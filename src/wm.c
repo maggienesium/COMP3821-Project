@@ -34,53 +34,41 @@
  *   n        - length of text
  *   ps       - pointer to pattern set
  *   tbl      - pointer to precomputed WuManberTables
- *
+ *bloom_check
  * Output:
  *   Prints matching pattern IDs and positions to stdout.
  * ---------------------------------------------------------------
  */
-void wm_search(const unsigned char *text, int n,
-               const PatternSet *ps, const WuManberTables *tbl)
-{
-    if (!text || !ps || !tbl || ps->min_len < B) return;
+void wm_search(const unsigned char *text, int n, const PatternSet *ps, const WuManberTables *tbl) {
+    int B = tbl->B;
+    int m = ps->min_length;
+    const BloomFilter *bf = &tbl->prefix_filter;
+    int use_bloom = (bf->bit_array != NULL);
 
-    int m = ps->min_len;
-    int pos = m - 1;
-
-    while (pos < n) {
-        uint32_t key = block_key(text + pos - B + 1, B);
+    for (int i = m - 1; i < n; ) {
+        uint32_t key = block_key(text + i - B + 1, B, B);
         int shift = tbl->shift_table[key];
 
         if (shift > 0) {
-            pos += shift;   // No pattern here — skip ahead
+            i += shift;
         } else {
-            // Potential match zone — check all patterns in this bucket
-            int pid = tbl->hash_table[key];
-
-            while (pid != -1) {
-                int len = tbl->pat_len[pid];
-
-                // Check prefix hash first (cheap)
-                uint32_t prefix_h = 0x811C9DC5;
-                for (int i = 0; i < (len < B ? len : B); ++i)
-                    prefix_h = (prefix_h ^ text[pos - m + 1 + i]) * 0x01000193;
-
-                if (prefix_h == tbl->prefix_hash[pid]) {
-                    // Verify full string match
-                    int start = pos - m + 1;
-                    if (start + len <= n &&
-                        strncmp((const char *)text + start,
-                                ps->patterns[pid], len) == 0)
-                    {
-                        printf("[MATCH] Pattern %d ('%s') at position %d\n",
-                               pid, ps->patterns[pid], start);
-                    }
+            // --- Optional probabilistic prefix check ---
+            if (use_bloom) {
+                if (!bloom_check(bf, text + i - m + 1, B)) {
+                    i++;
+                    continue;
                 }
-                pid = tbl->next[pid]; // move through hash bucket chain
             }
 
-            // Advance by one character (can’t skip safely)
-            pos += 1;
+            uint32_t h = hash_prefix(text + i - m + 1, m, B);
+
+            for (int pid = tbl->hash_table[key]; pid != -1; pid = tbl->next[pid]) {
+                if (tbl->prefix_hash[pid] == h &&
+                    strncmp((const char *)text + i - m + 1, ps->patterns[pid], ps->min_length) == 0) {
+                    printf("Match found: %s at %d\n", ps->patterns[pid], i - m + 1);
+                }
+            }
+            i++;
         }
     }
 }

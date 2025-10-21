@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
     int use_bloom = ask_user_mode();
 
     PatternSet ps = {0};
-    WuManberTables tbl = {0};  // ✅ Fixed: Actual struct, not pointer
+    WuManberTables tbl = {0};
 
     // Example pattern loading
     strcpy(ps.patterns[0], "MALWARE");
@@ -27,8 +27,7 @@ int main(int argc, char *argv[]) {
     strcpy(ps.patterns[2], "BAD");
     ps.pattern_count = 3;
 
-    // Prepare patterns and tables
-    int default_B = 2;  // placeholder
+    int default_B = 2;  // (placeholder)
     wm_prepare_patterns(&ps, default_B);
     wm_build_tables(&ps, &tbl, use_bloom);
 
@@ -36,13 +35,11 @@ int main(int argc, char *argv[]) {
     const unsigned char text[] = "THIS_IS_BAD_EVILWARE";
     int text_len = strlen((const char *)text);
 
-    // --- Timing Start ---
     struct timespec start, end;
     clock_gettime(CLOCK_MONOTONIC, &start);
 
     wm_search(text, text_len, &ps, &tbl);
 
-    // --- Timing End ---
     clock_gettime(CLOCK_MONOTONIC, &end);
 
     double elapsed = (end.tv_sec - start.tv_sec) +
@@ -50,7 +47,6 @@ int main(int argc, char *argv[]) {
 
     printf("\n[+] Search completed in %.6f seconds\n", elapsed);
 
-    // Clean up Bloom filter memory if used
     if (use_bloom)
         bloom_free(&tbl.prefix_filter);  
 

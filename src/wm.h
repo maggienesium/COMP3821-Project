@@ -3,28 +3,41 @@
 
 #include <stdint.h>
 
-#define B 2                     // Maybe implement an adaptive block size to improve optimisation? i.e. a function that chooses what block size is best depending on input parameters.
 #define ALPHABET_SIZE 256       // 256 ASCII character set.
 #define MAX_PATTERNS 10000      // Snort and Suricata have around 5 to ten thousand signatures so this is an appropriate upper bound
-#define MAX_PATTERN_LEN 128     // Malware patterns rarely exceed 80 so 128 is a safe choice.
+#define MAX_PATTERN_LEN 128     // Malware patterns rarely exceed 80, so 128 is a safe choice.
+
+typedef struct {
+    uint8_t *bit_array;
+    uint32_t size;
+    uint32_t num_hashes;
+} BloomFilter;  // This is to optimise hash prefixing using probabilistic data structures. Will compare with original deterministic approach in testing. TC & SC
 
 typedef struct {
     char patterns[MAX_PATTERNS][MAX_PATTERN_LEN];
-    int  pattern_count;
-    int  min_len;
+    int pattern_count;
+    int min_length;
+    int avg_length;
 } PatternSet;
 
 typedef struct {
-    int shift_table[1 << (B * 8)];
-    int hash_table[1 << (B * 8)];
-    int next[MAX_PATTERNS];
-    uint32_t prefix_hash[MAX_PATTERNS];
-    int pat_len[MAX_PATTERNS];
+    int B;
+    int *shift_table;
+    int *hash_table;
+    int *next;
+    uint32_t *prefix_hash;
+    int *pat_len;
+    BloomFilter prefix_filter; 
 } WuManberTables;
 
-uint32_t block_key(const unsigned char *s, int avail);
-void wm_prepare_patterns(PatternSet *ps);
-void wm_build_tables(const PatternSet *ps, WuManberTables *tbl);
+uint32_t block_key(const unsigned char *s, int avail, int B);
+uint32_t hash_prefix(const unsigned char *s, int len, int B);
+void wm_prepare_patterns(PatternSet *ps, int B);
+void wm_build_tables(const PatternSet *ps, WuManberTables *tbl, int use_bloom);
 void wm_search(const unsigned char *text, int n, const PatternSet *ps, const WuManberTables *tbl);
+void bloom_init(BloomFilter *bf, int n, double p);
+void bloom_add(BloomFilter *bf, const unsigned char *data, int len);
+int bloom_check(const BloomFilter *bf, const unsigned char *data, int len);
+void bloom_free(BloomFilter *bf);
 
 #endif

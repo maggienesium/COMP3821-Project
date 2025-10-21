@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -O2
 
-SRC = wm.c wmpp.c main.c
+SRC = wm.c wmpp.c main.c bloom.c
 OBJ = $(SRC:.c=.o)
 TARGET = wm_test
 

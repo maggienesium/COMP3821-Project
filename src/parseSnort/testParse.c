@@ -1,10 +1,11 @@
-#include "wm.h"
+#include "../wm.h"
 #include <string.h>
 #include <stdio.h>
 #include "parseRules.h"
+#include "hashTable.h"
 #include <stdlib.h>
 
-// main file used to test parsing a set of snort rules and creating wu-mamber
+// main file used to test parsing a set of snort rules and creating wu-mamber table
 int main(void) {
     char *rules[] = {
         "alert tcp any any -> any any (msg:\"Directory Traversal - /etc/passwd\"; content:\"/etc/passwd\"; sid:1004; rev:1;)",
@@ -16,17 +17,15 @@ int main(void) {
         "alert tcp any any -> any any (msg:\"Password in cleartext\"; content:\"password=\"; nocase; sid:1010; rev:1;)"
     };
 
-    PatternSet *ps = parseSnort(rules, 7);
-    WuManberTables *tbls = createTable(rules, 7);
+    struct HashTable *table = hashTableNew();
 
-    for (int i = 0; i < 7; i++) {
-        printf("%s\n", ps->patterns[i]);
-    }
+    PatternSet *ps = addSnortRules(rules, 7, table);
+    WuManberTables *tbls = createTable(ps);
 
-    const char *badUrl = "base64";
-    // should work, not sure why isn't
+    const char *badUrl = "this is my message with content base64, cmd.exe and password=testing";
     wm_search((const unsigned char *)badUrl, strlen(badUrl), ps, tbls);
 
+    free(table);
     free(ps);
     free(tbls);
 

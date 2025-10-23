@@ -43,5 +43,8 @@ int bloom_check(const BloomFilter *bf, const unsigned char *data, int len) {
 }
 
 void bloom_free(BloomFilter *bf) {
+    if (bf == 0) {
+        return;
+    }
     free(bf->bit_array);
 }

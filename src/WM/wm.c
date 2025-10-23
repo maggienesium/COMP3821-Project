@@ -34,12 +34,13 @@
  *   n        - length of text
  *   ps       - pointer to pattern set
  *   tbl      - pointer to precomputed WuManberTables
- *bloom_check
+ *
  * Output:
  *   Prints matching pattern IDs and positions to stdout.
  * ---------------------------------------------------------------
  */
 void wm_search(const unsigned char *text, int n, const PatternSet *ps, const WuManberTables *tbl) {
+    
     int B = tbl->B;
     int m = ps->min_length;
     const BloomFilter *bf = &tbl->prefix_filter;
@@ -52,7 +53,6 @@ void wm_search(const unsigned char *text, int n, const PatternSet *ps, const WuM
         if (shift > 0) {
             i += shift;
         } else {
-            // --- Optional probabilistic prefix check ---
             if (use_bloom) {
                 if (!bloom_check(bf, text + i - m + 1, B)) {
                     i++;
@@ -64,7 +64,7 @@ void wm_search(const unsigned char *text, int n, const PatternSet *ps, const WuM
 
             for (int pid = tbl->hash_table[key]; pid != -1; pid = tbl->next[pid]) {
                 if (tbl->prefix_hash[pid] == h &&
-                    strncmp((const char *)text + i - m + 1, ps->patterns[pid], ps->min_length) == 0) {
+                    strncmp((const char *)text + i - m + 1, ps->patterns[pid], (size_t) ps->min_length) == 0) {
                     printf("Match found: %s at %d\n", ps->patterns[pid], i - m + 1);
                 }
             }

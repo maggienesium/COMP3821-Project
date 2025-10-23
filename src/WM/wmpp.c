@@ -44,22 +44,6 @@
 #include <stdlib.h>
 #include "wm.h"
 
-/*
- * Shall we implement Bloom Filters for the Hash prefix? I have 
- * coded them in COMP4337 for an assignment. Let me know.
- * 
- * Bloom Filters are probabilistic Data Structures that trade a 
- * small chance of false positives for huge space and speed savings.
- * 
- * Maybe I create like two different hash prefixes and benchmark
- * False positives vs Speed/Space Tradeoff? Would be interesting...
- * 
- * There are three ways to go about it:
- * 1. Deterministic Prefix-Hash Filter (Just a general hash)
- * 2. Probabilistic Prefix-Hash Filter (Just Bloom Filter)
- * 3. Hybrid - probs overkill, only useful for >10k patterns
- */
-
 /* ---------------------------------------------------------------
  * Purpose:
  *   Adaptive Block Size choice:
@@ -76,13 +60,11 @@
  * 
  * Credit: https://ssojet.com/hashing/fnv-1a-in-python/
  * --------------------------------------------------------------- */
-int choose_block_size(const PatternSet *ps) {
-    if (ps->min_length < 4) return 2;
+static int choose_block_size(const PatternSet *ps) {
+    if (ps->min_length < 4 || ps->pattern_count > 5000) return 2;
     if (ps->avg_length > 30) return 4;
-    if (ps->pattern_count > 5000) return 2;
     return 3;
 }
-
 
 /* ---------------------------------------------------------------
  * Helper: Compute a simple prefix hash for quick verification.
@@ -101,7 +83,7 @@ int choose_block_size(const PatternSet *ps) {
  * Credit: https://ssojet.com/hashing/fnv-1a-in-python/
  * --------------------------------------------------------------- */
 uint32_t hash_prefix(const unsigned char *s, int len, int B) {
-    uint32_t h = 0x811C9DC5;            // (FNV offset basis)
+    uint32_t h = 0x811C9DC5;    // (FNV offset basis)
     for (int i = 0; i < (len < B ? len : B); ++i)
         h = (h ^ s[i]) * 0x01000193;    // (FNV prime)
     return h;
@@ -198,16 +180,15 @@ void wm_build_tables(const PatternSet *ps, WuManberTables *tbl, int use_bloom) {
 
     tbl->shift_table = calloc(TABLE_SIZE, sizeof(int));
     tbl->hash_table  = calloc(TABLE_SIZE, sizeof(int));
-    tbl->next        = calloc(ps->pattern_count, sizeof(int));
-    tbl->prefix_hash = calloc(ps->pattern_count, sizeof(uint32_t));
-    tbl->pat_len     = calloc(ps->pattern_count, sizeof(int));
+    tbl->next        = calloc((size_t) ps->pattern_count, sizeof(int));
+    tbl->prefix_hash = calloc((size_t) ps->pattern_count, sizeof(uint32_t));
+    tbl->pat_len     = calloc((size_t) ps->pattern_count, sizeof(int));
 
     for (uint32_t i = 0; i < TABLE_SIZE; ++i) {
         tbl->shift_table[i] = default_shift;
         tbl->hash_table[i]  = -1;
     }
 
-    // --- Initialize Bloom filter if chosen ---
     if (use_bloom) {
         printf("[*] Using Bloom filter prefix (Probabilistic).\n");
         bloom_init(&tbl->prefix_filter, ps->pattern_count, 0.01);   // Set a 1% false positive rate
@@ -238,4 +219,29 @@ void wm_build_tables(const PatternSet *ps, WuManberTables *tbl, int use_bloom) {
         tbl->next[pid] = tbl->hash_table[sfx];
         tbl->hash_table[sfx] = pid;
     }
+}
+
+/* ---------------------------------------------------------------
+ * Step 3: Clear any used memory
+ *
+ * Purpose:
+ *   No one wants a memory leak...
+ *
+ * Parameters:
+ *   tbl - Pointer to WuManberTables to clear
+ *
+ * Notes:
+ *   - Calls bloom_free if it was used in the tbl struct.
+ * --------------------------------------------------------------- */
+void wm_free_tables(WuManberTables *tbl) {
+    if (!tbl) return;
+
+    free(tbl->shift_table);
+    free(tbl->hash_table);
+    free(tbl->next);
+    free(tbl->prefix_hash);
+    free(tbl->pat_len);
+
+    if (tbl->prefix_filter.bit_array != NULL)
+        bloom_free(&tbl->prefix_filter);
 }

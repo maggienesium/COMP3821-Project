@@ -5,13 +5,13 @@
 
 #define ALPHABET_SIZE 256       // 256 ASCII character set.
 #define MAX_PATTERNS 10000      // Snort and Suricata have around 5 to ten thousand signatures so this is an appropriate upper bound
-#define MAX_PATTERN_LEN 128     // Malware patterns rarely exceed 80, so 128 is a safe choice.
+#define MAX_PATTERN_LEN 256
 
 typedef struct {
     uint8_t *bit_array;
     uint32_t size;
     uint32_t num_hashes;
-} BloomFilter;  // This is to optimise hash prefixing using probabilistic data structures. Will compare with original deterministic approach in testing. TC & SC
+} BloomFilter;
 
 typedef struct {
     char patterns[MAX_PATTERNS][MAX_PATTERN_LEN];
@@ -30,10 +30,12 @@ typedef struct {
     BloomFilter prefix_filter; 
 } WuManberTables;
 
+static inline int choose_block_size(const PatternSet *ps);
 uint32_t block_key(const unsigned char *s, int avail, int B);
 uint32_t hash_prefix(const unsigned char *s, int len, int B);
 void wm_prepare_patterns(PatternSet *ps, int B);
 void wm_build_tables(const PatternSet *ps, WuManberTables *tbl, int use_bloom);
+void wm_free_tables(WuManberTables *tbl);
 void wm_search(const unsigned char *text, int n, const PatternSet *ps, const WuManberTables *tbl);
 void bloom_init(BloomFilter *bf, int n, double p);
 void bloom_add(BloomFilter *bf, const unsigned char *data, int len);

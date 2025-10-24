@@ -132,7 +132,7 @@ uint32_t block_key(const unsigned char *s, int avail, int B) {
  * --------------------------------------------------------------- */
 void wm_prepare_patterns(PatternSet *ps, int B) {
     if (!ps || ps->pattern_count <= 0)  // no valid patterns
-        return;  
+        return;
 
     int m = INT_MAX;
 

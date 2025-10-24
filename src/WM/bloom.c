@@ -37,9 +37,9 @@ int bloom_check(const BloomFilter *bf, const unsigned char *data, int len) {
     for (uint32_t i = 0; i < bf->num_hashes; ++i) {
         uint32_t idx = (h1 + i * h2) % bf->size;
         if (!(bf->bit_array[idx >> 3] & (1 << (idx & 7))))
-            return 0;  // definitely not present
+            return 0;   // definitely not present
     }
-    return 1; // possibly present
+    return 1;   // possibly present
 }
 
 void bloom_free(BloomFilter *bf) {

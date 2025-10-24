@@ -10,6 +10,7 @@ SRC_DIR = src
 PARSE_DIR = $(SRC_DIR)/parse
 WM_DIR = $(SRC_DIR)/WM
 BIN_DIR = bin
+TOOLS_DIR = tools
 
 TARGET = $(BIN_DIR)/testParse
 
@@ -33,10 +34,19 @@ $(TARGET): $(OBJ)
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-# Clean
+# Run cpplint across all C and header files in src/
+LINT = cpplint
+LINT_FLAGS = --recursive --quiet
+
+lint:
+	@echo "Running cpplint..."
+	@$(LINT) $(LINT_FLAGS) $(SRC_DIR)
+	@echo "cpplint completed."
+
+
 clean:
 	rm -f $(OBJ) $(TARGET)
 
 rebuild: clean all
 
-.PHONY: all clean rebuild
+.PHONY: all clean rebuild lint

@@ -60,18 +60,18 @@ typedef struct {
  */
 static void wm_print_analytics(const WMStats *s, int use_bloom, int n, int B) {
     printf("\n[Search Stats]\n");
-    printf("  Windows examined     : %llu\n", (unsigned long long)s->windows);
+    printf("  Windows examined     : %llu\n", (uint64_t)s->windows);
     printf("  Block size (B)       : %d\n", B);
-    printf("  Avg shift distance   : %.3f\n", 
+    printf("  Avg shift distance   : %.3f\n",
            s->windows ? (double)s->sum_shift / s->windows : 0.0);
-    printf("  Hash hits            : %llu\n", (unsigned long long)s->hash_hits);
-    printf("  Chain traversals     : %llu\n", (unsigned long long)s->chain_steps);
-    printf("  Exact matches        : %llu\n", (unsigned long long)s->exact_matches);
+    printf("  Hash hits            : %llu\n", (uint64_t)s->hash_hits);
+    printf("  Chain traversals     : %llu\n", (uint64_t)s->chain_steps);
+    printf("  Exact matches        : %llu\n", (uint64_t)s->exact_matches);
 
     if (use_bloom) {
-        printf("  Bloom checks         : %llu\n", (unsigned long long)s->bloom_checks);
-        printf("  Bloom positives      : %llu\n", (unsigned long long)s->bloom_pass);
-        printf("  Verified after Bloom : %llu\n", (unsigned long long)s->verif_after_bloom);
+        printf("  Bloom checks         : %llu\n", (uint64_t)s->bloom_checks);
+        printf("  Bloom positives      : %llu\n", (uint64_t)s->bloom_pass);
+        printf("  Verified after Bloom : %llu\n", (uint64_t)s->verif_after_bloom);
     }
 
     printf("  Elapsed time         : %.6f sec\n", s->elapsed_sec);

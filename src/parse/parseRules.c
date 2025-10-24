@@ -117,7 +117,7 @@ PatternSet *loadSnortRulesFromFile(const char *filename) {
     while (fgets(line, sizeof(line), fp)) {
         trim(line);
         if (line[0] == '#' || strlen(line) < 5)
-            continue; // skip comments or empty lines
+            continue;   // skip comments or empty lines
 
         addContentToTable(line, ps, &currPattern);
     }

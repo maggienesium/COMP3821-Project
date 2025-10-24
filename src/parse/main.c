@@ -8,7 +8,7 @@
 #include "parseRules.h"
 
 #define RULESET_PATH "./src/ruleset/snort3-community-rules/snort3-community.rules"
-#define TESTS_PATH "./src/tests/pcaps" // root folder to walk
+#define TESTS_PATH "./src/tests/pcaps"
 
 static int ask_user_mode(void) {
     char choice;
@@ -26,8 +26,13 @@ static void scan_file(const char *filepath, PatternSet *ps, WuManberTables *tbl)
     if (!fp) return;
 
     fseek(fp, 0, SEEK_END);
-    long size = ftell(fp);
-    rewind(fp);
+    int64_t pos = ftell(fp);
+    if (pos < 0) {
+        perror("ftell failed");
+        fclose(fp);
+        return;
+    }
+    uint64_t size = (uint64_t)pos;
 
     if (size <= 0) {
         fclose(fp);

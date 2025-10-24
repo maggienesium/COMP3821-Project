@@ -1,10 +1,10 @@
-#ifndef WM_H
-#define WM_H
+#ifndef SRC_WM_WM_H_
+#define SRC_WM_WM_H_
 
 #include <stdint.h>
 
 #define ALPHABET_SIZE 256       // 256 ASCII character set.
-#define MAX_PATTERNS 10000      // Snort and Suricata have around 5 to ten thousand signatures so this is an appropriate upper bound
+#define MAX_PATTERNS 10000
 #define MAX_PATTERN_LEN 256
 
 typedef struct {
@@ -28,7 +28,7 @@ typedef struct {
     int *next;
     uint32_t *prefix_hash;
     int *pat_len;
-    BloomFilter prefix_filter; 
+    BloomFilter prefix_filter;
 } WuManberTables;
 
 uint32_t block_key(const unsigned char *s, int avail, int B);
@@ -42,4 +42,4 @@ void bloom_add(BloomFilter *bf, const unsigned char *data, int len);
 int bloom_check(const BloomFilter *bf, const unsigned char *data, int len);
 void bloom_free(BloomFilter *bf);
 
-#endif
+#endif  // SRC_WM_WM_H_

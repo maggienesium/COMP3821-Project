@@ -1,5 +1,5 @@
-#ifndef PARSERULES_H
-#define PARSERULES_H
+#ifndef SRC_PARSE_PARSERULES_H_
+#define SRC_PARSE_PARSERULES_H_
 
 #include "../WM/wm.h"
 
@@ -8,4 +8,4 @@ PatternSet *addContentToTable(char *snortRule, PatternSet *ps, int *currPattern)
 PatternSet *loadSnortRulesFromFile(const char *filename);
 WuManberTables *createTable(PatternSet *ps, int use_bloom);
 
-#endif
+#endif  // SRC_PARSE_PARSERULES_H_

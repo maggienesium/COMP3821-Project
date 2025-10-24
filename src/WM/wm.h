@@ -15,6 +15,7 @@ typedef struct {
 
 typedef struct {
     char patterns[MAX_PATTERNS][MAX_PATTERN_LEN];
+    char **rule_refs;
     int pattern_count;
     int min_length;
     int avg_length;
@@ -30,7 +31,6 @@ typedef struct {
     BloomFilter prefix_filter; 
 } WuManberTables;
 
-static inline int choose_block_size(const PatternSet *ps);
 uint32_t block_key(const unsigned char *s, int avail, int B);
 uint32_t hash_prefix(const unsigned char *s, int len, int B);
 void wm_prepare_patterns(PatternSet *ps, int B);

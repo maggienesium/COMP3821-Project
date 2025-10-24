@@ -2,6 +2,12 @@
     "files.associations": {
         "*.embeddedhtml": "html",
         "limits.h": "c",
-        "time.h": "c"
+        "time.h": "c",
+        "string.h": "c",
+        "stdio.h": "c",
+        "parserules.h": "c",
+        "hashtable.h": "c",
+        "__locale": "c",
+        "wm.h": "c"
     }
 }

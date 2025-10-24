@@ -7,21 +7,33 @@ CFLAGS = -Wall -Wextra -Og -g -Werror \
          -fno-omit-frame-pointer
 
 SRC_DIR = src
-OBJ_DIR = $(SRC_DIR)/WM
-TARGET  = $(OBJ_DIR)/wm_test
+PARSE_DIR = $(SRC_DIR)/parse
+WM_DIR = $(SRC_DIR)/WM
+BIN_DIR = bin
 
-SRC = $(SRC_DIR)/wm.c $(SRC_DIR)/wmpp.c $(SRC_DIR)/main.c $(SRC_DIR)/bloom.c
-OBJ = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SRC))
+TARGET = $(BIN_DIR)/testParse
 
+SRC = $(PARSE_DIR)/parseRules.c \
+      $(PARSE_DIR)/main.c \
+      $(WM_DIR)/bloom.c \
+      $(WM_DIR)/wm.c \
+      $(WM_DIR)/wmpp.c
+
+OBJ = $(SRC:.c=.o)
+
+# Default target
 all: $(TARGET)
 
+# Link
 $(TARGET): $(OBJ)
-	$(CC) $(CFLAGS) -o $@ $(OBJ)
+	@mkdir -p $(BIN_DIR)
+	$(CC) $(CFLAGS) -o $@ $(OBJ) -lm
 
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(SRC_DIR)/WM/wm.h
-	@mkdir -p $(OBJ_DIR)
+# Compile
+%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
+# Clean
 clean:
 	rm -f $(OBJ) $(TARGET)
 

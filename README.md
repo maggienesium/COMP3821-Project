@@ -1,6 +1,12 @@
 # COMP3821-Project
 COMP3821 Project 2025T3
 
+In order to make commits:
+
+If on Mac: brew install cpplint
+
+otherwise: pip3 install cpplint
+
 To test WM:
 
 Run *make* and then run *./bin/testParse* then choose *n* or *d* for non-deterministic or deterministic option. Example output for one of the pcaps:

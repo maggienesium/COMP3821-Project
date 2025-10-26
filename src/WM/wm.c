@@ -1,21 +1,22 @@
 /* 
- *                  Wu-Manber Pattern Searching
+ *                  Wu–Manber Multi-Pattern Matcher
  *
  * ---------------------------------------------------------------
- * Implements the search phase of the Wu–Manber algorithm.
+ * Implements the search phase of the Wu–Manber algorithm for
+ * multiple pattern matching.
  *
  * Reference:
  *   "Efficient Wu-Manber Pattern Matching Hardware for Intrusion 
- *    and Malware Detection" - Monther Aldwairi
+ *    and Malware Detection" — Monther Aldwairi
  *
  * Core Idea:
  *   Use precomputed shift and hash tables (see wmpp.c and wm.h)
- *   to skip ahead in the input text efficiently, reducing 
- *   unnecessary comparisons.
+ *   to skip ahead in the input efficiently, minimizing unnecessary
+ *   comparisons. Can optionally integrate Bloom filters for
+ *   probabilistic prefix filtering.
  *
  *   Text window size = m (length of shortest pattern)
  *   Block size       = B 
- *
  * ---------------------------------------------------------------
  */
 
@@ -23,16 +24,18 @@
 #include <string.h>
 #include <stdint.h>
 #include <time.h>
+#include <stdlib.h>
 #include "wm.h"
 
 /* ---------------------------------------------------------------
  * Struct: WMStats
- * 
- * Tracks runtime analytics such as:
- *      - Total windows examined
- *      - Hash lookups
- *      - Bloom filter checks
- *      - Total elapsed time.
+ *
+ * Tracks runtime analytics for a single Wu–Manber search run:
+ *    - Total windows examined
+ *    - Shift operations and hash lookups
+ *    - Bloom filter checks (if enabled)
+ *    - Dynamic memory activity (for space complexity)
+ *    - Elapsed time
  * ---------------------------------------------------------------
  */
 typedef struct {
@@ -44,22 +47,71 @@ typedef struct {
     uint64_t bloom_checks;
     uint64_t bloom_pass;
     uint64_t verif_after_bloom;
+    uint64_t alloc_count;       // malloc/realloc count
+    uint64_t free_count;        // free count
+    size_t   total_bytes;       // total bytes allocated
     double   elapsed_sec;
 } WMStats;
 
+/* Local analytics tracker reference */
+static WMStats *local_wm_stats = NULL;
+
 /* ---------------------------------------------------------------
+ * Function: wm_malloc / wm_realloc / wm_calloc / wm_free
+ *
  * Purpose:
- *   Print aggregated performance statistics from a single
- *   Wu–Manber search run.
+ *   Memory wrappers to instrument allocation activity.
+ *   Enables estimation of space complexity over runtime.
+ * ---------------------------------------------------------------
+ */
+void *wm_malloc(size_t size) {
+    void *ptr = malloc(size);
+    if (ptr && g_wm_global_stats) {
+        g_wm_global_stats->alloc_count++;
+        g_wm_global_stats->total_bytes += size;
+    }
+    return ptr;
+}
+
+void *wm_calloc(size_t count, size_t size) {
+    void *ptr = calloc(count, size);
+    if (ptr && g_wm_global_stats) {
+        g_wm_global_stats->alloc_count++;
+        g_wm_global_stats->total_bytes += count * size;
+    }
+    return ptr;
+}
+
+void *wm_realloc(void *ptr, size_t size) {
+    void *new_ptr = realloc(ptr, size);
+    if (new_ptr && g_wm_global_stats) {
+        g_wm_global_stats->alloc_count++;
+        g_wm_global_stats->total_bytes += size;
+    }
+    return new_ptr;
+}
+
+void wm_free(void *ptr) {
+    if (ptr && g_wm_global_stats) g_wm_global_stats->free_count++;
+    free(ptr);
+}
+
+/* ---------------------------------------------------------------
+ * Function: wm_print_analytics
+ *
+ * Purpose:
+ *   Print aggregated performance and memory statistics for a
+ *   Wu–Manber pattern search.
  *
  * Parameters:
- *   s          - pointer to WMStats struct with counters
- *   use_bloom  - flag (1 if Bloom filter mode enabled)
- *   n          - number of bytes scanned (for throughput)
+ *   s          - pointer to WMStats struct with collected data
+ *   use_bloom  - flag indicating Bloom filter use (1 = enabled)
+ *   n          - total number of bytes scanned
+ *   B          - block size used in pattern preprocessing
  * ---------------------------------------------------------------
  */
 static void wm_print_analytics(const WMStats *s, int use_bloom, int n, int B) {
-    printf("\n[Search Stats]\n");
+    printf("\n[Search Stats: Wu–Manber]\n");
     printf("  Windows examined     : %llu\n", (uint64_t)s->windows);
     printf("  Block size (B)       : %d\n", B);
     printf("  Avg shift distance   : %.3f\n",
@@ -74,31 +126,51 @@ static void wm_print_analytics(const WMStats *s, int use_bloom, int n, int B) {
         printf("  Verified after Bloom : %llu\n", (uint64_t)s->verif_after_bloom);
     }
 
+    printf("\n[Memory Usage]\n");
+    if (g_wm_global_stats) {
+        printf("  Allocations          : %llu\n",
+            (uint64_t)g_wm_global_stats->alloc_count);
+        printf("  Frees                : %llu\n",
+            (uint64_t)g_wm_global_stats->free_count);
+        printf("  Total bytes alloc’d  : %llu bytes\n",
+            (uint64_t)g_wm_global_stats->total_bytes);
+    } else {
+        printf("  (no global memory tracker attached)\n");
+    }
+
+    printf("\n[Performance]\n");
     printf("  Elapsed time         : %.6f sec\n", s->elapsed_sec);
     printf("  Throughput           : %.2f MB/s\n",
            s->elapsed_sec > 0 ? (n / (1024.0 * 1024.0)) / s->elapsed_sec : 0.0);
 }
 
 /* ---------------------------------------------------------------
+ * Function: wm_search
+ *
  * Purpose:
- *   Perform the Wu–Manber search on a given text buffer, printing
- *   any matching patterns and detailed analytics.
+ *   Perform Wu–Manber multi-pattern search and print performance
+ *   and memory analytics.
  *
  * Parameters:
  *   text   - pointer to input buffer
- *   n      - size of buffer (in bytes)
+ *   n      - buffer length in bytes
  *   ps     - pointer to pattern set
  *   tbl    - pointer to precomputed WuManberTables
  * ---------------------------------------------------------------
  */
-void wm_search(const unsigned char *text, int n, const PatternSet *ps, const WuManberTables *tbl) {
+void wm_search(const unsigned char *text, int n,
+               const PatternSet *ps, const WuManberTables *tbl) {
+    if (!text || !ps || !tbl) return;
+
+    WMStats s = {0};
+    local_wm_stats = &s;
+
     struct timespec start, end;
     clock_gettime(CLOCK_MONOTONIC, &start);
 
-    WMStats s = {0};
-
     int B = tbl->B;
     int m = ps->min_length;
+    if (m < B) m = B;
     const BloomFilter *bf = &tbl->prefix_filter;
     int use_bloom = (bf->bit_array != NULL);
 
@@ -129,7 +201,8 @@ void wm_search(const unsigned char *text, int n, const PatternSet *ps, const WuM
         for (int pid = tbl->hash_table[key]; pid != -1; pid = tbl->next[pid]) {
             s.chain_steps++;
             if (tbl->prefix_hash[pid] == h &&
-                strncmp((const char *)text + i - m + 1, ps->patterns[pid],
+                strncmp((const char *)text + i - m + 1,
+                        ps->patterns[pid],
                         (size_t)ps->min_length) == 0) {
                 s.exact_matches++;
                 s.verif_after_bloom++;
@@ -140,7 +213,8 @@ void wm_search(const unsigned char *text, int n, const PatternSet *ps, const WuM
 
     clock_gettime(CLOCK_MONOTONIC, &end);
     s.elapsed_sec = ((end.tv_sec - start.tv_sec) +
-                    (end.tv_nsec - start.tv_nsec)) / 1e9;
+                     (end.tv_nsec - start.tv_nsec)) / 1e9;
 
     wm_print_analytics(&s, use_bloom, n, tbl->B);
+    local_wm_stats = NULL;
 }

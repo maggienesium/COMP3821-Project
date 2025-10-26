@@ -9,6 +9,7 @@ CFLAGS = -Wall -Wextra -Og -g -Werror \
 SRC_DIR = src
 PARSE_DIR = $(SRC_DIR)/parse
 WM_DIR = $(SRC_DIR)/WM
+AC_DIR = $(SRC_DIR)/AC
 BIN_DIR = bin
 TOOLS_DIR = tools
 
@@ -18,23 +19,20 @@ SRC = $(PARSE_DIR)/parseRules.c \
       $(PARSE_DIR)/main.c \
       $(WM_DIR)/bloom.c \
       $(WM_DIR)/wm.c \
-      $(WM_DIR)/wmpp.c
+      $(WM_DIR)/wmpp.c \
+      $(AC_DIR)/ac.c
 
 OBJ = $(SRC:.c=.o)
 
-# Default target
 all: $(TARGET)
 
-# Link
 $(TARGET): $(OBJ)
 	@mkdir -p $(BIN_DIR)
 	$(CC) $(CFLAGS) -o $@ $(OBJ) -lm
 
-# Compile
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-# Run cpplint across all C and header files in src/
 LINT = cpplint
 LINT_FLAGS = --recursive --quiet
 

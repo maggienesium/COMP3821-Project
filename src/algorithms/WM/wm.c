@@ -29,8 +29,7 @@
 
 /* ---------------------------------------------------------------
  * Struct: WMStats
- *
- * Tracks runtime analytics for a single Wu–Manber search run:
+ *  Tracks runtime analytics for a single Wu–Manber search run:
  *    - Total windows examined
  *    - Shift operations and hash lookups
  *    - Bloom filter checks (if enabled)
@@ -57,9 +56,6 @@ typedef struct {
 static WMStats *local_wm_stats = NULL;
 
 /* ---------------------------------------------------------------
- * Function: wm_malloc / wm_realloc / wm_calloc / wm_free
- *
- * Purpose:
  *   Memory wrappers to instrument allocation activity.
  *   Enables estimation of space complexity over runtime.
  * ---------------------------------------------------------------
@@ -97,17 +93,8 @@ void wm_free(void *ptr) {
 }
 
 /* ---------------------------------------------------------------
- * Function: wm_print_analytics
- *
- * Purpose:
  *   Print aggregated performance and memory statistics for a
  *   Wu–Manber pattern search.
- *
- * Parameters:
- *   s          - pointer to WMStats struct with collected data
- *   use_bloom  - flag indicating Bloom filter use (1 = enabled)
- *   n          - total number of bytes scanned
- *   B          - block size used in pattern preprocessing
  * ---------------------------------------------------------------
  */
 static void wm_print_analytics(const WMStats *s, int use_bloom, int n, int B) {
@@ -145,17 +132,8 @@ static void wm_print_analytics(const WMStats *s, int use_bloom, int n, int B) {
 }
 
 /* ---------------------------------------------------------------
- * Function: wm_search
- *
- * Purpose:
  *   Perform Wu–Manber multi-pattern search and print performance
  *   and memory analytics.
- *
- * Parameters:
- *   text   - pointer to input buffer
- *   n      - buffer length in bytes
- *   ps     - pointer to pattern set
- *   tbl    - pointer to precomputed WuManberTables
  * ---------------------------------------------------------------
  */
 void wm_search(const unsigned char *text, int n,

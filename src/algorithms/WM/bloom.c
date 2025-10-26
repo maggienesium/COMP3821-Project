@@ -20,18 +20,7 @@
 #include "wm.h"
 
 /* ---------------------------------------------------------------
- * Function: fnv1a
- *
- * Purpose:
- *   Compute the 32-bit FNV-1a hash of a byte sequence.
- *
- * Parameters:
- *   s    - pointer to input data
- *   len  - length of data in bytes
- *   seed - initial hash seed
- *
- * Returns:
- *   32-bit FNV-1a hash value
+ *      Compute the 32-bit FNV-1a hash of a byte sequence.
  * ---------------------------------------------------------------
  */
 static inline uint32_t fnv1a(const unsigned char *s, int len, uint32_t seed) {
@@ -42,16 +31,8 @@ static inline uint32_t fnv1a(const unsigned char *s, int len, uint32_t seed) {
 }
 
 /* ---------------------------------------------------------------
- * Function: bloom_init
- *
- * Purpose:
  *   Initialize a Bloom filter given the number of expected items
  *   and desired false positive probability.
- *
- * Parameters:
- *   bf - pointer to BloomFilter struct
- *   n  - expected number of items
- *   p  - desired false positive probability (e.g. 0.01 = 1%)
  * ---------------------------------------------------------------
  */
 void bloom_init(BloomFilter *bf, int n, double p) {
@@ -64,15 +45,7 @@ void bloom_init(BloomFilter *bf, int n, double p) {
 }
 
 /* ---------------------------------------------------------------
- * Function: bloom_add
- *
- * Purpose:
- *   Insert a data element into the Bloom filter.
- *
- * Parameters:
- *   bf   - pointer to initialized Bloom filter
- *   data - pointer to input data
- *   len  - data length in bytes
+ *          Insert a data element into the Bloom filter.
  * ---------------------------------------------------------------
  */
 void bloom_add(BloomFilter *bf, const unsigned char *data, int len) {
@@ -86,18 +59,7 @@ void bloom_add(BloomFilter *bf, const unsigned char *data, int len) {
 }
 
 /* ---------------------------------------------------------------
- * Function: bloom_check
- *
- * Purpose:
  *   Check whether a data element may exist in the Bloom filter.
- *
- * Parameters:
- *   bf   - pointer to Bloom filter
- *   data - pointer to input data
- *   len  - data length in bytes
- *
- * Returns:
- *   1 if possibly present, 0 if definitely not present
  * ---------------------------------------------------------------
  */
 int bloom_check(const BloomFilter *bf, const unsigned char *data, int len) {
@@ -109,17 +71,11 @@ int bloom_check(const BloomFilter *bf, const unsigned char *data, int len) {
         if (!(bf->bit_array[idx >> 3] & (1 << (idx & 7))))
             return 0;   // definitely not present
     }
-    return 1;   // possibly present
+    return 1;   // possibly present (since it is probabilistic)
 }
 
 /* ---------------------------------------------------------------
- * Function: bloom_free
- *
- * Purpose:
- *   Release dynamically allocated memory used by the Bloom filter.
- *
- * Parameters:
- *   bf - pointer to BloomFilter to clear
+ *   Free dynamically allocated memory used by the Bloom filter.
  * ---------------------------------------------------------------
  */
 void bloom_free(BloomFilter *bf) {

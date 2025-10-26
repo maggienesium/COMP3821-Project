@@ -1,5 +1,5 @@
-#ifndef SRC_SH_SH_H_
-#define SRC_SH_SH_H_
+#ifndef SRC_ALGORITHMS_SH_SH_H_
+#define SRC_ALGORITHMS_SH_SH_H_
 
 #include <stdint.h>
 #include <stdio.h>
@@ -15,9 +15,8 @@
 
 /* ---------------------------------------------------------------
  * Struct: Pattern
- *
- * Represents a single parsed Snort rule pattern.
- * Each pattern includes:
+ *  Represents a single parsed Snort rule pattern.
+ *  Each pattern includes:
  *   - Raw pattern string (may include hex-encoded bytes)
  *   - Rule metadata (sid, message, nocase flag)
  * --------------------------------------------------------------- */
@@ -29,6 +28,8 @@ typedef struct {
     int   sid;
     int   nocase;
 } Pattern;
+
+// Will need to homogenise the parsing with the other module.
 
 /* ---------------------------------------------------------------
  *                Function Prototypes (Parsing & Loading)
@@ -53,14 +54,6 @@ void performSetHorspool(char *text, uint64_t textLength,
                         Pattern *patterns, int numPatterns,
                         const char *alertFile);
 
-/* ---------------------------------------------------------------
- *                       Main Entry Point
- * --------------------------------------------------------------- */
-
-/**
- * Standalone CLI driver (for experimentation).
- * Usage: ./set_horspool <rules_file> <pcap_file>
- */
 int main(int argc, char *argv[]);
 
-#endif  // SRC_SH_SH_H_
+#endif  // SRC_ALGORITHMS_SH_SH_H_

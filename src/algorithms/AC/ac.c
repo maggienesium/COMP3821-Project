@@ -49,14 +49,7 @@ typedef struct {
 static ACStats *g_ac_stats = NULL;
 
 /* ---------------------------------------------------------------
- * Function: ac_print_analytics
- * 
- * Purpose:
  *   Display collected runtime statistics after a search.
- *
- * Parameters:
- *   s  - pointer to ACStats struct
- *   n  - total number of bytes scanned
  * ---------------------------------------------------------------
  */
 static void ac_print_analytics(const ACStats *s, int n) {
@@ -74,13 +67,7 @@ static void ac_print_analytics(const ACStats *s, int n) {
 }
 
 /* ---------------------------------------------------------------
- * Function: to_lower_char
- *
- * Purpose:
  *   Convert a character to lowercase (for case-insensitive mode).
- *
- * Parameters:
- *   c  - unsigned character to convert
  * ---------------------------------------------------------------
  */
 static inline unsigned char to_lower_char(unsigned char c) {
@@ -88,9 +75,6 @@ static inline unsigned char to_lower_char(unsigned char c) {
 }
 
 /* ---------------------------------------------------------------
- * Function: ac_malloc / ac_realloc / ac_free_mem
- *
- * Purpose:
  *   Memory wrappers that count allocations and total bytes
  *   for dynamic space complexity tracking.
  * ---------------------------------------------------------------
@@ -131,13 +115,7 @@ void ac_free_mem(void *ptr) {
 
 
 /* ---------------------------------------------------------------
- * Function: ac_create
- *
- * Purpose:
  *   Allocate and initialize an empty Aho–Corasick automaton.
- *
- * Returns:
- *   Pointer to an initialized AhoCorasick structure.
  * ---------------------------------------------------------------
  */
 AhoCorasick *ac_create(void) {
@@ -166,14 +144,7 @@ AhoCorasick *ac_create(void) {
 }
 
 /* ---------------------------------------------------------------
- * Function: ac_add_pattern
- *
- * Purpose:
- *   Insert a pattern string into the automaton.
- *
- * Parameters:
- *   ac       - pointer to initialized automaton
- *   pattern  - string to insert
+ *          Insert a pattern string into the automaton.
  * ---------------------------------------------------------------
  */
 void ac_add_pattern(AhoCorasick *ac, const char *pattern) {
@@ -212,13 +183,7 @@ void ac_add_pattern(AhoCorasick *ac, const char *pattern) {
 }
 
 /* ---------------------------------------------------------------
- * Function: ac_build
- *
- * Purpose:
  *   Compute failure links using BFS traversal and merge outputs.
- *
- * Parameters:
- *   ac  - pointer to automaton to finalize
  * ---------------------------------------------------------------
  */
 void ac_build(AhoCorasick *ac) {
@@ -267,14 +232,7 @@ void ac_build(AhoCorasick *ac) {
 }
 
 /* ---------------------------------------------------------------
- * Function: ac_search
- *
- * Purpose:
  *   Perform Aho–Corasick search and print analytics summary.
- *
- * Parameters:
- *   ac    - pointer to automaton
- *   text  - input buffer to scan
  * ---------------------------------------------------------------
  */
 void ac_search(AhoCorasick *ac, const char *text) {
@@ -319,13 +277,7 @@ void ac_search(AhoCorasick *ac, const char *text) {
 }
 
 /* ---------------------------------------------------------------
- * Function: ac_destroy
- *
- * Purpose:
- *   Free all dynamically allocated memory associated with automaton.
- *
- * Parameters:
- *   ac  - pointer to automaton to free
+ * Free all dynamically allocated memory associated with automaton.
  * ---------------------------------------------------------------
  */
 void ac_destroy(AhoCorasick *ac) {

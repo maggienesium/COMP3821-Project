@@ -7,9 +7,10 @@ CFLAGS = -Wall -Wextra -Og -g -Werror \
          -fno-omit-frame-pointer
 
 SRC_DIR = src
+ALG_DIR = $(SRC_DIR)/algorithms
 PARSE_DIR = $(SRC_DIR)/parse
-WM_DIR = $(SRC_DIR)/WM
-AC_DIR = $(SRC_DIR)/AC
+WM_DIR = $(ALG_DIR)/WM
+AC_DIR = $(ALG_DIR)/AC
 BIN_DIR = bin
 TOOLS_DIR = tools
 

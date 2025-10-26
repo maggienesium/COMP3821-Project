@@ -27,16 +27,7 @@
 #include "wm.h"
 
 /* ---------------------------------------------------------------
- * Function: choose_block_size
- *
- * Purpose:
- *   Dynamically select block size (B) based on dataset heuristics.
- *
- * Parameters:
- *   ps - pointer to pattern set
- *
- * Returns:
- *   Recommended block size (2, 3, or 4)
+ *  Dynamically select block size (B) based on dataset heuristics.
  * ---------------------------------------------------------------
  */
 int choose_block_size(const PatternSet *ps) {
@@ -46,19 +37,8 @@ int choose_block_size(const PatternSet *ps) {
 }
 
 /* ---------------------------------------------------------------
- * Function: hash_prefix
- *
- * Purpose:
  *   Compute a lightweight FNV-1a hash of the first B bytes of a
- *   pattern for quick mismatch filtering during search.
- *
- * Parameters:
- *   s   - pointer to pattern
- *   len - pattern length
- *   B   - block size
- *
- * Returns:
- *   32-bit prefix hash value
+ *   pattern for quick mismatch filtering during search.xww
  * ---------------------------------------------------------------
  */
 uint32_t hash_prefix(const unsigned char *s, int len, int B) {
@@ -69,19 +49,8 @@ uint32_t hash_prefix(const unsigned char *s, int len, int B) {
 }
 
 /* ---------------------------------------------------------------
- * Function: block_key
- *
- * Purpose:
  *   Convert a sequence of B bytes into a unique numeric key used
  *   for indexing shift and hash tables.
- *
- * Parameters:
- *   s     - pointer to input bytes
- *   avail - number of bytes available (may be < B)
- *   B     - block size
- *
- * Returns:
- *   32-bit integer key
  * ---------------------------------------------------------------
  */
 uint32_t block_key(const unsigned char *s, int avail, int B) {
@@ -94,14 +63,7 @@ uint32_t block_key(const unsigned char *s, int avail, int B) {
 }
 
 /* ---------------------------------------------------------------
- * Function: wm_prepare_patterns
- *
- * Purpose:
  *   Identify the shortest pattern length (m) for the window size.
- *
- * Parameters:
- *   ps - pointer to PatternSet
- *   B  - chosen block size
  * ---------------------------------------------------------------
  */
 void wm_prepare_patterns(PatternSet *ps, int B) {
@@ -117,16 +79,8 @@ void wm_prepare_patterns(PatternSet *ps, int B) {
 }
 
 /* ---------------------------------------------------------------
- * Function: wm_build_tables
- *
- * Purpose:
  *   Construct shift and hash tables for the Wu–Manber algorithm,
  *   optionally using a Bloom filter for prefix filtering.
- *
- * Parameters:
- *   ps        - pointer to preprocessed pattern set
- *   tbl       - pointer to WuManberTables to populate
- *   use_bloom - 1 to enable Bloom filter mode
  * ---------------------------------------------------------------
  */
 void wm_build_tables(const PatternSet *ps, WuManberTables *tbl, int use_bloom) {
@@ -183,13 +137,7 @@ void wm_build_tables(const PatternSet *ps, WuManberTables *tbl, int use_bloom) {
 }
 
 /* ---------------------------------------------------------------
- * Function: wm_free_tables
- *
- * Purpose:
  *   Free all dynamically allocated tables from preprocessing.
- *
- * Parameters:
- *   tbl - pointer to WuManberTables
  * ---------------------------------------------------------------
  */
 void wm_free_tables(WuManberTables *tbl) {

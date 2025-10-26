@@ -1,5 +1,5 @@
-#ifndef SRC_WM_WM_H_
-#define SRC_WM_WM_H_
+#ifndef SRC_ALGORITHMS_WM_WM_H_
+#define SRC_ALGORITHMS_WM_WM_H_
 
 #include <stdint.h>
 #include <stddef.h>
@@ -94,4 +94,4 @@ void *wm_realloc(void *ptr, size_t size);
 void *wm_calloc(size_t count, size_t size);
 void  wm_free(void *ptr);
 
-#endif  // SRC_WM_WM_H_
+#endif  // SRC_ALGORITHMS_WM_WM_H_

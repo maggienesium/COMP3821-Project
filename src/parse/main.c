@@ -5,59 +5,52 @@
 #include <dirent.h>
 #include <inttypes.h>
 #include <sys/stat.h>
-#include "../WM/wm.h"
-#include "../AC/ac.h"
+#include "../algorithms/WM/wm.h"
+#include "../algorithms/AC/ac.h"
 #include "parseRules.h"
 
-#define RULESET_PATH "./src/ruleset/snort3-community-rules/snort3-community.rules"
-#define TESTS_PATH   "./src/tests/pcaps"
+#define RULESET_PATH "./data/ruleset/snort3-community-rules/snort3-community.rules"
+#define TESTS_PATH   "./data/tests/pcaps"
 
 /* ---------------------------------------------------------------
- * Enum: AlgorithmType
- * ---------------------------------------------------------------
- * Distinguishes which pattern-matching algorithm to run.
+ *                        Algorithm to run
  * --------------------------------------------------------------- */
 typedef enum {
-    ALG_WM_DET,   // Wu–Manber with deterministic prefix hashing
-    ALG_WM_NDET,  // Wu–Manber with probabilistic Bloom filter
-    ALG_AC        // Aho–Corasick automaton
+    ALG_WM_DET,   // Wu–Manber deterministic
+    ALG_WM_PROB,  // Wu–Manber probabilistic
+    ALG_AC,       // Aho–Corasick
+    ALG_SH        // Set-Horspool
 } AlgorithmType;
 
 /* ---------------------------------------------------------------
- * Global: WM analytics tracker
- * ---------------------------------------------------------------
- * Used by memory wrappers to record total allocations and bytes.
+ * Used by memory wrappers to record total allocations and bytes
+ * for Wu-Manber algorithm. Other algorithms have other types.
  * --------------------------------------------------------------- */
 WMGlobalStats *g_wm_global_stats = NULL;
 
 /* ---------------------------------------------------------------
- * Function: ask_user_algorithm
- *
- * Purpose:
- *   Prompt the user to choose between algorithms.
+ *      Prompt the user to choose between algorithms.
  * --------------------------------------------------------------- */
 static AlgorithmType ask_user_algorithm(void) {
     char choice;
+
     printf("\nSelect Algorithm:\n");
     printf("  (d) Wu–Manber (Deterministic Prefix Hash)\n");
-    printf("  (n) Wu–Manber (Non-Deterministic Bloom Filter)\n");
+    printf("  (p) Wu–Manber (Probabilistic Bloom Filter)\n");
     printf("  (a) Aho–Corasick Automaton\n");
-    printf("Enter choice [d/n/a]: ");
+    printf("Enter choice [d/p/a]: ");
     fflush(stdout);
     scanf(" %c", &choice);
 
     if (choice == 'a' || choice == 'A')
         return ALG_AC;
-    else if (choice == 'n' || choice == 'N')
-        return ALG_WM_NDET;
+    else if (choice == 'p' || choice == 'P')
+        return ALG_WM_PROB;
     else
         return ALG_WM_DET;
 }
 
 /* ---------------------------------------------------------------
- * Function: scan_file_wm
- *
- * Purpose:
  *   Perform Wu–Manber search on a single file and report timing.
  * --------------------------------------------------------------- */
 static void scan_file_wm(const char *filepath, PatternSet *ps, WuManberTables *tbl) {
@@ -73,7 +66,6 @@ static void scan_file_wm(const char *filepath, PatternSet *ps, WuManberTables *t
     }
     uint64_t size = (uint64_t)pos_tmp;
     rewind(fp);
-
 
     if (size == 0) {
         fclose(fp);
@@ -100,9 +92,6 @@ static void scan_file_wm(const char *filepath, PatternSet *ps, WuManberTables *t
 }
 
 /* ---------------------------------------------------------------
- * Function: scan_file_ac
- *
- * Purpose:
  *   Perform Aho–Corasick search on a single file and report timing.
  * --------------------------------------------------------------- */
 static void scan_file_ac(const char *filepath, AhoCorasick *ac) {
@@ -144,10 +133,11 @@ static void scan_file_ac(const char *filepath, AhoCorasick *ac) {
     free(buffer);
 }
 
+// The above two functions are too similar. I will create a helper
+// function that chooses the alg then a more general function above
+// that is not specific to any algorithm.
+
 /* ---------------------------------------------------------------
- * Function: walk_directory
- *
- * Purpose:
  *   Recursively walk a directory and scan all .pcap files.
  * --------------------------------------------------------------- */
 static void walk_directory(const char *base_path, PatternSet *ps,
@@ -185,10 +175,11 @@ static void walk_directory(const char *base_path, PatternSet *ps,
     closedir(dir);
 }
 
+// Why did I make this WM stuff seperate, need to pipeline AC, WM, SH
+// etc. to all print space analytics the same way, through a generalised
+// function. Reconsider the global analytics variable.
+
 /* ---------------------------------------------------------------
- * Function: print_wm_space_analytics
- *
- * Purpose:
  *   Print total allocations and bytes tracked by wm_* wrappers.
  * --------------------------------------------------------------- */
 static void print_wm_space_analytics(void) {
@@ -201,9 +192,6 @@ static void print_wm_space_analytics(void) {
            g_wm_global_stats->total_bytes / (1024.0 * 1024.0));
 }
 
-/* ---------------------------------------------------------------
- * Main Entry Point
- * --------------------------------------------------------------- */
 int main(void) {
     AlgorithmType alg = ask_user_algorithm();
 
@@ -216,7 +204,6 @@ int main(void) {
 
     printf("[+] Loaded %d patterns\n", ps->pattern_count);
 
-    /* Initialize global WM analytics */
     g_wm_global_stats = calloc(1, sizeof(WMGlobalStats));
 
     if (alg == ALG_AC) {
@@ -233,7 +220,7 @@ int main(void) {
 
         ac_free_mem(ac);
     } else {
-        int use_bloom = (alg == ALG_WM_NDET);
+        int use_bloom = (alg == ALG_WM_PROB);
         WuManberTables *tbl = wm_malloc(sizeof(WuManberTables));
         wm_build_tables(ps, tbl, use_bloom);
 

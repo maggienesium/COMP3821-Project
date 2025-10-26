@@ -1,16 +1,48 @@
 # COMP3821-Project
-COMP3821 Project 2025T3
 
-In order to make commits:
+## To enable commits:
 
-If on Mac: brew install cpplint
+The repository is configured so that any commits must pass linting standards defined in the Makefile. To do this, you will need to install CPPlint:
 
-otherwise: pip3 install cpplint
+**On macOS**:
 
-To test WM:
+```bash
+brew install cpplint
+```
 
-Run *make* and then run *./bin/testParse* then choose *n* or *d* for non-deterministic or deterministic option. Example output for one of the pcaps:
+**On Linux or Windows (ensure pip is installed)**:
 
+```bash
+pipx install cpplint
+```
+
+## Running the Project
+
+1. Compile
+
+Run:
+
+```bash
+make
+```
+
+Generate the executable in ./bin/testParse
+
+2. Run the algorithm
+
+Execute:
+
+./bin/testParse
+
+When prompted, choose:
+
+d -> Deterministic Wu–Manber (prefix hash)
+
+n -> Non-deterministic Wu–Manber (Bloom filter)
+
+a -> Aho-Corasick
+
+🧪 Example Output
 === Scanning: ./src/tests/pcaps/2017-07-29-BTCware-ransomware-from-cabeiriscout_faith.pcap ===
 
 [Search Stats]
@@ -23,3 +55,18 @@ Run *make* and then run *./bin/testParse* then choose *n* or *d* for non-determi
   Elapsed time         : 0.008304 sec
   Throughput           : 27.40 MB/s
 [+] Completed in 0.008324 seconds
+
+
+That’s all you need — just make, run the binary, and pick your mode.
+
+Make sure to run
+
+```bash
+make clean
+```
+
+before recompiling code. To check for linting, run
+
+```bash
+make lint
+```

@@ -44,25 +44,10 @@ typedef struct {
     int       *shift_table;
     int       *hash_table;
     int       *next;
-    uint32_t  *prefix_hash;
     int       *pat_len;
+    uint32_t  *prefix_hash;
     BloomFilter prefix_filter;
 } WuManberTables;
-
-/* ---------------------------------------------------------------
- * WMGlobalStats:
- *   Tracks global memory analytics for the Wu–Manber algorithm.
- *   Updated automatically by wm_malloc, wm_calloc, wm_realloc,
- *   and wm_free for space complexity measurements.
- * --------------------------------------------------------------- */
-typedef struct {
-    uint64_t alloc_count;
-    uint64_t free_count;
-    uint64_t total_bytes;
-} WMGlobalStats;
-
-/* Global analytics reference (defined in main.c) */
-extern WMGlobalStats *g_wm_global_stats;
 
 /* ---------------------------------------------------------------
  *          Wu–Manber Preprocessing and Search API
@@ -85,13 +70,5 @@ void bloom_init(BloomFilter *bf, int n, double p);
 void bloom_add(BloomFilter *bf, const unsigned char *data, int len);
 int  bloom_check(const BloomFilter *bf, const unsigned char *data, int len);
 void bloom_free(BloomFilter *bf);
-
-/* ---------------------------------------------------------------
- *              Memory Tracking Wrappers (Analytics)
- * --------------------------------------------------------------- */
-void *wm_malloc(size_t size);
-void *wm_realloc(void *ptr, size_t size);
-void *wm_calloc(size_t count, size_t size);
-void  wm_free(void *ptr);
 
 #endif  // SRC_ALGORITHMS_WM_WM_H_

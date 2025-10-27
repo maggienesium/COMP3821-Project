@@ -25,6 +25,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include "wm.h"
+#include "../../parse/analytics.h"
 
 /* ---------------------------------------------------------------
  *  Dynamically select block size (B) based on dataset heuristics.
@@ -93,11 +94,11 @@ void wm_build_tables(const PatternSet *ps, WuManberTables *tbl, int use_bloom) {
     const uint32_t TABLE_SIZE = (1u << (B * 8));
     int default_shift = m - B + 1;
 
-    tbl->shift_table = wm_calloc(TABLE_SIZE, sizeof(int));
-    tbl->hash_table  = wm_calloc(TABLE_SIZE, sizeof(int));
-    tbl->next        = wm_calloc((size_t)ps->pattern_count, sizeof(int));
-    tbl->prefix_hash = wm_calloc((size_t)ps->pattern_count, sizeof(uint32_t));
-    tbl->pat_len     = wm_calloc((size_t)ps->pattern_count, sizeof(int));
+    tbl->shift_table = track_calloc(TABLE_SIZE, sizeof(int));
+    tbl->hash_table  = track_calloc(TABLE_SIZE, sizeof(int));
+    tbl->next        = track_calloc((size_t)ps->pattern_count, sizeof(int));
+    tbl->prefix_hash = track_calloc((size_t)ps->pattern_count, sizeof(uint32_t));
+    tbl->pat_len     = track_calloc((size_t)ps->pattern_count, sizeof(int));
 
     for (uint32_t i = 0; i < TABLE_SIZE; ++i) {
         tbl->shift_table[i] = default_shift;
@@ -143,11 +144,11 @@ void wm_build_tables(const PatternSet *ps, WuManberTables *tbl, int use_bloom) {
 void wm_free_tables(WuManberTables *tbl) {
     if (!tbl) return;
 
-    wm_free(tbl->shift_table);
-    wm_free(tbl->hash_table);
-    wm_free(tbl->next);
-    wm_free(tbl->prefix_hash);
-    wm_free(tbl->pat_len);
+    track_free(tbl->shift_table);
+    track_free(tbl->hash_table);
+    track_free(tbl->next);
+    track_free(tbl->prefix_hash);
+    track_free(tbl->pat_len);
 
     if (tbl->prefix_filter.bit_array != NULL)
         bloom_free(&tbl->prefix_filter);

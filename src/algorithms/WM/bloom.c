@@ -9,8 +9,7 @@
  *   Bloom, B. H. (1970).
  *   “Space/time trade-offs in hash coding with allowable errors.”
  *   Communications of the ACM, 13(7):422–426.
- * ---------------------------------------------------------------
- */
+ * --------------------------------------------------------------- */
 
 #include <math.h>
 #include <stdlib.h>
@@ -18,11 +17,11 @@
 #include <stdint.h>
 #include <stdio.h>
 #include "wm.h"
+#include "../../parse/analytics.h"
 
 /* ---------------------------------------------------------------
  *      Compute the 32-bit FNV-1a hash of a byte sequence.
- * ---------------------------------------------------------------
- */
+ * --------------------------------------------------------------- */
 static inline uint32_t fnv1a(const unsigned char *s, int len, uint32_t seed) {
     uint32_t h = seed;
     for (int i = 0; i < len; ++i)
@@ -33,21 +32,19 @@ static inline uint32_t fnv1a(const unsigned char *s, int len, uint32_t seed) {
 /* ---------------------------------------------------------------
  *   Initialize a Bloom filter given the number of expected items
  *   and desired false positive probability.
- * ---------------------------------------------------------------
- */
+ * --------------------------------------------------------------- */
 void bloom_init(BloomFilter *bf, int n, double p) {
     double m = -(n * log(p)) / (log(2) * log(2));
     double k = (m / n) * log(2);
 
     bf->size = (uint32_t)m;
     bf->num_hashes = (uint32_t)k;
-    bf->bit_array = wm_calloc((bf->size + 7) / 8, sizeof(uint8_t));
+    bf->bit_array = track_calloc((bf->size + 7) / 8, sizeof(uint8_t));
 }
 
 /* ---------------------------------------------------------------
  *          Insert a data element into the Bloom filter.
- * ---------------------------------------------------------------
- */
+ * --------------------------------------------------------------- */
 void bloom_add(BloomFilter *bf, const unsigned char *data, int len) {
     uint32_t h1 = fnv1a(data, len, 0x811C9DC5);
     uint32_t h2 = fnv1a(data, len, 0x01000193);
@@ -60,8 +57,7 @@ void bloom_add(BloomFilter *bf, const unsigned char *data, int len) {
 
 /* ---------------------------------------------------------------
  *   Check whether a data element may exist in the Bloom filter.
- * ---------------------------------------------------------------
- */
+ * --------------------------------------------------------------- */
 int bloom_check(const BloomFilter *bf, const unsigned char *data, int len) {
     uint32_t h1 = fnv1a(data, len, 0x811C9DC5);
     uint32_t h2 = fnv1a(data, len, 0x01000193);
@@ -76,10 +72,9 @@ int bloom_check(const BloomFilter *bf, const unsigned char *data, int len) {
 
 /* ---------------------------------------------------------------
  *   Free dynamically allocated memory used by the Bloom filter.
- * ---------------------------------------------------------------
- */
+ * --------------------------------------------------------------- */
 void bloom_free(BloomFilter *bf) {
     if (!bf) return;
-    wm_free(bf->bit_array);
+    track_free(bf->bit_array);
     bf->bit_array = NULL;
 }

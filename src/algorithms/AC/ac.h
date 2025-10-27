@@ -10,8 +10,7 @@
  *     - Transition table (for all possible input symbols)
  *     - Failure link (used for backtracking)
  *     - Output list of matched patterns
- * ---------------------------------------------------------------
- */
+ * --------------------------------------------------------------- */
 typedef struct ACNode {
     int   transitions[256];
     int   fail_state;
@@ -30,19 +29,12 @@ typedef struct {
 } AhoCorasick;
 
 /* ---------------------------------------------------------------
- *                 Aho–Corasick Automaton API
+ *                      AC Prototypes
  * --------------------------------------------------------------- */
 AhoCorasick *ac_create(void);
 void ac_add_pattern(AhoCorasick *ac, const char *pattern);
 void ac_build(AhoCorasick *ac);
-void ac_search(AhoCorasick *ac, const char *text);
+void ac_search(AhoCorasick *ac, const char *text, size_t len);
 void ac_destroy(AhoCorasick *ac);
-
-/* ---------------------------------------------------------------
- *                  Memory Tracking Analytics
- * --------------------------------------------------------------- */
-void *ac_realloc(void *ptr, size_t size);
-void *ac_malloc(size_t size);
-void ac_free_mem(void *ptr);
 
 #endif  // SRC_ALGORITHMS_AC_AC_H_

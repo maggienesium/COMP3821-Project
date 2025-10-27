@@ -11,17 +11,21 @@ ALG_DIR = $(SRC_DIR)/algorithms
 PARSE_DIR = $(SRC_DIR)/parse
 WM_DIR = $(ALG_DIR)/WM
 AC_DIR = $(ALG_DIR)/AC
+SH_DIR = $(ALG_DIR)/SH
+
 BIN_DIR = bin
 TOOLS_DIR = tools
 
 TARGET = $(BIN_DIR)/testParse
 
 SRC = $(PARSE_DIR)/parseRules.c \
+      $(PARSE_DIR)/analytics.c \
       $(PARSE_DIR)/main.c \
       $(WM_DIR)/bloom.c \
       $(WM_DIR)/wm.c \
       $(WM_DIR)/wmpp.c \
-      $(AC_DIR)/ac.c
+      $(AC_DIR)/ac.c \
+      $(SH_DIR)/sh.c
 
 OBJ = $(SRC:.c=.o)
 

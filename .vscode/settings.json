@@ -10,6 +10,8 @@
         "__locale": "c",
         "wm.h": "c",
         "stdlib.h": "c",
-        "stdint.h": "c"
+        "stdint.h": "c",
+        "ctype.h": "c",
+        "analytics.h": "c"
     }
 }

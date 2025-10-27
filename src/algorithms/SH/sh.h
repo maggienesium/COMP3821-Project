@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 #include <stdio.h>
-
+#include "../../parse/analytics.h"
 /* ---------------------------------------------------------------
  *                          Constants
  * --------------------------------------------------------------- */
@@ -29,31 +29,16 @@ typedef struct {
     int   nocase;
 } Pattern;
 
-// Will need to homogenise the parsing with the other module.
-
-/* ---------------------------------------------------------------
- *                Function Prototypes (Parsing & Loading)
- * --------------------------------------------------------------- */
-
-int parseHexBytes(const char *input, char *output, int maxLen);
-char *extractContent(const char *rule, int *nocase);
-char *extractMsg(const char *rule);
-int extractSid(const char *rule);
-int loadSnortRules(const char *filename, Pattern *patterns, int maxPatterns);
-
 /* ---------------------------------------------------------------
  *                      Function Prototypes
  * --------------------------------------------------------------- */
+void setHorspoolSearch(const char *text, uint64_t textLength,
+                       Pattern *patterns, int numPatterns,
+                       int *shiftTable, int minLength,
+                       AlgorithmStats *s);
+void performSetHorspool(const char *text, uint64_t textLength,
+                        Pattern *patterns, int numPatterns);
 void buildSetHorspoolShiftTable(Pattern *patterns, int numPatterns, int *shiftTable);
 int compareChar(char a, char b, int nocase);
-void setHorspoolSearch(char *text, uint64_t textLength,
-                       Pattern *patterns, int numPatterns,
-                       int *shiftTable, int minLength, FILE *alertFile);
-
-void performSetHorspool(char *text, uint64_t textLength,
-                        Pattern *patterns, int numPatterns,
-                        const char *alertFile);
-
-int main(int argc, char *argv[]);
 
 #endif  // SRC_ALGORITHMS_SH_SH_H_

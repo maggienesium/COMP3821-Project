@@ -14,7 +14,7 @@
 /* ---------------------------------------------------------------
  * BloomFilter:
  *   Probabilistic structure used for prefix filtering in the
- *   Wu–Manber algorithm. Reduces unnecessary hash lookups.
+ *   Wu–Manber algorithm. Reduces unnecessary hash lookups
  * --------------------------------------------------------------- */
 typedef struct {
     uint8_t  *bit_array;
@@ -24,7 +24,7 @@ typedef struct {
 
 /* ---------------------------------------------------------------
  * PatternSet:
- *   Holds all user-provided patterns and computed statistics.
+ *   Holds all user-provided patterns and computed statistics
  * --------------------------------------------------------------- */
 typedef struct {
     char      patterns[MAX_PATTERNS][MAX_PATTERN_LEN];
@@ -37,7 +37,7 @@ typedef struct {
 /* ---------------------------------------------------------------
  * WuManberTables:
  *   Stores preprocessed shift and hash tables for Wu–Manber,
- *   along with pattern metadata and optional Bloom filter.
+ *   along with pattern metadata and optional Bloom filter
  * --------------------------------------------------------------- */
 typedef struct {
     int        B;
@@ -50,7 +50,7 @@ typedef struct {
 } WuManberTables;
 
 /* ---------------------------------------------------------------
- *          Wu–Manber Preprocessing and Search API
+ *           Wu–Manber Preprocessing and Search API
  * --------------------------------------------------------------- */
 uint32_t block_key(const unsigned char *s, int avail, int B);
 uint32_t hash_prefix(const unsigned char *s, int len, int B);

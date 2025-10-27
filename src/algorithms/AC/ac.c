@@ -22,14 +22,14 @@
 #include "../../parse/analytics.h"
 
 /* ---------------------------------------------------------------
- *   Convert a character to lowercase (for case-insensitive mode).
+ *     Convert a character to lowercase (for case-insensitive)
  * --------------------------------------------------------------- */
 static inline unsigned char to_lower_char(unsigned char c) {
     return (unsigned char)tolower(c);
 }
 
 /* ---------------------------------------------------------------
- *   Allocate and initialize an empty Aho–Corasick automaton.
+ *     Allocate and initialize an empty Aho–Corasick automaton
  * --------------------------------------------------------------- */
 AhoCorasick *ac_create(void) {
     AhoCorasick *ac = track_malloc(sizeof(AhoCorasick));
@@ -57,7 +57,7 @@ AhoCorasick *ac_create(void) {
 }
 
 /* ---------------------------------------------------------------
- *          Insert a pattern string into the automaton.
+ *          Insert a pattern string into the automaton
  * --------------------------------------------------------------- */
 void ac_add_pattern(AhoCorasick *ac, const char *pattern) {
     if (!ac || !pattern || !*pattern) return;
@@ -95,7 +95,7 @@ void ac_add_pattern(AhoCorasick *ac, const char *pattern) {
 }
 
 /* ---------------------------------------------------------------
- *   Compute failure links using BFS traversal and merge outputs.
+ *   Compute failure links using BFS traversal and merge outputs
  * --------------------------------------------------------------- */
 void ac_build(AhoCorasick *ac) {
     if (!ac) return;
@@ -143,7 +143,7 @@ void ac_build(AhoCorasick *ac) {
 }
 
 /* ---------------------------------------------------------------
- *   Perform Aho–Corasick search and print analytics summary.
+ *    Perform Aho–Corasick search and print analytics summary
  * --------------------------------------------------------------- */
 void ac_search(AhoCorasick *ac, const char *text, size_t len) {
     if (!ac || !text) return;
@@ -182,7 +182,7 @@ void ac_search(AhoCorasick *ac, const char *text, size_t len) {
 
 
 /* ---------------------------------------------------------------
- * Free all dynamically allocated memory associated with automaton.
+ * Free all dynamically allocated memory associated with automaton
  * --------------------------------------------------------------- */
 void ac_destroy(AhoCorasick *ac) {
     if (!ac) return;

@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 /* ---------------------------------------------------------------
- *  Generic performance analytics shared across all algorithms
+ *   Generic performance analytics shared across all algorithms
  * --------------------------------------------------------------- */
 typedef struct {
     const char *algorithm_name;

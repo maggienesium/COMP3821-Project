@@ -14,8 +14,7 @@
  *  from a Snort ruleset file. This is used when reading and 
  *  preprocessing each line of a ruleset before parsing Snort 
  *  content patterns.
- * ---------------------------------------------------------------
- */
+ * --------------------------------------------------------------- */
 static void trim(char *s) {
     char *end;
     while (isspace((unsigned char)*s)) s++;
@@ -36,8 +35,7 @@ static void trim(char *s) {
  *     https://www.splunk.com/en_us/blog/learn/snort-rules.html
  *   Snort payload options:
  *     https://docs.snort.org/rules/options/payload/
- * -------------------------------------------------------------------------
- */
+ * ------------------------------------------------------------------------- */
 PatternSet *addContentToTable(char *snortRule, PatternSet *ps, int *currPattern) {
     char *ptr = strstr(snortRule, "content:");
     while (ptr) {
@@ -64,8 +62,7 @@ PatternSet *addContentToTable(char *snortRule, PatternSet *ps, int *currPattern)
  *   Loads and parses all Snort rules from a specified ruleset file,
  *   automatically extracting every `content:"..."` pattern and storing
  *   it in a Wu–Manber PatternSet.
- * -------------------------------------------------------------------------
- */
+ * ------------------------------------------------------------------------- */
 PatternSet *loadSnortRulesFromFile(const char *filename) {
     FILE *fp = fopen(filename, "r");
     if (!fp) {
@@ -103,8 +100,7 @@ PatternSet *loadSnortRulesFromFile(const char *filename) {
 
 /* -------------------------------------------------------------------------
  *   Initializes and builds Wu–Manber tables based on a populated PatternSet.
- * -------------------------------------------------------------------------
- */
+ * ------------------------------------------------------------------------- */
 WuManberTables *createTable(PatternSet *ps, int use_bloom) {
     WuManberTables *tbl = malloc(sizeof(WuManberTables));
     if (!tbl) {

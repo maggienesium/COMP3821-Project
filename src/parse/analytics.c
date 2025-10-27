@@ -3,12 +3,12 @@
 #include "analytics.h"
 
 /* ---------------------------------------------------------------
- *  Global memory tracker (assign this in each algorithm)
+ *                      Global memory tracker
  * --------------------------------------------------------------- */
 MemoryStats *global_mem_stats = NULL;
 
 /* ---------------------------------------------------------------
- *  Memory tracking wrappers
+ *                      Memory tracking wrappers
  * --------------------------------------------------------------- */
 void *track_malloc(size_t size) {
     void *ptr = malloc(size);

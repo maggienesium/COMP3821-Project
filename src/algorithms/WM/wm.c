@@ -27,7 +27,6 @@
 #include "wm.h"
 #include "../../parse/analytics.h"
 
-
 /* ---------------------------------------------------------------
  *   Perform Wu–Manber multi-pattern search and print performance
  *   and memory analytics.

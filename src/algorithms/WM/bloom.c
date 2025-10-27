@@ -20,7 +20,7 @@
 #include "../../parse/analytics.h"
 
 /* ---------------------------------------------------------------
- *      Compute the 32-bit FNV-1a hash of a byte sequence.
+ *        Compute the 32-bit FNV-1a hash of a byte sequence
  * --------------------------------------------------------------- */
 static inline uint32_t fnv1a(const unsigned char *s, int len, uint32_t seed) {
     uint32_t h = seed;
@@ -31,7 +31,7 @@ static inline uint32_t fnv1a(const unsigned char *s, int len, uint32_t seed) {
 
 /* ---------------------------------------------------------------
  *   Initialize a Bloom filter given the number of expected items
- *   and desired false positive probability.
+ *   and desired false positive probability
  * --------------------------------------------------------------- */
 void bloom_init(BloomFilter *bf, int n, double p) {
     double m = -(n * log(p)) / (log(2) * log(2));
@@ -43,7 +43,7 @@ void bloom_init(BloomFilter *bf, int n, double p) {
 }
 
 /* ---------------------------------------------------------------
- *          Insert a data element into the Bloom filter.
+ *          Insert a data element into the Bloom filter
  * --------------------------------------------------------------- */
 void bloom_add(BloomFilter *bf, const unsigned char *data, int len) {
     uint32_t h1 = fnv1a(data, len, 0x811C9DC5);
@@ -56,7 +56,7 @@ void bloom_add(BloomFilter *bf, const unsigned char *data, int len) {
 }
 
 /* ---------------------------------------------------------------
- *   Check whether a data element may exist in the Bloom filter.
+ *   Check whether a data element may exist in the Bloom filter
  * --------------------------------------------------------------- */
 int bloom_check(const BloomFilter *bf, const unsigned char *data, int len) {
     uint32_t h1 = fnv1a(data, len, 0x811C9DC5);
@@ -71,7 +71,7 @@ int bloom_check(const BloomFilter *bf, const unsigned char *data, int len) {
 }
 
 /* ---------------------------------------------------------------
- *   Free dynamically allocated memory used by the Bloom filter.
+ *   Free dynamically allocated memory used by the Bloom filter
  * --------------------------------------------------------------- */
 void bloom_free(BloomFilter *bf) {
     if (!bf) return;

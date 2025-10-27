@@ -1,10 +1,10 @@
 /*
- *                     Set Horspool Multi-Pattern Matcher
+ *               Set Horspool Multi-Pattern Matcher
  * ----------------------------------------------------------------
  * Implements the Set Horspool algorithm for multi-pattern matching
  * using preloaded Snort-style rules.
  *
- *   Reference:
+ * Reference:
  *   - "Set Horspool algorithm for intrusion detection systems"
  *     (adapted from Wu–Manber-style optimizations)
  * ----------------------------------------------------------------
@@ -18,7 +18,7 @@
 #include "sh.h"
 #include "../../parse/analytics.h"
 /* ---------------------------------------------------------------
- *                 Internal Global Counters
+ *                   Internal Global Counters
  * --------------------------------------------------------------- */
 static int totalComparisons = 0;
 static int totalOccurrences = 0;
@@ -77,7 +77,7 @@ void setHorspoolSearch(const char *text, uint64_t textLength,
 
 
 /* ---------------------------------------------------------------
- *                 Public API: performSetHorspool()
+ *                          Public API
  * --------------------------------------------------------------- */
 void performSetHorspool(const char *text, uint64_t textLength,
                         Pattern *patterns, int numPatterns) {
@@ -146,7 +146,7 @@ void buildSetHorspoolShiftTable(Pattern *patterns, int numPatterns, int *shiftTa
 }
 
 /* ---------------------------------------------------------------
- *                 Utility: Case-Insensitive Compare
+ *              Utility: Case-Insensitive Comparison
  * --------------------------------------------------------------- */
 int compareChar(char a, char b, int nocase) {
     return nocase

@@ -15,8 +15,7 @@
  *   2. Select optimal block size (B)
  *   3. Construct shift and hash tables
  *   4. Optionally, initialize Bloom filter
- * ---------------------------------------------------------------
- */
+ * --------------------------------------------------------------- */
 
 #include <stdio.h>
 #include <string.h>
@@ -28,9 +27,8 @@
 #include "../../parse/analytics.h"
 
 /* ---------------------------------------------------------------
- *  Dynamically select block size (B) based on dataset heuristics.
- * ---------------------------------------------------------------
- */
+ *  Dynamically select block size (B) based on dataset heuristics
+ * --------------------------------------------------------------- */
 int choose_block_size(const PatternSet *ps) {
     if (ps->min_length < 4 || ps->pattern_count > 5000) return 2;
     if (ps->avg_length > 30) return 4;
@@ -39,9 +37,8 @@ int choose_block_size(const PatternSet *ps) {
 
 /* ---------------------------------------------------------------
  *   Compute a lightweight FNV-1a hash of the first B bytes of a
- *   pattern for quick mismatch filtering during search.xww
- * ---------------------------------------------------------------
- */
+ *   pattern for quick mismatch filtering during search
+ * --------------------------------------------------------------- */
 uint32_t hash_prefix(const unsigned char *s, int len, int B) {
     uint32_t h = 0x811C9DC5;
     for (int i = 0; i < (len < B ? len : B); ++i)
@@ -51,9 +48,8 @@ uint32_t hash_prefix(const unsigned char *s, int len, int B) {
 
 /* ---------------------------------------------------------------
  *   Convert a sequence of B bytes into a unique numeric key used
- *   for indexing shift and hash tables.
- * ---------------------------------------------------------------
- */
+ *   for indexing shift and hash tables
+ * --------------------------------------------------------------- */
 uint32_t block_key(const unsigned char *s, int avail, int B) {
     uint32_t k = 0;
     for (int i = 0; i < B; ++i) {
@@ -64,9 +60,8 @@ uint32_t block_key(const unsigned char *s, int avail, int B) {
 }
 
 /* ---------------------------------------------------------------
- *   Identify the shortest pattern length (m) for the window size.
- * ---------------------------------------------------------------
- */
+ *   Identify the shortest pattern length (m) for the window size
+ * --------------------------------------------------------------- */
 void wm_prepare_patterns(PatternSet *ps, int B) {
     if (!ps || ps->pattern_count <= 0) return;
 
@@ -81,9 +76,8 @@ void wm_prepare_patterns(PatternSet *ps, int B) {
 
 /* ---------------------------------------------------------------
  *   Construct shift and hash tables for the Wu–Manber algorithm,
- *   optionally using a Bloom filter for prefix filtering.
- * ---------------------------------------------------------------
- */
+ *   optionally using a Bloom filter for prefix filtering
+ * --------------------------------------------------------------- */
 void wm_build_tables(const PatternSet *ps, WuManberTables *tbl, int use_bloom) {
     if (!ps || !tbl) return;
 
@@ -138,9 +132,8 @@ void wm_build_tables(const PatternSet *ps, WuManberTables *tbl, int use_bloom) {
 }
 
 /* ---------------------------------------------------------------
- *   Free all dynamically allocated tables from preprocessing.
- * ---------------------------------------------------------------
- */
+ *    Free all dynamically allocated tables from preprocessing
+ * --------------------------------------------------------------- */
 void wm_free_tables(WuManberTables *tbl) {
     if (!tbl) return;
 

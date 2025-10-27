@@ -5,7 +5,7 @@
 #include <stddef.h>
 
 /* ---------------------------------------------------------------
- *   Represents a node in the Aho–Corasick automaton.
+ *  Represents a node in the Aho–Corasick automaton.
  *   Each node stores:
  *     - Transition table (for all possible input symbols)
  *     - Failure link (used for backtracking)
@@ -19,8 +19,7 @@ typedef struct ACNode {
 } ACNode;
 
 /* ---------------------------------------------------------------
- *   Container for the entire Aho–Corasick automaton,
- *   including dynamic array of nodes.
+*      Container for the entire Aho–Corasick automaton ADT
  * --------------------------------------------------------------- */
 typedef struct {
     ACNode *nodes;

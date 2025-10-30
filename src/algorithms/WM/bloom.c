@@ -1,4 +1,4 @@
-/* 
+/*
  *                      Bloom Filter Module
  *
  * ---------------------------------------------------------------
@@ -51,7 +51,7 @@ void bloom_add(BloomFilter *bf, const unsigned char *data, int len) {
 
     for (uint32_t i = 0; i < bf->num_hashes; ++i) {
         uint32_t idx = (h1 + i * h2) % bf->size;
-        bf->bit_array[idx >> 3] |= (1 << (idx & 7));
+        bf->bit_array[idx >> 3] |= (uint8_t)(1 << (idx & 7));
     }
 }
 

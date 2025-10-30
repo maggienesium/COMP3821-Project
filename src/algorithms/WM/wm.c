@@ -1,4 +1,4 @@
-/* 
+/*
  *                  Wu–Manber Multi-Pattern Matcher
  *
  * ---------------------------------------------------------------
@@ -6,7 +6,7 @@
  * multiple pattern matching.
  *
  * Reference:
- *   "Efficient Wu-Manber Pattern Matching Hardware for Intrusion 
+ *   "Efficient Wu-Manber Pattern Matching Hardware for Intrusion
  *    and Malware Detection" — Monther Aldwairi
  *
  * Core Idea:
@@ -16,7 +16,7 @@
  *   probabilistic prefix filtering.
  *
  *   Text window size = m (length of shortest pattern)
- *   Block size       = B 
+ *   Block size       = B
  * --------------------------------------------------------------- */
 
 #include <stdio.h>
@@ -85,8 +85,8 @@ void wm_search(const unsigned char *text, int n,
     }
 
     clock_gettime(CLOCK_MONOTONIC, &end);
-    s.elapsed_sec = ((end.tv_sec - start.tv_sec) +
-                     (end.tv_nsec - start.tv_nsec)) / 1e9;
+    s.elapsed_sec = (double)(end.tv_sec - start.tv_sec) +
+                     (double)(end.tv_nsec - start.tv_nsec) / 1e9;
 
     compute_throughput(&s);
     print_algorithm_stats(&s);

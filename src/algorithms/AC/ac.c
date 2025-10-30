@@ -1,9 +1,9 @@
-/* 
+/*
  *               Aho–Corasick Multi-Pattern Matcher
  *
  * ---------------------------------------------------------------
- * Implements the Aho–Corasick string matching algorithm for 
- * multiple pattern searches. Supports case-insensitive matching 
+ * Implements the Aho–Corasick string matching algorithm for
+ * multiple pattern searches. Supports case-insensitive matching
  * for ASCII text.
  *
  * Reference:
@@ -173,8 +173,8 @@ void ac_search(AhoCorasick *ac, const char *text, size_t len) {
     }
 
     clock_gettime(CLOCK_MONOTONIC, &end);
-    s.elapsed_sec = ((end.tv_sec - start.tv_sec) +
-                     (end.tv_nsec - start.tv_nsec)) / 1e9;
+    s.elapsed_sec = (double)(end.tv_sec - start.tv_sec) +
+                     (double)(end.tv_nsec - start.tv_nsec) / 1e9;
 
     compute_throughput(&s);
     print_algorithm_stats(&s);

@@ -6,30 +6,16 @@
 #include <ctype.h>
 
 #include "parseRules.h"
+#include "trim.c"
 
 #define CONTENT_START 9
 
-/* ---------------------------------------------------------------
- *  Removes leading and trailing whitespace from a string read 
- *  from a Snort ruleset file. This is used when reading and 
- *  preprocessing each line of a ruleset before parsing Snort 
- *  content patterns.
- * --------------------------------------------------------------- */
-static void trim(char *s) {
-    char *end;
-    while (isspace((unsigned char)*s)) s++;
-    if (*s == 0) return;
-    end = s + strlen(s) - 1;
-    while (end > s && isspace((unsigned char)*end)) end--;
-    end[1] = '\0';
-}
-
 
 /* -------------------------------------------------------------------------
- *   Parses a single Snort rule line and extracts one or more `content:"..."` 
+ *   Parses a single Snort rule line and extracts one or more `content:"..."`
  *   strings from it. Each extracted content string is added to the given
  *   Wu–Manber PatternSet for later table construction.
- * 
+ *
  * References:
  *   Snort rule format overview:
  *     https://www.splunk.com/en_us/blog/learn/snort-rules.html
@@ -118,12 +104,12 @@ WuManberTables *createTable(PatternSet *ps, int use_bloom) {
 /**
  * TODO: a function which accepts an incoming packet, processes it
  * before string matching and finally, snort rules are verified against it
- * packet with the below options I found relevant, need to check if we should 
+ * packet with the below options I found relevant, need to check if we should
  * consider these.
- * fast_pattern 
+ * fast_pattern
  * nocase
  * width
  * endian
- *  
+ *
  * Ask Maggie whether she still wants to do this.
  */

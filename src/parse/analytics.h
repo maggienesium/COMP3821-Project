@@ -53,7 +53,7 @@ extern MemoryStats *global_mem_stats;
 static inline void compute_throughput(AlgorithmStats *s) {
     if (!s) return;
     if (s->elapsed_sec > 0) {
-        s->throughput_mb_s = (s->file_size / (1024.0 * 1024.0)) / s->elapsed_sec;
+        s->throughput_mb_s = ((double)s->file_size / (1024.0 * 1024.0)) / s->elapsed_sec;
     } else {
         s->throughput_mb_s = 0.0;
     }
@@ -69,37 +69,37 @@ static inline void print_algorithm_stats(const AlgorithmStats *s) {
            s->algorithm_name ? s->algorithm_name : "Unknown");
 
     // Common metrics
-    if (s->chars_scanned) printf("  Characters scanned     : %'llu\n",
-        (uint64_t)s->chars_scanned);
-    if (s->comparisons)   printf("  Comparisons            : %'llu\n",
-        (uint64_t)s->comparisons);
-    if (s->transitions)   printf("  State transitions      : %'llu\n",
-        (uint64_t)s->transitions);
-    if (s->fail_steps)    printf("  Fail traversals        : %'llu\n",
-        (uint64_t)s->fail_steps);
-    if (s->shifts)        printf("  Shifts                 : %'llu\n",
-        (uint64_t)s->shifts);
-    if (s->matches)       printf("  Matches (total)        : %'llu\n",
-        (uint64_t)s->matches);
+    if (s->chars_scanned) printf("  Characters scanned     : %'lu\n",
+        (unsigned long)s->chars_scanned);
+    if (s->comparisons)   printf("  Comparisons            : %'lu\n",
+        (unsigned long)s->comparisons);
+    if (s->transitions)   printf("  State transitions      : %'lu\n",
+        (unsigned long)s->transitions);
+    if (s->fail_steps)    printf("  Fail traversals        : %'lu\n",
+        (unsigned long)s->fail_steps);
+    if (s->shifts)        printf("  Shifts                 : %'lu\n",
+        (unsigned long)s->shifts);
+    if (s->matches)       printf("  Matches (total)        : %'lu\n",
+        (unsigned long)s->matches);
 
     // Wu–Manber specific metrics
-    if (s->windows)       printf("  Windows processed      : %'llu\n",
-        (uint64_t)s->windows);
-    if (s->sum_shift)     printf("  Total shift distance   : %'llu\n",
-        (uint64_t)s->sum_shift);
-    if (s->hash_hits)     printf("  Hash table hits        : %'llu\n",
-        (uint64_t)s->hash_hits);
-    if (s->bloom_checks)  printf("  Bloom checks           : %'llu\n",
-        (uint64_t)s->bloom_checks);
-    if (s->bloom_pass)    printf("  Bloom positive checks  : %'llu\n",
-        (uint64_t)s->bloom_pass);
-    if (s->chain_steps)   printf("  Chain traversal steps  : %'llu\n",
-        (uint64_t)s->chain_steps);
-    if (s->exact_matches) printf("  Exact string matches   : %'llu\n",
-        (uint64_t)s->exact_matches);
+    if (s->windows)       printf("  Windows processed      : %'lu\n",
+        (unsigned long)s->windows);
+    if (s->sum_shift)     printf("  Total shift distance   : %'lu\n",
+        (unsigned long)s->sum_shift);
+    if (s->hash_hits)     printf("  Hash table hits        : %'lu\n",
+        (unsigned long)s->hash_hits);
+    if (s->bloom_checks)  printf("  Bloom checks           : %'lu\n",
+        (unsigned long)s->bloom_checks);
+    if (s->bloom_pass)    printf("  Bloom positive checks  : %'lu\n",
+        (unsigned long)s->bloom_pass);
+    if (s->chain_steps)   printf("  Chain traversal steps  : %'lu\n",
+        (unsigned long)s->chain_steps);
+    if (s->exact_matches) printf("  Exact string matches   : %'lu\n",
+        (unsigned long)s->exact_matches);
     if (s->verif_after_bloom)
-                          printf("  Verified post-Bloom    : %'llu\n",
-                            (uint64_t)s->verif_after_bloom);
+                          printf("  Verified post-Bloom    : %'lu\n",
+                            (unsigned long)s->verif_after_bloom);
 
     // Derived metrics — ratios and averages
     if (s->windows > 0) {
@@ -112,17 +112,16 @@ static inline void print_algorithm_stats(const AlgorithmStats *s) {
 
         if (s->bloom_checks)
             printf("  ➤ Bloom pass rate      : %.2f%%\n",
-                   (100.0 * s->bloom_pass) / (double)s->bloom_checks);
+                   (100.0 * (double)s->bloom_pass) / (double)s->bloom_checks);
 
         printf("  ➤ Match rate (per window): %.4f%%\n",
-               (100.0 * s->exact_matches) / (double)s->windows);
+               (100.0 * (double)s->exact_matches) / (double)s->windows);
     }
 
     // Timing & throughput
     printf("\n  Elapsed time           : %.6f sec\n", s->elapsed_sec);
     printf("  Throughput             : %.2f MB/s\n", s->throughput_mb_s);
 }
-
 
 /* ---------------------------------------------------------------
  *                 Print memory usage stats
@@ -131,12 +130,12 @@ static inline void print_memory_stats(const char *label, const MemoryStats *m) {
     if (!m) return;
 
     printf("\n[Space Complexity Summary: %s]\n", label ? label : "Unknown");
-    printf("  Total allocations : %llu\n",
-        (uint64_t)m->alloc_count);
-    printf("  Total frees       : %llu\n",
-        (uint64_t)m->free_count);
+    printf("  Total allocations : %lu\n",
+        (unsigned long)m->alloc_count);
+    printf("  Total frees       : %lu\n",
+        (unsigned long)m->free_count);
     printf("  Total bytes used  : %zu bytes (%.2f MB)\n",
-           m->total_bytes, m->total_bytes / (1024.0 * 1024.0));
+           m->total_bytes, (double)m->total_bytes / (1024.0 * 1024.0));
 }
 
 void *track_malloc(size_t size);

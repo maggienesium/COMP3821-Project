@@ -29,7 +29,8 @@ static inline void trim(char *s) {
 
     // Move trimmed string to the beginning if needed
     if (s != start) {
-        // The size is the length of the content (end - start + 1) plus the null terminator (+1)
-        memmove(s, start, (size_t)(end - start + 1) + 1);
+        // The size is the length of the content (end - start + 1) plus the null terminator (+1),
+        // which simplifies to (end - start + 2).
+        memmove(s, start, (size_t)(end - start + 2));
     }
 }

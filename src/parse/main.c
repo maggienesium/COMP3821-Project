@@ -1,3 +1,10 @@
+// Define the POSIX source to have access to clock_gettime and CLOCK_MONOTONIC
+#if defined(_WIN32) && !defined(__CYGWIN__)
+#define _POSIX_C_SOURCE 200809L
+#else
+#define _POSIX_C_SOURCE 199309L
+#endif
+
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>

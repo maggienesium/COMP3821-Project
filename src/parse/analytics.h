@@ -6,6 +6,9 @@
 #include <stddef.h>
 #include <stdio.h>
 
+#define BYTES_PER_KB 1024.0
+#define BYTES_PER_MB (1024.0 * 1024.0)
+
 /* ---------------------------------------------------------------
  *   Generic performance analytics shared across all algorithms
  * --------------------------------------------------------------- */
@@ -53,7 +56,7 @@ extern MemoryStats *global_mem_stats;
 static inline void compute_throughput(AlgorithmStats *s) {
     if (!s) return;
     if (s->elapsed_sec > 0) {
-        s->throughput_mb_s = ((double)s->file_size / (1024.0 * 1024.0)) / s->elapsed_sec;
+        s->throughput_mb_s = ((double)s->file_size / BYTES_PER_MB) / s->elapsed_sec;
     } else {
         s->throughput_mb_s = 0.0;
     }
@@ -135,7 +138,7 @@ static inline void print_memory_stats(const char *label, const MemoryStats *m) {
     printf("  Total frees       : %lu\n",
         (unsigned long)m->free_count);
     printf("  Total bytes used  : %zu bytes (%.2f MB)\n",
-           m->total_bytes, (double)m->total_bytes / (1024.0 * 1024.0));
+           m->total_bytes, (double)m->total_bytes / BYTES_PER_MB);
 }
 
 void *track_malloc(size_t size);

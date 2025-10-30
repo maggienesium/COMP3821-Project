@@ -13,9 +13,9 @@ It performs the following steps:
 3.  For each test file, it runs the './bin/testParse' executable with each
     of the available algorithms:
     - Aho-Corasick ('a')
-    - Set-Horspool ('sh')
+    - Set-Horspool ('h')
     - Wu-Manber (Deterministic, 'd')
-    - Wu-Manber (Non-Deterministic, 'n')
+    - Wu-Manber (Probabilistic, 'p')
 4.  It captures and parses the statistical output from each run.
 5.  It measures the CPU time consumed by each algorithm during its run.
 6.  Finally, it presents a formatted comparison table in the

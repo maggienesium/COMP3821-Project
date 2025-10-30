@@ -59,7 +59,11 @@ lint:
 
 
 clean:
-	$(RM) $(OBJ)
-	$(RM) $(TARGET)
+ifeq ($(OS),Windows_NT)
+	-$(RM) $(subst /,\,$(OBJ))
+	-$(RM) $(subst /,\,$(TARGET))
+else
+	-$(RM) $(OBJ) $(TARGET)
+endif
 
 rebuild: clean all

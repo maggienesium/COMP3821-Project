@@ -24,6 +24,7 @@ It performs the following steps:
 Dependencies:
 - psutil: For measuring CPU usage (`pip install psutil`)
 - rich: For creating beautiful terminal tables (`pip install rich`)
+- matplotlib: For generating performance plots (`pip install matplotlib`)
 
 Usage:
 - Make sure you have installed the dependencies.
@@ -42,18 +43,20 @@ try:
     import psutil
     from rich.console import Console
     from rich.table import Table
+    import matplotlib.pyplot as plt
 except ImportError:
     print("Required Python packages not found. Attempting to install them...")
     try:
-        subprocess.check_call([sys.executable, "-m", "pip", "install", "psutil", "rich"])
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "psutil", "rich", "matplotlib"])
         # Retry importing after installation
         import psutil
         from rich.console import Console
         from rich.table import Table
+        import matplotlib.pyplot as plt
         print("Packages installed successfully.")
     except Exception as e:
         print(f"Failed to install required packages: {e}", file=sys.stderr)
-        print("Please install them manually by running: pip install psutil rich", file=sys.stderr)
+        print("Please install them manually by running: pip install psutil rich matplotlib", file=sys.stderr)
         sys.exit(1)
 
 # --- Configuration ---
@@ -160,6 +163,10 @@ def parse_stats(output):
         "Match rate (per window)": r"Match rate \(per window\)\s*:\s*([\d,\.]+\s*%)",
         "Elapsed time": r"Elapsed time\s*:\s*([\d.]+) sec",
         "Throughput": r"Throughput\s*:\s*([\d.]+\s*MB/s)",
+        "Preprocessing-Time": r"Preprocessing-Time:\s*([\d\.]+)",
+        "Ruleset-Count": r"Ruleset-Count:\s*(\d+)",
+        "Ruleset-Avg-Length": r"Ruleset-Avg-Length:\s*([\d\.]+)",
+        "Memory-Usage-MB": r"Total bytes used\s*:\s*\d+ bytes \(([\d\.]+) MB\)",
     }
 
     for key, pattern in patterns.items():
@@ -249,6 +256,95 @@ def display_results(pcap_file, results):
     console.print("\n")
 
 
+def generate_plots(all_results):
+    """Generates and saves plots based on the collected analysis data."""
+    console = Console()
+    console.rule("[bold blue]📊 Generating Performance Plots 📊[/bold blue]")
+
+    if not all_results:
+        console.print("[yellow]No results to plot.[/yellow]")
+        return
+
+    # --- Prepare data ---
+    # Create a mapping from algorithm name back to its key if needed, or just use names
+    alg_names = [res['Algorithm'] for res in all_results]
+
+    # Extract metrics, converting to float and handling missing values
+    def get_metric(results, key, name, default=0.0):
+        res = next((r for r in results if r.get('Algorithm') == name), None)
+        if not res:
+            return default
+        val_str = res.get(key, str(default))
+        # Clean up strings like 'MB/s' or '%' before converting
+        val_str = val_str.replace('MB/s', '').replace('%', '').strip()
+        try:
+            return float(val_str)
+        except (ValueError, TypeError):
+            return default
+
+    mem_usage = [get_metric(all_results, 'Memory-Usage-MB', name) for name in alg_names]
+    throughput = [get_metric(all_results, 'Throughput', name) for name in alg_names]
+    prep_time = [get_metric(all_results, 'Preprocessing-Time', name) for name in alg_names]
+
+    # Ruleset stats are constant for the run, grab from the first valid result
+    ruleset_count = get_metric(all_results, 'Ruleset-Count', alg_names[0])
+    avg_len = get_metric(all_results, 'Ruleset-Avg-Length', alg_names[0])
+
+    # --- Create Plots ---
+    plt.style.use('seaborn-v0_8-darkgrid')
+    # Create a 3x2 grid to accommodate 5 plots cleanly
+    fig, axs = plt.subplots(3, 2, figsize=(18, 16))
+    fig.suptitle('Algorithm Performance Analysis', fontsize=22, weight='bold')
+
+    # Plot 1: Memory Usage vs. Number of Rules
+    axs[0, 0].bar(alg_names, mem_usage, color='skyblue')
+    axs[0, 0].set_title('Memory Usage vs. Number of Rules', fontsize=14)
+    axs[0, 0].set_ylabel('Memory Usage (MB)', fontsize=12)
+    axs[0, 0].set_xlabel(f"Algorithms (at {int(ruleset_count)} rules)", fontsize=12)
+
+    # Plot 2: Throughput vs. Number of Rules
+    axs[0, 1].bar(alg_names, throughput, color='lightcoral')
+    axs[0, 1].set_title('Throughput vs. Number of Rules', fontsize=14)
+    axs[0, 1].set_ylabel('Throughput (MB/s)', fontsize=12)
+    axs[0, 1].set_xlabel(f"Algorithms (at {int(ruleset_count)} rules)", fontsize=12)
+
+    # Plot 3: Preprocessing Time vs. Number of Rules
+    axs[1, 0].bar(alg_names, prep_time, color='mediumseagreen')
+    axs[1, 0].set_title('Preprocessing Time vs. Number of Rules', fontsize=14)
+    axs[1, 0].set_ylabel('Preprocessing Time (seconds)', fontsize=12)
+    axs[1, 0].set_xlabel(f"Algorithms (at {int(ruleset_count)} rules)", fontsize=12)
+
+    # Plot 4: Throughput vs. Avg Pattern Length
+    axs[1, 1].bar(alg_names, throughput, color='plum')
+    axs[1, 1].set_title('Throughput vs. Avg Pattern Length', fontsize=14)
+    axs[1, 1].set_ylabel('Throughput (MB/s)', fontsize=12)
+    axs[1, 1].set_xlabel(f"Algorithms (at {avg_len:.2f} avg. length)", fontsize=12)
+
+    # Plot 5: Preprocessing Time vs. Avg Pattern Length
+    axs[2, 0].bar(alg_names, prep_time, color='sandybrown')
+    axs[2, 0].set_title('Preprocessing Time vs. Avg Pattern Length', fontsize=14)
+    axs[2, 0].set_ylabel('Preprocessing Time (seconds)', fontsize=12)
+    axs[2, 0].set_xlabel(f"Algorithms (at {avg_len:.2f} avg. length)", fontsize=12)
+
+    # Hide the unused subplot
+    axs[2, 1].set_visible(False)
+
+    # Improve layout
+    for ax_row in axs:
+        for ax in ax_row:
+            ax.tick_params(axis='x', rotation=15, labelsize=10)
+            ax.grid(axis='y', linestyle='--', alpha=0.7)
+
+    plt.tight_layout(rect=[0, 0.03, 1, 0.95])
+
+    plot_filename = "performance_analysis.png"
+    try:
+        plt.savefig(plot_filename)
+        console.print(f"[green]✅ Plots saved to [bold]{plot_filename}[/bold][/green]\n")
+    except Exception as e:
+        console.print(f"[red]❌ Could not save plots: {e}[/red]")
+
+
 def main():
     """Main function to orchestrate the analysis."""
     console = Console()
@@ -258,9 +354,19 @@ def main():
     pcap_files = find_pcap_files()
 
     console.print("[bold cyan]Step 3: Running analysis on each .pcap file...[/bold cyan]\n")
+
+    # We'll collect results from the first pcap file to use for plotting
+    first_pcap_results = None
+
     for pcap_file in pcap_files:
         results = run_analysis(pcap_file)
+        if results and not first_pcap_results:
+            first_pcap_results = results
         display_results(pcap_file, results)
+
+    # Generate plots based on the first valid set of results
+    if first_pcap_results:
+        generate_plots(first_pcap_results)
 
     console.rule("[bold green] Analysis Complete [/bold green]")
     console.print("A note on metrics:", style="dim")

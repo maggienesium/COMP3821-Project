@@ -87,7 +87,7 @@ static void scan_file(const char *filepath, PatternSet *ps,
 int main(int argc, char *argv[]) {
     if (argc != 3) {
         fprintf(stderr, "Usage: %s <algorithm_choice> <file_to_scan>\n", argv[0]);
-        fprintf(stderr, "Algorithm choices: a, d, n, sh\n");
+        fprintf(stderr, "Algorithm choices: a, d, p, h\n");
         return EXIT_FAILURE;
     }
 

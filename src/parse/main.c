@@ -116,14 +116,29 @@ int main(int argc, char *argv[]) {
         return EXIT_FAILURE;
     }
 
+    // Calculate and print ruleset stats
+    uint64_t total_pattern_length = 0;
+    for (int i = 0; i < ps->pattern_count; i++) {
+        total_pattern_length += strlen(ps->patterns[i]);
+    }
+    double avg_pattern_length = (ps->pattern_count > 0) ? (double)total_pattern_length / (double)ps->pattern_count : 0.0;
+
+    printf("Ruleset-Count: %d\n", ps->pattern_count);
+    printf("Ruleset-Avg-Length: %.2f\n", avg_pattern_length);
+
     global_mem_stats = calloc(1, sizeof(MemoryStats));
+
+    struct timespec build_start, build_end;
+    double preprocessing_time = 0.0;
 
     switch (alg) {
         case ALG_AC: {
             AhoCorasick *ac = ac_create();
+            clock_gettime(CLOCK_MONOTONIC, &build_start);
             for (int i = 0; i < ps->pattern_count; i++)
                 ac_add_pattern(ac, ps->patterns[i]);
             ac_build(ac);
+            clock_gettime(CLOCK_MONOTONIC, &build_end);
             scan_file(filepath, ps, NULL, ac, NULL, 0, ALG_AC);
             ac_destroy(ac);
             break;
@@ -133,7 +148,9 @@ int main(int argc, char *argv[]) {
         case ALG_WM_PROB: {
             int use_bloom = (alg == ALG_WM_PROB);
             WuManberTables *tbl = track_malloc(sizeof(WuManberTables));
+            clock_gettime(CLOCK_MONOTONIC, &build_start);
             wm_build_tables(ps, tbl, use_bloom);
+            clock_gettime(CLOCK_MONOTONIC, &build_end);
             scan_file(filepath, ps, tbl, NULL, NULL, 0, alg);
             wm_free_tables(tbl);
             track_free(tbl);
@@ -142,17 +159,23 @@ int main(int argc, char *argv[]) {
 
         case ALG_SH: {
             Pattern *sh_patterns = track_calloc((size_t)ps->pattern_count, sizeof(Pattern));
+            clock_gettime(CLOCK_MONOTONIC, &build_start);
             for (int i = 0; i < ps->pattern_count; i++) {
                 sh_patterns[i].pattern = ps->patterns[i];
                 sh_patterns[i].length = (int)strlen(ps->patterns[i]);
                 sh_patterns[i].id = i;
                 sh_patterns[i].nocase = 0;
             }
+            clock_gettime(CLOCK_MONOTONIC, &build_end);
             scan_file(filepath, ps, NULL, NULL, sh_patterns, ps->pattern_count, ALG_SH);
             track_free(sh_patterns);
             break;
         }
     }
+
+    preprocessing_time = (double)(build_end.tv_sec - build_start.tv_sec) +
+                         (double)(build_end.tv_nsec - build_start.tv_nsec) / 1e9;
+    printf("Preprocessing-Time: %.6f\n", preprocessing_time);
 
     print_memory_stats("Active Algorithm", global_mem_stats);
 

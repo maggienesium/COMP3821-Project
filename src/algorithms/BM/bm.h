@@ -7,27 +7,10 @@
 #include "../WM/wm.h"
 
 #define NOT_IN_PATTERN -1
-/* ---------------------------------------------------------------
- * Struct: BadCharacterTable
- * A lookup table representing the last occurence of each alphabet character in the pattern.
- *  Each table includes:
- *   - character
- *   - final index
- * --------------------------------------------------------------- */
-
-// typedef struct {
-//     char character;
-//     int position;
-// } AlphabetPosition;
-
-// typedef struct {
-//     struct AlphabetPosition **blocks;
-//     int numBlocks;
-//     int numRules;
-// } BadCharacterTable;
-
 /**
- * Mapping of a pattern given from a Snort Rule to its corresponding BadCharacter Table
+ * Mapping of a pattern given from a Snort Rule to its corresponding
+ * BadCharacter, Good Suffix shift table and the border table where a border is
+ * defined as a prefix text suffix trio where the prefix and suffix are equal.
  */
 typedef struct {
     char *pattern;
@@ -51,5 +34,7 @@ typedef struct {
 BMPatterns *bm_preprocessing(PatternSet *ps);
 
 void bm_search(BMPatterns *bm, const char *text, size_t text_len);
+
+void bm_free_tables(BMPatterns *bm);
 
 #endif 

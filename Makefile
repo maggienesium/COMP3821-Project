@@ -12,6 +12,7 @@ PARSE_DIR = $(SRC_DIR)/parse
 WM_DIR = $(ALG_DIR)/WM
 AC_DIR = $(ALG_DIR)/AC
 SH_DIR = $(ALG_DIR)/SH
+BM_DIR = $(ALG_DIR)/BM
 
 BIN_DIR = bin
 TOOLS_DIR = tools
@@ -25,7 +26,8 @@ SRC = $(PARSE_DIR)/parseRules.c \
       $(WM_DIR)/wm.c \
       $(WM_DIR)/wmpp.c \
       $(AC_DIR)/ac.c \
-      $(SH_DIR)/sh.c
+      $(SH_DIR)/sh.c \
+      $(BM_DIR)/bm.c
 
 OBJ = $(SRC:.c=.o)
 

@@ -28,14 +28,14 @@
 #include "../WM/wm.h"
 
 BMPatterns *bm_preprocessing(PatternSet *ps) {
-    BMPatterns *bm_patterns = malloc(sizeof(BMPatterns));
-    bm_patterns->patterns = malloc(sizeof(PatternTable) * ps->pattern_count);
+    BMPatterns *bm_patterns = track_malloc(sizeof(BMPatterns));
+    bm_patterns->patterns = track_malloc(sizeof(PatternTable) * (size_t) ps->pattern_count);
     bm_patterns->num_patterns = ps->pattern_count;
     
     for (int i = 0; i < ps->pattern_count; i++) {
         char *pattern = ps->patterns[i];
         PatternTable *curr_pattern = &bm_patterns->patterns[i];
-        curr_pattern->pattern = malloc(sizeof(char) * (strlen(pattern) + 1));
+        curr_pattern->pattern = track_malloc(sizeof(char) * (strlen(pattern) + 1));
         
         strcpy(curr_pattern->pattern, pattern);
 
@@ -47,7 +47,7 @@ BMPatterns *bm_preprocessing(PatternSet *ps) {
         int j = 0;
         for (; pattern[j] != '\0'; j++) {
             if (j > curr_pattern->badCharTable[(int)pattern[j]]) {
-                curr_pattern->badCharTable[(int)pattern[j]] = j;
+                curr_pattern->badCharTable[(int)(unsigned char)pattern[j]] = j;
             }
             curr_pattern->goodSuffixTable[j] = 0;
         }
@@ -55,7 +55,7 @@ BMPatterns *bm_preprocessing(PatternSet *ps) {
         curr_pattern->pattern_length = j;
         int index = j;
         int k = j + 1;
-        curr_pattern->borderTable = calloc(j + 1, sizeof(int)); 
+        curr_pattern->borderTable = track_calloc((size_t)j + 1, sizeof(int)); 
         curr_pattern->borderTable[index] = k;
 
         while (index > 0) {
@@ -71,7 +71,8 @@ BMPatterns *bm_preprocessing(PatternSet *ps) {
         }
 
         k = curr_pattern->borderTable[0];
-        for (int index = 0; index <= curr_pattern->pattern_length; index++) {
+        index = 0;
+        for (; index <= curr_pattern->pattern_length; index++) {
             if (curr_pattern->goodSuffixTable[index] == 0) {
                 curr_pattern->goodSuffixTable[index] = k;
             }
@@ -98,7 +99,7 @@ void bm_search(BMPatterns *bm, const char *text, size_t text_len) {
 
         PatternTable curr_table = bm->patterns[i];
         int j = curr_table.pattern_length - 1;
-        while (shift + curr_table.pattern_length - 1 < text_len) {
+        while ((size_t)(shift + curr_table.pattern_length) - 1 < text_len) {
             // test starting from the final character in the pattern to
             // to the start of the text
             while (j >= 0 && curr_table.pattern[j] != '\0' && curr_table.pattern[j] == text[shift + j]) {
@@ -117,7 +118,7 @@ void bm_search(BMPatterns *bm, const char *text, size_t text_len) {
                 // occurence of char in pattern if in pattern, else shift 1.
                 // also, can use good suffix heuristic, and skip such that
                 // the next prefix matches
-                int bad_skip_past_mismatch = bm->patterns[i].badCharTable[(int)text[shift + j]];
+                int bad_skip_past_mismatch = bm->patterns[i].badCharTable[(int)(unsigned char)text[shift + j]];
                 int skip_past_mismatch = bad_skip_past_mismatch;
                 if (shift + j + 1 <= bm->patterns[i].pattern_length) {
                     int good_skip_past_mismatch = bm->patterns[i].goodSuffixTable[shift + j + 1];
@@ -144,28 +145,44 @@ void bm_search(BMPatterns *bm, const char *text, size_t text_len) {
     print_algorithm_stats(&s);
 }
 
-int main(void) {
-    printf("\n[+] Loading Snort rules from: %s\n", RULESET_PATH);
-    PatternSet *ps = loadSnortRulesFromFile(RULESET_PATH);
-    if (!ps) {
-        fprintf(stderr, "[-] Failed to load rules from %s\n", RULESET_PATH);
-        return EXIT_FAILURE;
+void bm_free_tables(BMPatterns *bm) {
+    if (bm == NULL) {
+        return;
     }
-    printf("[+] Loaded %d patterns\n", ps->pattern_count);
 
-    BMPatterns *bm = bm_preprocessing(ps);
+    for (int i = 0; i < bm->num_patterns; i++) {
+        track_free(bm->patterns[i].borderTable);
+        track_free(bm->patterns[i].pattern);
+    }
 
-    const char *badUrl = "this is my message with content base64, cmd.exe and password=testing";
-    bm_search(bm, badUrl, strlen(badUrl));
+    track_free(bm->patterns);
 
-    print_memory_stats("Active Algorithm", global_mem_stats);
-
-    for (int i = 0; i < ps->pattern_count; i++)
-        free(ps->rule_refs[i]);
-    free(ps->rule_refs);
-    free(ps);
-
-    free(global_mem_stats);
-
-    return 0;
+    track_free(bm);
+    return;
 }
+
+// int main(void) {
+//     printf("\n[+] Loading Snort rules from: %s\n", RULESET_PATH);
+//     PatternSet *ps = loadSnortRulesFromFile(RULESET_PATH);
+//     if (!ps) {
+//         fprintf(stderr, "[-] Failed to load rules from %s\n", RULESET_PATH);
+//         return EXIT_FAILURE;
+//     }
+//     printf("[+] Loaded %d patterns\n", ps->pattern_count);
+
+//     BMPatterns *bm = bm_preprocessing(ps);
+
+//     const char *badUrl = "this is my message with content base64, cmd.exe and password=testing";
+//     bm_search(bm, badUrl, strlen(badUrl));
+
+//     print_memory_stats("Active Algorithm", global_mem_stats);
+
+//     for (int i = 0; i < ps->pattern_count; i++)
+//         free(ps->rule_refs[i]);
+//     free(ps->rule_refs);
+//     free(ps);
+
+//     free(global_mem_stats);
+
+//     return 0;
+// }

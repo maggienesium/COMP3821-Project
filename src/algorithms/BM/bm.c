@@ -8,6 +8,8 @@
  * Reference:
  * https://medium.com/@siddharth.21/the-boyer-moore-string-search-algorithm-674906cab162,
  * slightly changed to break when first match is found.
+ * https://medium.com/@neethamadhu.ma/good-suffix-rule-in-boyer-moore-algorithm-explained-simply-9d9b6d20a773 
+ * 
  * R. S. Boyer, J. S. Moore,
  *   A Fast String Searching Algoritm,”
  *   CACM 20(10):762–772 (1977).
@@ -25,7 +27,7 @@
 #include "../../parse/parseRules.h"
 #include "../WM/wm.h"
 
-BMPatterns *generateBadCharacterTables(PatternSet *ps) {
+BMPatterns *bm_preprocessing(PatternSet *ps) {
     BMPatterns *bm_patterns = malloc(sizeof(BMPatterns));
     bm_patterns->patterns = malloc(sizeof(PatternTable) * ps->pattern_count);
     bm_patterns->num_patterns = ps->pattern_count;
@@ -47,11 +49,39 @@ BMPatterns *generateBadCharacterTables(PatternSet *ps) {
             if (j > curr_pattern->badCharTable[(int)pattern[j]]) {
                 curr_pattern->badCharTable[(int)pattern[j]] = j;
             }
+            curr_pattern->goodSuffixTable[j] = 0;
         }
 
         curr_pattern->pattern_length = j;
+        int index = j;
+        int k = j + 1;
+        curr_pattern->borderTable = calloc(j + 1, sizeof(int)); 
+        curr_pattern->borderTable[index] = k;
+
+        while (index > 0) {
+            while (k <= curr_pattern->pattern_length && pattern[index - 1] != pattern[k - 1]) {
+                if (curr_pattern->goodSuffixTable[k] == 0) {
+                    curr_pattern->goodSuffixTable[k] = k - 1;
+                }
+                k = curr_pattern->borderTable[k];
+            }
+            index--;
+            k--;
+            curr_pattern->borderTable[index] = k;
+        }
+
+        k = curr_pattern->borderTable[0];
+        for (int index = 0; index <= curr_pattern->pattern_length; index++) {
+            if (curr_pattern->goodSuffixTable[index] == 0) {
+                curr_pattern->goodSuffixTable[index] = k;
+            }
+
+            if (index == k) {
+                k = curr_pattern->borderTable[k];
+            }
+        }
     }
-    printf("%s\n", bm_patterns->patterns[0].pattern);
+
     return bm_patterns;
 }
 
@@ -67,7 +97,6 @@ void bm_search(BMPatterns *bm, const char *text, size_t text_len) {
         shift = 0;
 
         PatternTable curr_table = bm->patterns[i];
-        printf("%d and %s\n", i, bm->patterns[i].pattern);
         int j = curr_table.pattern_length - 1;
         while (shift + curr_table.pattern_length - 1 < text_len) {
             // test starting from the final character in the pattern to
@@ -78,7 +107,6 @@ void bm_search(BMPatterns *bm, const char *text, size_t text_len) {
 
             if (j < 0) {
                 // then we have a match at that shift value
-                printf("%s at %d\n", curr_table.pattern, j);
                 s.exact_matches++;
                 
                 break;
@@ -87,7 +115,18 @@ void bm_search(BMPatterns *bm, const char *text, size_t text_len) {
                 // compared everything to the right of pattern position at mismatch
                 // , can align shift to be the next index such that mismatch in text = last
                 // occurence of char in pattern if in pattern, else shift 1.
-                int skip_past_mismatch = bm->patterns[i].badCharTable[(int)text[shift + j]];
+                // also, can use good suffix heuristic, and skip such that
+                // the next prefix matches
+                int bad_skip_past_mismatch = bm->patterns[i].badCharTable[(int)text[shift + j]];
+                int skip_past_mismatch = bad_skip_past_mismatch;
+                if (shift + j + 1 <= bm->patterns[i].pattern_length) {
+                    int good_skip_past_mismatch = bm->patterns[i].goodSuffixTable[shift + j + 1];
+
+                    if (bad_skip_past_mismatch < good_skip_past_mismatch) {
+                        skip_past_mismatch = good_skip_past_mismatch;
+                    }
+                }   
+
                 if (skip_past_mismatch > 0 && j - skip_past_mismatch > 1) {
                     shift += j - skip_past_mismatch;
                 } else {
@@ -114,7 +153,7 @@ int main(void) {
     }
     printf("[+] Loaded %d patterns\n", ps->pattern_count);
 
-    BMPatterns *bm = generateBadCharacterTables(ps);
+    BMPatterns *bm = bm_preprocessing(ps);
 
     const char *badUrl = "this is my message with content base64, cmd.exe and password=testing";
     bm_search(bm, badUrl, strlen(badUrl));

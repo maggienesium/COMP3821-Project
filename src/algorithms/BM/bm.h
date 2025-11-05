@@ -33,10 +33,12 @@ typedef struct {
     char *pattern;
     int pattern_length;
     int badCharTable[ALPHABET_SIZE];
+    int goodSuffixTable[ALPHABET_SIZE];
+    int *borderTable;
 } PatternTable;
 
 /**
- * Struct storing all the patterns and their Bad Character Tables.
+ * Struct storing all the patterns and their pre-processing tables
  */
 typedef struct {
     PatternTable *patterns;
@@ -46,7 +48,7 @@ typedef struct {
 /* ---------------------------------------------------------------
  *                      Function Prototypes
  * --------------------------------------------------------------- */
-BMPatterns *generateBadCharacterTables(PatternSet *ps);
+BMPatterns *bm_preprocessing(PatternSet *ps);
 
 void bm_search(BMPatterns *bm, const char *text, size_t text_len);
 

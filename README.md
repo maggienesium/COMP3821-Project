@@ -42,6 +42,8 @@ n -> Non-deterministic Wu–Manber (Bloom filter)
 
 a -> Aho-Corasick
 
+b -> Boyer-Moore
+
 🧪 Example Output
 === Scanning: ./src/tests/pcaps/2017-07-29-BTCware-ransomware-from-cabeiriscout_faith.pcap ===
 

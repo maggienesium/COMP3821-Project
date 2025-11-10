@@ -1,3 +1,8 @@
+// Define the POSIX source to have access to clock_gettime and CLOCK_MONOTONIC
+#if !defined(_WIN32) || defined(__CYGWIN__)
+#define _POSIX_C_SOURCE 199309L
+#endif
+
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -107,8 +112,8 @@ static void scan_file(const char *filepath, PatternSet *ps,
     }
 
     clock_gettime(CLOCK_MONOTONIC, &end);
-    double elapsed = (end.tv_sec - start.tv_sec) +
-                     (end.tv_nsec - start.tv_nsec) / 1e9;
+    double elapsed = (double)(end.tv_sec - start.tv_sec) +
+                     (double)(end.tv_nsec - start.tv_nsec) / 1e9;
     printf("[+] %s Completed in %.6f seconds\n", alg_name, elapsed);
 
     free(buffer);
@@ -144,26 +149,43 @@ static void walk_directory(const char *base_path, PatternSet *ps,
                 scan_file(path, ps, tbl, ac, sh_patterns, sh_count, bm, alg);
         }
     }
-    closedir(dir);
-}
 
-int main(void) {
-    AlgorithmType alg = ask_user_algorithm();
+    char choice = argv[1][0];
+    const char *filepath = argv[2];
+    AlgorithmType alg;
 
-    printf("\n[+] Loading Snort rules from: %s\n", RULESET_PATH);
+    switch (choice) {
+        case 'a': alg = ALG_AC; break;
+        case 'd': alg = ALG_WM_DET; break;
+        case 'p': alg = ALG_WM_PROB; break;
+        case 'h': alg = ALG_SH; break;
+        default:
+            fprintf(stderr, "Invalid algorithm choice: %c\n", choice);
+            return EXIT_FAILURE;
+    }
+
     PatternSet *ps = loadSnortRulesFromFile(RULESET_PATH);
     if (!ps) {
         fprintf(stderr, "[-] Failed to load rules from %s\n", RULESET_PATH);
         return EXIT_FAILURE;
     }
-    printf("[+] Loaded %d patterns\n", ps->pattern_count);
+
+    // Calculate and print ruleset stats
+    uint64_t total_pattern_length = 0;
+    for (int i = 0; i < ps->pattern_count; i++) {
+        total_pattern_length += strlen(ps->patterns[i]);
+    }
+    double avg_pattern_length = (ps->pattern_count > 0) ? (double)total_pattern_length / (double)ps->pattern_count : 0.0;
+
+    printf("Ruleset-Count: %d\n", ps->pattern_count);
+    printf("Ruleset-Avg-Length: %.2f\n", avg_pattern_length);
 
     global_mem_stats = calloc(1, sizeof(MemoryStats));
     printf("%c hi\n", alg);
     switch (alg) {
         case ALG_AC: {
-            printf("[+] Building Aho–Corasick automaton...\n");
             AhoCorasick *ac = ac_create();
+            clock_gettime(CLOCK_MONOTONIC, &build_start);
             for (int i = 0; i < ps->pattern_count; i++)
                 ac_add_pattern(ac, ps->patterns[i]);
             ac_build(ac);
@@ -178,6 +200,7 @@ int main(void) {
         case ALG_WM_PROB: {
             int use_bloom = (alg == ALG_WM_PROB);
             WuManberTables *tbl = track_malloc(sizeof(WuManberTables));
+            clock_gettime(CLOCK_MONOTONIC, &build_start);
             wm_build_tables(ps, tbl, use_bloom);
 
             printf("\n[+] Scanning all files under: %s\n", TESTS_PATH);
@@ -189,8 +212,8 @@ int main(void) {
         }
 
         case ALG_SH: {
-            printf("[+] Preparing Set–Horspool patterns...\n");
             Pattern *sh_patterns = track_calloc((size_t)ps->pattern_count, sizeof(Pattern));
+            clock_gettime(CLOCK_MONOTONIC, &build_start);
             for (int i = 0; i < ps->pattern_count; i++) {
                 sh_patterns[i].pattern = ps->patterns[i];
                 sh_patterns[i].length = (int)strlen(ps->patterns[i]);
@@ -218,6 +241,10 @@ int main(void) {
             break;
         }
     }
+
+    preprocessing_time = (double)(build_end.tv_sec - build_start.tv_sec) +
+                         (double)(build_end.tv_nsec - build_start.tv_nsec) / 1e9;
+    printf("Preprocessing-Time: %.6f\n", preprocessing_time);
 
     print_memory_stats("Active Algorithm", global_mem_stats);
 

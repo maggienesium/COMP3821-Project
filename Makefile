@@ -31,6 +31,17 @@ SRC = $(PARSE_DIR)/parseRules.c \
 
 OBJ = $(SRC:.c=.o)
 
+# OS-specific commands
+ifeq ($(OS),Windows_NT)
+    RM = del /F
+    # Add any other Windows-specific commands or flags here
+else
+    RM = rm -f
+    # Add any other Unix-specific commands or flags here
+endif
+
+.PHONY: all clean rebuild lint
+
 all: $(TARGET)
 
 $(TARGET): $(OBJ)
@@ -50,8 +61,11 @@ lint:
 
 
 clean:
-	rm -f $(OBJ) $(TARGET)
+ifeq ($(OS),Windows_NT)
+	-$(RM) $(subst /,\,$(OBJ))
+	-$(RM) $(subst /,\,$(TARGET))
+else
+	-$(RM) $(OBJ) $(TARGET)
+endif
 
 rebuild: clean all
-
-.PHONY: all clean rebuild lint

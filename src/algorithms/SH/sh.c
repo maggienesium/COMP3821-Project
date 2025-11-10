@@ -100,12 +100,12 @@ void performSetHorspool(const char *text, uint64_t textLength,
     setHorspoolSearch(text, textLength, patterns, numPatterns, shiftTable, minLength, &s);
 
     clock_gettime(CLOCK_MONOTONIC, &end);
-    s.elapsed_sec = ((end.tv_sec - start.tv_sec) +
-                     (end.tv_nsec - start.tv_nsec)) / 1e9;
+    s.elapsed_sec = (double)(end.tv_sec - start.tv_sec) +
+                     (double)(end.tv_nsec - start.tv_nsec) / 1e9;
 
-    /* To ensure that throughput values remain physically meaningful and comparable across runs, 
-     * I applied a lower bound of 1 ms (0.001 s) to measured elapsed times. This prevents the 
-     * division by near-zero durations that would otherwise yield inflated throughput figures 
+    /* To ensure that throughput values remain physically meaningful and comparable across runs,
+     * I applied a lower bound of 1 ms (0.001 s) to measured elapsed times. This prevents the
+     * division by near-zero durations that would otherwise yield inflated throughput figures
      * while maintaining the correct order of magnitude for genuinely fast scans. */
     if (s.elapsed_sec < 1e-3)
         s.elapsed_sec = 1e-3;

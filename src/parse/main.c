@@ -14,6 +14,7 @@
 #include "../algorithms/WM/wm.h"
 #include "../algorithms/AC/ac.h"
 #include "../algorithms/SH/sh.h"
+#include "../algorithms/BM/bm.h"
 #include "../parse/analytics.h"
 #include "../parse/parseRules.h"
 
@@ -27,15 +28,40 @@ typedef enum {
     ALG_WM_DET,   // Wu–Manber deterministic
     ALG_WM_PROB,  // Wu–Manber probabilistic
     ALG_AC,       // Aho–Corasick
-    ALG_SH        // Set–Horspool
+    ALG_SH,       // Set–Horspool
+    ALG_BM        // Boyer-Moore
 } AlgorithmType;
+
+/* ---------------------------------------------------------------
+ *              Prompt user to choose algorithm
+ * --------------------------------------------------------------- */
+static AlgorithmType ask_user_algorithm(void) {
+    char choice;
+    printf("\nSelect Algorithm:\n");
+    printf("  (d) Wu–Manber (Deterministic Prefix Hash)\n");
+    printf("  (p) Wu–Manber (Probabilistic Bloom Filter)\n");
+    printf("  (a) Aho–Corasick Automaton\n");
+    printf("  (h) Set–Horspool Multi-Pattern Search\n");
+    printf("  (b) Boyer-Moore Multi-Pattern Variant");
+    printf("Enter choice [d/p/a/h/b]: ");
+    fflush(stdout);
+    scanf(" %c", &choice);
+
+    switch (choice) {
+        case 'a': case 'A': return ALG_AC;
+        case 'p': case 'P': return ALG_WM_PROB;
+        case 'h': case 'H': return ALG_SH;
+        case 'b': case 'B': printf("Hi!"); return ALG_BM;
+        default: return ALG_WM_DET;
+    }
+}
 
 /* ---------------------------------------------------------------
  *          Scan a single file with chosen algorithm
  * --------------------------------------------------------------- */
 static void scan_file(const char *filepath, PatternSet *ps,
                       WuManberTables *tbl, AhoCorasick *ac,
-                      Pattern *sh_patterns, int sh_count,
+                      Pattern *sh_patterns, int sh_count, BMPatterns *bm,
                       AlgorithmType alg) {
     FILE *fp = fopen(filepath, "rb");
     if (!fp) return;
@@ -56,11 +82,11 @@ static void scan_file(const char *filepath, PatternSet *ps,
     fread(buffer, 1, (size_t)size, fp);
     buffer[size] = '\0';
     fclose(fp);
-
     const char *alg_name =
         (alg == ALG_AC) ? "Aho–Corasick" :
         (alg == ALG_WM_PROB) ? "Wu–Manber (Probabilistic)" :
         (alg == ALG_SH) ? "Set–Horspool" :
+        (alg == ALG_BM) ? "Boyer-Moore":
         "Wu–Manber (Deterministic)";
 
     printf("\n=== Scanning (%s): %s ===\n", alg_name, filepath);
@@ -79,6 +105,10 @@ static void scan_file(const char *filepath, PatternSet *ps,
         case ALG_SH:
             performSetHorspool(buffer, (uint64_t)size, sh_patterns, sh_count);
             break;
+        case ALG_BM:
+            bm_search(bm, buffer, (size_t)size);
+            break;
+            
     }
 
     clock_gettime(CLOCK_MONOTONIC, &end);
@@ -89,11 +119,35 @@ static void scan_file(const char *filepath, PatternSet *ps,
     free(buffer);
 }
 
-int main(int argc, char *argv[]) {
-    if (argc != 3) {
-        fprintf(stderr, "Usage: %s <algorithm_choice> <file_to_scan>\n", argv[0]);
-        fprintf(stderr, "Algorithm choices: a, d, p, h\n");
-        return EXIT_FAILURE;
+/* ---------------------------------------------------------------
+ *            Walk directory and scan all .pcap files
+ * --------------------------------------------------------------- */
+static void walk_directory(const char *base_path, PatternSet *ps,
+                           WuManberTables *tbl, AhoCorasick *ac,
+                           Pattern *sh_patterns, int sh_count, BMPatterns *bm,
+                           AlgorithmType alg) {
+    DIR *dir = opendir(base_path);
+    if (!dir) return;
+
+    struct dirent *entry;
+    char path[1024];
+
+    while ((entry = readdir(dir))) {
+        if (!strcmp(entry->d_name, ".") || !strcmp(entry->d_name, ".."))
+            continue;
+
+        snprintf(path, sizeof(path), "%s/%s", base_path, entry->d_name);
+        struct stat st;
+        if (stat(path, &st) == -1)
+            continue;
+
+        if (S_ISDIR(st.st_mode)) {
+            walk_directory(path, ps, tbl, ac, sh_patterns, sh_count, bm, alg);
+        } else if (S_ISREG(st.st_mode)) {
+            const char *ext = strrchr(entry->d_name, '.');
+            if (ext && strcmp(ext, ".pcap") == 0)
+                scan_file(path, ps, tbl, ac, sh_patterns, sh_count, bm, alg);
+        }
     }
 
     char choice = argv[1][0];
@@ -127,10 +181,7 @@ int main(int argc, char *argv[]) {
     printf("Ruleset-Avg-Length: %.2f\n", avg_pattern_length);
 
     global_mem_stats = calloc(1, sizeof(MemoryStats));
-
-    struct timespec build_start, build_end;
-    double preprocessing_time = 0.0;
-
+    printf("%c hi\n", alg);
     switch (alg) {
         case ALG_AC: {
             AhoCorasick *ac = ac_create();
@@ -138,8 +189,9 @@ int main(int argc, char *argv[]) {
             for (int i = 0; i < ps->pattern_count; i++)
                 ac_add_pattern(ac, ps->patterns[i]);
             ac_build(ac);
-            clock_gettime(CLOCK_MONOTONIC, &build_end);
-            scan_file(filepath, ps, NULL, ac, NULL, 0, ALG_AC);
+
+            printf("\n[+] Scanning all files under: %s\n", TESTS_PATH);
+            walk_directory(TESTS_PATH, ps, NULL, ac, NULL, 0, NULL, ALG_AC);
             ac_destroy(ac);
             break;
         }
@@ -150,8 +202,10 @@ int main(int argc, char *argv[]) {
             WuManberTables *tbl = track_malloc(sizeof(WuManberTables));
             clock_gettime(CLOCK_MONOTONIC, &build_start);
             wm_build_tables(ps, tbl, use_bloom);
-            clock_gettime(CLOCK_MONOTONIC, &build_end);
-            scan_file(filepath, ps, tbl, NULL, NULL, 0, alg);
+
+            printf("\n[+] Scanning all files under: %s\n", TESTS_PATH);
+            walk_directory(TESTS_PATH, ps, tbl, NULL, NULL, 0, NULL, alg);
+
             wm_free_tables(tbl);
             track_free(tbl);
             break;
@@ -166,9 +220,24 @@ int main(int argc, char *argv[]) {
                 sh_patterns[i].id = i;
                 sh_patterns[i].nocase = 0;
             }
-            clock_gettime(CLOCK_MONOTONIC, &build_end);
-            scan_file(filepath, ps, NULL, NULL, sh_patterns, ps->pattern_count, ALG_SH);
+
+            printf("\n[+] Scanning all files under: %s\n", TESTS_PATH);
+            walk_directory(TESTS_PATH, ps, NULL, NULL, sh_patterns, ps->pattern_count, NULL, ALG_SH);
+
             track_free(sh_patterns);
+            break;
+        }
+
+        case ALG_BM: {
+            printf("[+] Pre-processing all patterns for Boyer-Moore...\n");
+            BMPatterns *bm = bm_preprocessing(ps);
+
+            printf("\n[+] Scanning all files under: %s\n", TESTS_PATH);
+            walk_directory(TESTS_PATH, ps, NULL, NULL, NULL, 0, bm, ALG_BM);
+
+            // free all tables
+            bm_free_tables(bm);
+
             break;
         }
     }

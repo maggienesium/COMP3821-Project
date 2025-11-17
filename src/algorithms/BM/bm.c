@@ -138,8 +138,8 @@ void bm_search(BMPatterns *bm, const char *text, size_t text_len) {
     }
 
     clock_gettime(CLOCK_MONOTONIC, &end);
-    s.elapsed_sec = ((end.tv_sec - start.tv_sec) +
-                     (end.tv_nsec - start.tv_nsec)) / 1e9;
+    s.elapsed_sec = (double)(end.tv_sec - start.tv_sec) +
+                     (double)(end.tv_nsec - start.tv_nsec) / 1e9;
 
     compute_throughput(&s);
     print_algorithm_stats(&s);

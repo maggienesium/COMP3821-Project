@@ -285,7 +285,7 @@ def generate_plots(all_results):
     # Separate algorithms into two groups: fast and slow
     fast_algs = ['Aho-Corasick', 'Wu-Manber (Det)', 'Wu-Manber (Prob)']
     slow_algs = ['Set-Horspool', 'Boyer-Moore']
-    
+
     fast_names = [name for name in alg_names if name in fast_algs]
     slow_names = [name for name in alg_names if name in slow_algs]
 
@@ -293,7 +293,7 @@ def generate_plots(all_results):
     fast_mem = [get_metric(all_results, 'Memory-Usage-MB', name) for name in fast_names]
     fast_throughput = [get_metric(all_results, 'Throughput', name) for name in fast_names]
     fast_prep = [get_metric(all_results, 'Preprocessing-Time', name) for name in fast_names]
-    
+
     slow_mem = [get_metric(all_results, 'Memory-Usage-MB', name) for name in slow_names]
     slow_throughput = [get_metric(all_results, 'Throughput', name) for name in slow_names]
     slow_prep = [get_metric(all_results, 'Preprocessing-Time', name) for name in slow_names]
@@ -313,7 +313,7 @@ def generate_plots(all_results):
     axs[0, 0].set_title('Memory Usage - Fast Algorithms', fontsize=14, weight='bold')
     axs[0, 0].set_ylabel('Memory Usage (MB)', fontsize=12)
     axs[0, 0].set_xlabel(f"at {int(ruleset_count)} rules", fontsize=11)
-    
+
     axs[0, 1].bar(slow_names, slow_mem, color='lightsteelblue')
     axs[0, 1].set_title('Memory Usage - Slower Algorithms', fontsize=14, weight='bold')
     axs[0, 1].set_ylabel('Memory Usage (MB)', fontsize=12)
@@ -324,7 +324,7 @@ def generate_plots(all_results):
     axs[1, 0].set_title('Throughput - Fast Algorithms', fontsize=14, weight='bold')
     axs[1, 0].set_ylabel('Throughput (MB/s)', fontsize=12)
     axs[1, 0].set_xlabel(f"at {int(ruleset_count)} rules", fontsize=11)
-    
+
     axs[1, 1].bar(slow_names, slow_throughput, color='salmon')
     axs[1, 1].set_title('Throughput - Slower Algorithms', fontsize=14, weight='bold')
     axs[1, 1].set_ylabel('Throughput (MB/s)', fontsize=12)
@@ -335,7 +335,7 @@ def generate_plots(all_results):
     axs[2, 0].set_title('Preprocessing Time - Fast Algorithms', fontsize=14, weight='bold')
     axs[2, 0].set_ylabel('Preprocessing Time (seconds)', fontsize=12)
     axs[2, 0].set_xlabel(f"at {int(ruleset_count)} rules", fontsize=11)
-    
+
     axs[2, 1].bar(slow_names, slow_prep, color='lightgreen')
     axs[2, 1].set_title('Preprocessing Time - Slower Algorithms', fontsize=14, weight='bold')
     axs[2, 1].set_ylabel('Preprocessing Time (seconds)', fontsize=12)
@@ -346,7 +346,7 @@ def generate_plots(all_results):
     axs[3, 0].set_title('Throughput vs Pattern Length - Fast Algorithms', fontsize=14, weight='bold')
     axs[3, 0].set_ylabel('Throughput (MB/s)', fontsize=12)
     axs[3, 0].set_xlabel(f"at {avg_len:.2f} avg. length", fontsize=11)
-    
+
     axs[3, 1].bar(slow_names, slow_throughput, color='orchid')
     axs[3, 1].set_title('Throughput vs Pattern Length - Slower Algorithms', fontsize=14, weight='bold')
     axs[3, 1].set_ylabel('Throughput (MB/s)', fontsize=12)
@@ -357,7 +357,7 @@ def generate_plots(all_results):
     axs[4, 0].set_title('Preprocessing vs Pattern Length - Fast Algorithms', fontsize=14, weight='bold')
     axs[4, 0].set_ylabel('Preprocessing Time (seconds)', fontsize=12)
     axs[4, 0].set_xlabel(f"at {avg_len:.2f} avg. length", fontsize=11)
-    
+
     axs[4, 1].bar(slow_names, slow_prep, color='peachpuff')
     axs[4, 1].set_title('Preprocessing vs Pattern Length - Slower Algorithms', fontsize=14, weight='bold')
     axs[4, 1].set_ylabel('Preprocessing Time (seconds)', fontsize=12)

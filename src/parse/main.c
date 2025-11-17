@@ -152,7 +152,7 @@ static void scan_file(const char *filepath, PatternSet *ps,
 //     closedir(dir)
 // }
 
-int main(int argc, char *argv[]) {                
+int main(int argc, char *argv[]) {
     if (argc != 3) {
         fprintf(stderr, "Usage: %s <algorithm_choice> <file_to_scan>\n", argv[0]);
         fprintf(stderr, "Algorithm choices: a, d, p, h\n");
@@ -232,7 +232,7 @@ int main(int argc, char *argv[]) {
                 sh_patterns[i].nocase = 0;
             }
             clock_gettime(CLOCK_MONOTONIC, &build_end);
-            scan_file(filepath, ps, NULL, NULL, sh_patterns, ps->pattern_count, 
+            scan_file(filepath, ps, NULL, NULL, sh_patterns, ps->pattern_count,
                 NULL, ALG_SH);
             track_free(sh_patterns);
             break;

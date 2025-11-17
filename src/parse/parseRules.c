@@ -25,12 +25,24 @@
 PatternSet *addContentToTable(char *snortRule, PatternSet *ps, int *currPattern) {
     char *ptr = strstr(snortRule, "content:");
     while (ptr) {
+        // Skip negative content patterns (content:!)
+        if (ptr[8] == '!') {
+            ptr = strstr(ptr + 1, "content:");
+            continue;
+        }
+
         char *content = &ptr[CONTENT_START];
         char *content_end = strstr(content, "\"");
         if (!content_end) break;
 
         size_t len = (size_t)(content_end - content);
         if (len >= MAX_PATTERN_LEN) len = MAX_PATTERN_LEN - 1;
+
+        if (len == 0) {
+            // Skip empty patterns
+            ptr = strstr(content_end, "content:");
+            continue;
+        }
 
         strncpy(ps->patterns[*currPattern], content, len);
         ps->patterns[*currPattern][len] = '\0';

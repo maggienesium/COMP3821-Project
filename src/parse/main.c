@@ -240,7 +240,9 @@ int main(int argc, char *argv[]) {
 
         case ALG_BM: {
             printf("[+] Pre-processing all patterns for Boyer-Moore...\n");
+            clock_gettime(CLOCK_MONOTONIC, &build_start);
             BMPatterns *bm = bm_preprocessing(ps);
+            clock_gettime(CLOCK_MONOTONIC, &build_end);
 
             printf("\n[+] Scanning all files under: %s\n", TESTS_PATH);
             scan_file(filepath, ps, NULL, NULL, NULL, 0, bm, ALG_BM);

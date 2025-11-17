@@ -267,7 +267,6 @@ def generate_plots(all_results):
         return
 
     # --- Prepare data ---
-    # Create a mapping from algorithm name back to its key if needed, or just use names
     alg_names = [res['Algorithm'] for res in all_results]
 
     # Extract metrics, converting to float and handling missing values
@@ -283,9 +282,21 @@ def generate_plots(all_results):
         except (ValueError, TypeError):
             return default
 
-    mem_usage = [get_metric(all_results, 'Memory-Usage-MB', name) for name in alg_names]
-    throughput = [get_metric(all_results, 'Throughput', name) for name in alg_names]
-    prep_time = [get_metric(all_results, 'Preprocessing-Time', name) for name in alg_names]
+    # Separate algorithms into two groups: fast and slow
+    fast_algs = ['Aho-Corasick', 'Wu-Manber (Det)', 'Wu-Manber (Prob)']
+    slow_algs = ['Set-Horspool', 'Boyer-Moore']
+    
+    fast_names = [name for name in alg_names if name in fast_algs]
+    slow_names = [name for name in alg_names if name in slow_algs]
+
+    # Extract metrics for each group
+    fast_mem = [get_metric(all_results, 'Memory-Usage-MB', name) for name in fast_names]
+    fast_throughput = [get_metric(all_results, 'Throughput', name) for name in fast_names]
+    fast_prep = [get_metric(all_results, 'Preprocessing-Time', name) for name in fast_names]
+    
+    slow_mem = [get_metric(all_results, 'Memory-Usage-MB', name) for name in slow_names]
+    slow_throughput = [get_metric(all_results, 'Throughput', name) for name in slow_names]
+    slow_prep = [get_metric(all_results, 'Preprocessing-Time', name) for name in slow_names]
 
     # Ruleset stats are constant for the run, grab from the first valid result
     ruleset_count = get_metric(all_results, 'Ruleset-Count', alg_names[0])
@@ -293,54 +304,92 @@ def generate_plots(all_results):
 
     # --- Create Plots ---
     plt.style.use('seaborn-v0_8-darkgrid')
-    # Create a 3x2 grid to accommodate 5 plots cleanly
-    fig, axs = plt.subplots(3, 2, figsize=(18, 16))
-    fig.suptitle('Algorithm Performance Analysis', fontsize=22, weight='bold')
+    # Create a 5x2 grid for 10 plots (5 metrics × 2 groups)
+    fig, axs = plt.subplots(5, 2, figsize=(16, 24))
+    fig.suptitle('Algorithm Performance Analysis - Separated by Performance Class', fontsize=22, weight='bold')
 
-    # Plot 1: Memory Usage vs. Number of Rules
-    axs[0, 0].bar(alg_names, mem_usage, color='skyblue')
-    axs[0, 0].set_title('Memory Usage vs. Number of Rules', fontsize=14)
+    # Row 0: Memory Usage vs. Number of Rules
+    axs[0, 0].bar(fast_names, fast_mem, color='skyblue')
+    axs[0, 0].set_title('Memory Usage - Fast Algorithms', fontsize=14, weight='bold')
     axs[0, 0].set_ylabel('Memory Usage (MB)', fontsize=12)
-    axs[0, 0].set_xlabel(f"Algorithms (at {int(ruleset_count)} rules)", fontsize=12)
+    axs[0, 0].set_xlabel(f"at {int(ruleset_count)} rules", fontsize=11)
+    
+    axs[0, 1].bar(slow_names, slow_mem, color='lightsteelblue')
+    axs[0, 1].set_title('Memory Usage - Slower Algorithms', fontsize=14, weight='bold')
+    axs[0, 1].set_ylabel('Memory Usage (MB)', fontsize=12)
+    axs[0, 1].set_xlabel(f"at {int(ruleset_count)} rules", fontsize=11)
 
-    # Plot 2: Throughput vs. Number of Rules
-    axs[0, 1].bar(alg_names, throughput, color='lightcoral')
-    axs[0, 1].set_title('Throughput vs. Number of Rules', fontsize=14)
-    axs[0, 1].set_ylabel('Throughput (MB/s)', fontsize=12)
-    axs[0, 1].set_xlabel(f"Algorithms (at {int(ruleset_count)} rules)", fontsize=12)
-
-    # Plot 3: Preprocessing Time vs. Number of Rules
-    axs[1, 0].bar(alg_names, prep_time, color='mediumseagreen')
-    axs[1, 0].set_title('Preprocessing Time vs. Number of Rules', fontsize=14)
-    axs[1, 0].set_ylabel('Preprocessing Time (seconds)', fontsize=12)
-    axs[1, 0].set_xlabel(f"Algorithms (at {int(ruleset_count)} rules)", fontsize=12)
-
-    # Plot 4: Throughput vs. Avg Pattern Length
-    axs[1, 1].bar(alg_names, throughput, color='plum')
-    axs[1, 1].set_title('Throughput vs. Avg Pattern Length', fontsize=14)
+    # Row 1: Throughput vs. Number of Rules
+    axs[1, 0].bar(fast_names, fast_throughput, color='lightcoral')
+    axs[1, 0].set_title('Throughput - Fast Algorithms', fontsize=14, weight='bold')
+    axs[1, 0].set_ylabel('Throughput (MB/s)', fontsize=12)
+    axs[1, 0].set_xlabel(f"at {int(ruleset_count)} rules", fontsize=11)
+    
+    axs[1, 1].bar(slow_names, slow_throughput, color='salmon')
+    axs[1, 1].set_title('Throughput - Slower Algorithms', fontsize=14, weight='bold')
     axs[1, 1].set_ylabel('Throughput (MB/s)', fontsize=12)
-    axs[1, 1].set_xlabel(f"Algorithms (at {avg_len:.2f} avg. length)", fontsize=12)
+    axs[1, 1].set_xlabel(f"at {int(ruleset_count)} rules", fontsize=11)
 
-    # Plot 5: Preprocessing Time vs. Avg Pattern Length
-    axs[2, 0].bar(alg_names, prep_time, color='sandybrown')
-    axs[2, 0].set_title('Preprocessing Time vs. Avg Pattern Length', fontsize=14)
+    # Row 2: Preprocessing Time vs. Number of Rules
+    axs[2, 0].bar(fast_names, fast_prep, color='mediumseagreen')
+    axs[2, 0].set_title('Preprocessing Time - Fast Algorithms', fontsize=14, weight='bold')
     axs[2, 0].set_ylabel('Preprocessing Time (seconds)', fontsize=12)
-    axs[2, 0].set_xlabel(f"Algorithms (at {avg_len:.2f} avg. length)", fontsize=12)
+    axs[2, 0].set_xlabel(f"at {int(ruleset_count)} rules", fontsize=11)
+    
+    axs[2, 1].bar(slow_names, slow_prep, color='lightgreen')
+    axs[2, 1].set_title('Preprocessing Time - Slower Algorithms', fontsize=14, weight='bold')
+    axs[2, 1].set_ylabel('Preprocessing Time (seconds)', fontsize=12)
+    axs[2, 1].set_xlabel(f"at {int(ruleset_count)} rules", fontsize=11)
 
-    # Hide the unused subplot
-    axs[2, 1].set_visible(False)
+    # Row 3: Throughput vs. Avg Pattern Length
+    axs[3, 0].bar(fast_names, fast_throughput, color='plum')
+    axs[3, 0].set_title('Throughput vs Pattern Length - Fast Algorithms', fontsize=14, weight='bold')
+    axs[3, 0].set_ylabel('Throughput (MB/s)', fontsize=12)
+    axs[3, 0].set_xlabel(f"at {avg_len:.2f} avg. length", fontsize=11)
+    
+    axs[3, 1].bar(slow_names, slow_throughput, color='orchid')
+    axs[3, 1].set_title('Throughput vs Pattern Length - Slower Algorithms', fontsize=14, weight='bold')
+    axs[3, 1].set_ylabel('Throughput (MB/s)', fontsize=12)
+    axs[3, 1].set_xlabel(f"at {avg_len:.2f} avg. length", fontsize=11)
 
-    # Improve layout
-    for ax_row in axs:
-        for ax in ax_row:
-            ax.tick_params(axis='x', rotation=15, labelsize=10)
-            ax.grid(axis='y', linestyle='--', alpha=0.7)
+    # Row 4: Preprocessing Time vs. Avg Pattern Length
+    axs[4, 0].bar(fast_names, fast_prep, color='sandybrown')
+    axs[4, 0].set_title('Preprocessing vs Pattern Length - Fast Algorithms', fontsize=14, weight='bold')
+    axs[4, 0].set_ylabel('Preprocessing Time (seconds)', fontsize=12)
+    axs[4, 0].set_xlabel(f"at {avg_len:.2f} avg. length", fontsize=11)
+    
+    axs[4, 1].bar(slow_names, slow_prep, color='peachpuff')
+    axs[4, 1].set_title('Preprocessing vs Pattern Length - Slower Algorithms', fontsize=14, weight='bold')
+    axs[4, 1].set_ylabel('Preprocessing Time (seconds)', fontsize=12)
+    axs[4, 1].set_xlabel(f"at {avg_len:.2f} avg. length", fontsize=11)
 
-    plt.tight_layout(rect=[0, 0.03, 1, 0.95])
+    # Improve layout for all subplots
+    for i in range(5):
+        for j in range(2):
+            axs[i, j].tick_params(axis='x', rotation=15, labelsize=10)
+            axs[i, j].grid(axis='y', linestyle='--', alpha=0.7)
+            # Add value labels on bars with scientific notation for small values
+            ax = axs[i, j]
+            for container in ax.containers:
+                # Custom formatter: use scientific notation if value < 0.01 or > 1000
+                labels = []
+                for bar in container:
+                    val = bar.get_height()
+                    if val == 0:
+                        labels.append('0')
+                    elif abs(val) < 0.01 and val != 0:
+                        labels.append(f'{val:.2e}')
+                    elif abs(val) > 1000:
+                        labels.append(f'{val:.2e}')
+                    else:
+                        labels.append(f'{val:.3g}')
+                ax.bar_label(container, labels=labels, padding=3, fontsize=9)
+
+    plt.tight_layout(rect=[0, 0.01, 1, 0.99])
 
     plot_filename = "performance_analysis.png"
     try:
-        plt.savefig(plot_filename)
+        plt.savefig(plot_filename, dpi=150)
         console.print(f"[green]✅ Plots saved to [bold]{plot_filename}[/bold][/green]\n")
     except Exception as e:
         console.print(f"[red]❌ Could not save plots: {e}[/red]")

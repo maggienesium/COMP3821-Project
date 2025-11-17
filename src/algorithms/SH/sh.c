@@ -96,8 +96,11 @@ void performSetHorspool(const char *text, uint64_t textLength,
     s.algorithm_name = "Set–Horspool";
     s.file_size = textLength;
 
-    struct timespec start, end;
-    clock_gettime(CLOCK_MONOTONIC, &start);
+    if (numPatterns == 0 || !patterns) {
+        compute_throughput(&s);
+        print_algorithm_stats(&s);
+        return;
+    }
 
     int minLength = patterns[0].length;
     for (int i = 1; i < numPatterns; i++) {
@@ -105,24 +108,39 @@ void performSetHorspool(const char *text, uint64_t textLength,
             minLength = patterns[i].length;
     }
 
-    int *shiftTable = (int *)track_malloc(MAX_CHAR * sizeof(int));
-    buildSetHorspoolShiftTable(patterns, numPatterns, shiftTable);
+    if (minLength <= 0) {
+        compute_throughput(&s);
+        print_algorithm_stats(&s);
+        return;
+    }
 
-    setHorspoolSearch(text, textLength, patterns, numPatterns, shiftTable, minLength, &s);
+    int *shiftTable = (int *)track_malloc(MAX_CHAR * sizeof(int));
+    PatternList *hashTable = (PatternList *)track_malloc(MAX_CHAR * sizeof(PatternList));
+
+    // Initialize hash table
+    for (int i = 0; i < MAX_CHAR; i++) {
+        hashTable[i].indices = NULL;
+        hashTable[i].count = 0;
+        hashTable[i].capacity = 0;
+    }
+
+    buildSetHorspoolShiftTable(patterns, numPatterns, shiftTable);
+    buildPatternHashTable(patterns, numPatterns, minLength, hashTable);
+
+    struct timespec start, end;
+    clock_gettime(CLOCK_MONOTONIC, &start);
+
+    setHorspoolSearch(text, textLength, patterns, numPatterns, shiftTable, minLength, hashTable, &s);
 
     clock_gettime(CLOCK_MONOTONIC, &end);
     s.elapsed_sec = (double)(end.tv_sec - start.tv_sec) +
                      (double)(end.tv_nsec - start.tv_nsec) / 1e9;
 
-    /* To ensure that throughput values remain physically meaningful and comparable across runs,
-     * I applied a lower bound of 1 ms (0.001 s) to measured elapsed times. This prevents the
-     * division by near-zero durations that would otherwise yield inflated throughput figures
-     * while maintaining the correct order of magnitude for genuinely fast scans. */
-    if (s.elapsed_sec < 1e-3)
-        s.elapsed_sec = 1e-3;
-
     compute_throughput(&s);
     print_algorithm_stats(&s);
+
+    freePatternHashTable(hashTable);
+    track_free(hashTable);
     track_free(shiftTable);
 }
 
@@ -136,12 +154,17 @@ void buildSetHorspoolShiftTable(Pattern *patterns, int numPatterns, int *shiftTa
             minLength = patterns[i].length;
     }
 
+    // Initialize all shifts to minLength (safe skip distance)
     for (int i = 0; i < MAX_CHAR; i++) {
         shiftTable[i] = minLength;
     }
 
+    // For each pattern, update shifts based on character positions
     for (int p = 0; p < numPatterns; p++) {
-        for (int i = 0; i < minLength - 1; i++) {
+        int patternLen = patterns[p].length;
+
+        // Process characters from position 0 to minLength-2
+        for (int i = 0; i < minLength - 1 && i < patternLen; i++) {
             unsigned char ch = (unsigned char)patterns[p].pattern[i];
             int shift = minLength - 1 - i;
             if (shift < shiftTable[ch]) shiftTable[ch] = shift;
@@ -151,6 +174,19 @@ void buildSetHorspoolShiftTable(Pattern *patterns, int numPatterns, int *shiftTa
                                     ? tolower((unsigned char)ch)
                                     : toupper((unsigned char)ch));
                 if (shift < shiftTable[alt]) shiftTable[alt] = shift;
+            }
+        }
+
+        // Rightmost character at position minLength-1 gets shift=0
+        if (patternLen >= minLength) {
+            unsigned char rightmost = (unsigned char)patterns[p].pattern[minLength - 1];
+            shiftTable[rightmost] = 0;
+
+            if (patterns[p].nocase && isalpha((unsigned char)rightmost)) {
+                unsigned char alt = (unsigned char)(isupper((unsigned char)rightmost)
+                                    ? tolower((unsigned char)rightmost)
+                                    : toupper((unsigned char)rightmost));
+                shiftTable[alt] = 0;
             }
         }
     }

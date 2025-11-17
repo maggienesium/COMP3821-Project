@@ -1,1 +1,12 @@
 .github/**
+performance_analysis.png
+analysis_output.txt
+bin/testParse
+src/algorithms/AC/ac.o
+.gitignore
+src/algorithms/WM/bloom.o
+src/algorithms/WM/wm.o
+.gitignore
+.gitignore
+.gitignore
+src/parse/parseRules.o

@@ -1,15 +1,15 @@
-/* 
+/*
  *              Boyer-Moore String Matching Algorithm
  *
  * ---------------------------------------------------------------
- * This file implements the Boyer-Moore String Matching algorithm which only 
+ * This file implements the Boyer-Moore String Matching algorithm which only
  * works with one pattern string. Hence, the overall time complexity will be
  * fairly bad as we need to iterate through all the patterns and match it.
  * Reference:
  * https://medium.com/@siddharth.21/the-boyer-moore-string-search-algorithm-674906cab162,
  * slightly changed to break when first match is found.
- * https://medium.com/@neethamadhu.ma/good-suffix-rule-in-boyer-moore-algorithm-explained-simply-9d9b6d20a773 
- * 
+ * https://medium.com/@neethamadhu.ma/good-suffix-rule-in-boyer-moore-algorithm-explained-simply-9d9b6d20a773
+ *
  * R. S. Boyer, J. S. Moore,
  *   A Fast String Searching Algoritm,”
  *   CACM 20(10):762–772 (1977).
@@ -31,12 +31,12 @@ BMPatterns *bm_preprocessing(PatternSet *ps) {
     BMPatterns *bm_patterns = track_malloc(sizeof(BMPatterns));
     bm_patterns->patterns = track_malloc(sizeof(PatternTable) * (size_t) ps->pattern_count);
     bm_patterns->num_patterns = ps->pattern_count;
-    
+
     for (int i = 0; i < ps->pattern_count; i++) {
         char *pattern = ps->patterns[i];
         PatternTable *curr_pattern = &bm_patterns->patterns[i];
         curr_pattern->pattern = track_malloc(sizeof(char) * (strlen(pattern) + 1));
-        
+
         strcpy(curr_pattern->pattern, pattern);
 
         // initialse pattern table with length values
@@ -55,7 +55,7 @@ BMPatterns *bm_preprocessing(PatternSet *ps) {
         curr_pattern->pattern_length = j;
         int index = j;
         int k = j + 1;
-        curr_pattern->borderTable = track_calloc((size_t)j + 1, sizeof(int)); 
+        curr_pattern->borderTable = track_calloc((size_t)j + 1, sizeof(int));
         curr_pattern->borderTable[index] = k;
 
         while (index > 0) {
@@ -109,7 +109,7 @@ void bm_search(BMPatterns *bm, const char *text, size_t text_len) {
             if (j < 0) {
                 // then we have a match at that shift value
                 s.exact_matches++;
-                
+
                 break;
             } else {
                 // utilise bad character heuristic since we have already
@@ -126,7 +126,7 @@ void bm_search(BMPatterns *bm, const char *text, size_t text_len) {
                     if (bad_skip_past_mismatch < good_skip_past_mismatch) {
                         skip_past_mismatch = good_skip_past_mismatch;
                     }
-                }   
+                }
 
                 if (skip_past_mismatch > 0 && j - skip_past_mismatch > 1) {
                     shift += j - skip_past_mismatch;

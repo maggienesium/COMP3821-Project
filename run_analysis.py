@@ -70,6 +70,7 @@ ALGORITHMS = {
     "h": "Set-Horspool",
     "d": "Wu-Manber (Det)",
     "p": "Wu-Manber (Prob)",
+    "b": "Boyer-Moore",
 }
 
 # --- Main Logic ---

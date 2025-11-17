@@ -14,6 +14,17 @@
 #define MAX_LINE_LENGTH    4096
 
 /* ---------------------------------------------------------------
+ * Struct: PatternList
+ *  Stores indices of patterns that have a specific character
+ *  at the rightmost position of the minimum length window
+ * --------------------------------------------------------------- */
+typedef struct {
+    int *indices;      // Array of pattern indices
+    int count;         // Number of patterns in this list
+    int capacity;      // Allocated capacity
+} PatternList;
+
+/* ---------------------------------------------------------------
  * Struct: Pattern
  *  Represents a single parsed Snort rule pattern.
  *  Each pattern includes:
@@ -35,10 +46,13 @@ typedef struct {
 void setHorspoolSearch(const char *text, uint64_t textLength,
                        Pattern *patterns, int numPatterns,
                        int *shiftTable, int minLength,
+                       PatternList *hashTable,
                        AlgorithmStats *s);
 void performSetHorspool(const char *text, uint64_t textLength,
                         Pattern *patterns, int numPatterns);
 void buildSetHorspoolShiftTable(Pattern *patterns, int numPatterns, int *shiftTable);
+void buildPatternHashTable(Pattern *patterns, int numPatterns, int minLength, PatternList *hashTable);
+void freePatternHashTable(PatternList *hashTable);
 int compareChar(char a, char b, int nocase);
 
 #endif  // SRC_ALGORITHMS_SH_SH_H_

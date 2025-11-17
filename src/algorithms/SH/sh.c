@@ -17,19 +17,14 @@
 #include <time.h>
 #include "sh.h"
 #include "../../parse/analytics.h"
-/* ---------------------------------------------------------------
- *                   Internal Global Counters
- * --------------------------------------------------------------- */
-static int totalComparisons = 0;
-static int totalOccurrences = 0;
-static int patternMatches[MAX_PATTERNS] = {0};
 
 /* ---------------------------------------------------------------
  *                 Search Phase (core algorithm)
  * --------------------------------------------------------------- */
 void setHorspoolSearch(const char *text, uint64_t textLength,
-                       Pattern *patterns, int numPatterns,
+                       Pattern *patterns, int numPatterns __attribute__((unused)),
                        int *shiftTable, int minLength,
+                       PatternList *hashTable,
                        AlgorithmStats *s) {
     if (minLength <= 0 || !text || !patterns) return;
 
@@ -38,17 +33,33 @@ void setHorspoolSearch(const char *text, uint64_t textLength,
         uint64_t windowEnd = pos + (uint64_t)minLength - 1;
         if (windowEnd >= textLength) break;
 
-        int foundMatch = 0;
-        int maxShift = shiftTable[(unsigned char)text[windowEnd]];
+        s->windows++;
+        unsigned char endChar = (unsigned char)text[windowEnd];
+        int shift = shiftTable[endChar];
 
-        for (int p = 0; p < numPatterns; p++) {
+        // OPTIMIZATION: Only check patterns when shift is minimal
+        // If shift > 1, we can skip this position entirely
+        if (shift > 1) {
+            pos += (uint64_t)shift;
+            s->sum_shift += (uint64_t)shift;
+            continue;
+        }
+
+        // shift == 0 or 1: Check only patterns in the hash table for this character
+        PatternList *candidateList = &hashTable[endChar];
+        int foundMatch = 0;
+
+        for (int i = 0; i < candidateList->count; i++) {
+            int p = candidateList->indices[i];
             int patternLen = patterns[p].length;
+
             if (patternLen <= 0 || pos + (uint64_t)patternLen > textLength)
                 continue;
 
+            // Verify full pattern match
             int matched = 1;
-            for (int j = patternLen - 1; j >= 0; j--) {
-                totalComparisons++;
+            for (int j = 0; j < patternLen; j++) {
+                s->comparisons++;
                 if (!compareChar(text[pos + (uint64_t)j],
                                  patterns[p].pattern[j],
                                  patterns[p].nocase)) {
@@ -58,20 +69,20 @@ void setHorspoolSearch(const char *text, uint64_t textLength,
             }
 
             if (matched) {
-                totalOccurrences++;
-                patternMatches[p]++;
                 s->matches++;
                 foundMatch = 1;
+                // Don't break - continue checking other patterns
+                // (overlapping matches are valid)
             }
         }
 
-        if (foundMatch)
-            pos++;
-        else
-            pos += (uint64_t)maxShift;
-
-        s->chars_scanned++;
-        s->shifts += (uint64_t)maxShift;
+        // Use shift table for next position
+        if (foundMatch) {
+            pos++;  // Shift by 1 to find overlapping matches
+        } else {
+            pos += (shift > 0) ? (uint64_t)shift : 1;
+            s->sum_shift += (shift > 0) ? (uint64_t)shift : 1;
+        }
     }
 }
 
@@ -152,4 +163,64 @@ int compareChar(char a, char b, int nocase) {
     return nocase
         ? (tolower((unsigned char)a) == tolower((unsigned char)b))
         : (a == b);
+}
+
+/* ---------------------------------------------------------------
+ *        Utility: Build Pattern Hash Table for Fast Lookup
+ * --------------------------------------------------------------- */
+void buildPatternHashTable(Pattern *patterns, int numPatterns, int minLength, PatternList *hashTable) {
+    // For each pattern, add its index to the hash table entry
+    // corresponding to the character at position minLength-1
+    for (int p = 0; p < numPatterns; p++) {
+        if (patterns[p].length < minLength) continue;
+
+        unsigned char ch = (unsigned char)patterns[p].pattern[minLength - 1];
+
+        // Add pattern index to the hash table entry for this character
+        PatternList *list = &hashTable[ch];
+        if (list->count >= list->capacity) {
+            int newCapacity = (list->capacity == 0) ? 8 : list->capacity * 2;
+            int *newIndices = (int *)track_malloc((size_t)newCapacity * sizeof(int));
+            if (list->indices) {
+                memcpy(newIndices, list->indices, (size_t)list->count * sizeof(int));
+                track_free(list->indices);
+            }
+            list->indices = newIndices;
+            list->capacity = newCapacity;
+        }
+        list->indices[list->count++] = p;
+
+        // If case-insensitive, also add to the alternate case
+        if (patterns[p].nocase && isalpha((unsigned char)ch)) {
+            unsigned char altCh = (unsigned char)(isupper((unsigned char)ch)
+                                                   ? tolower((unsigned char)ch)
+                                                   : toupper((unsigned char)ch));
+            PatternList *altList = &hashTable[altCh];
+            if (altList->count >= altList->capacity) {
+                int newCapacity = (altList->capacity == 0) ? 8 : altList->capacity * 2;
+                int *newIndices = (int *)track_malloc((size_t)newCapacity * sizeof(int));
+                if (altList->indices) {
+                    memcpy(newIndices, altList->indices, (size_t)altList->count * sizeof(int));
+                    track_free(altList->indices);
+                }
+                altList->indices = newIndices;
+                altList->capacity = newCapacity;
+            }
+            altList->indices[altList->count++] = p;
+        }
+    }
+}
+
+/* ---------------------------------------------------------------
+ *          Utility: Free Pattern Hash Table Memory
+ * --------------------------------------------------------------- */
+void freePatternHashTable(PatternList *hashTable) {
+    for (int i = 0; i < MAX_CHAR; i++) {
+        if (hashTable[i].indices) {
+            track_free(hashTable[i].indices);
+            hashTable[i].indices = NULL;
+            hashTable[i].count = 0;
+            hashTable[i].capacity = 0;
+        }
+    }
 }

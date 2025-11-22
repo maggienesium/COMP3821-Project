@@ -25,7 +25,7 @@
 
 ## About The Project
 
-This project implements a Network Intrusion Detection System (NIDS) benchmarking framework that evaluates the performance of several canonical string-matching algorithms under realistic network traffic conditions. The goal is to compare the effectiveness of these algorithms in detecting malicious patterns, focusing on their throughput, memory usage, and preprocessing time when applied to Snort-style rule sets.
+This project implements a Network Intrusion Detection System (NIDS) benchmarking framework that evaluates the performance of several canonical string-matching algorithms under simulated network traffic conditions. The goal is to compare the effectiveness of these algorithms in detecting known patterns, focusing on their throughput, memory usage, and preprocessing time when applied to Snort-style rule sets.
 
 We implemented five well known string-matching algorithms: Boyer-Moore, Set-Horspool, two variants of Wu-Manber, and Aho-Corasick, chosen for their relevance in both legacy and modern hybrid NIDS systems. The benchmarking framework allows you to run experiments on pcap files, enabling the comparison of different algorithms across real world network data.
 
@@ -69,7 +69,7 @@ Windows users should install WSL then ensure `make` and `gcc` resolve from the c
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the repository or zip download:
  
    ```bash
    git clone https://github.com/maggienesium/COMP3821-Project.git

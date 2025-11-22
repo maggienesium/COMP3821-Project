@@ -11,7 +11,7 @@
  * https://medium.com/@neethamadhu.ma/good-suffix-rule-in-boyer-moore-algorithm-explained-simply-9d9b6d20a773
  *
  * R. S. Boyer, J. S. Moore,
- *   A Fast String Searching Algoritm,”
+ *   "A Fast String Searching Algorithm,”
  *   CACM 20(10):762–772 (1977).
  * --------------------------------------------------------------- */
 #include <stdio.h>

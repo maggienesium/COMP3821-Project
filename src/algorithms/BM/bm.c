@@ -9,6 +9,7 @@
  * https://medium.com/@siddharth.21/the-boyer-moore-string-search-algorithm-674906cab162,
  * slightly changed to break when first match is found.
  * https://medium.com/@neethamadhu.ma/good-suffix-rule-in-boyer-moore-algorithm-explained-simply-9d9b6d20a773
+ * https://www.geeksforgeeks.org/dsa/boyer-moore-algorithm-for-pattern-searching/
  *
  * R. S. Boyer, J. S. Moore,
  *   "A Fast String Searching Algorithm,”
